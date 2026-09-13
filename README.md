@@ -4,7 +4,13 @@ A warm, practical family recipe collection published with GitHub Pages.
 
 ## Adding recipes
 
-Each recipe has structured metadata in `lib/recipes.ts` and its own printable page under `app/recipes/`. Photographs live in `public/photos/` as metadata-free WebP files. New recipes should retain the cook’s phrasing and practical cues while separating ingredients, method, and family notes. Use the shared `RecipeScaler` component for ingredient quantities and yield so every recipe can be resized in the browser and printed at the selected scale.
+Each recipe has its complete structured record in `lib/recipes.ts` and its own printable page under `app/recipes/`. Photographs live in `public/photos/` as metadata-free WebP files. New recipes should retain the cook’s phrasing and practical cues while separating ingredients, method, and family notes. Use the shared `RecipeScaler` component for ingredient quantities and yield so every recipe can be resized in the browser and printed at the selected scale.
+
+Recipes use one of six sections: Breakfast, Lunch, Dinner, Appetizers, Side dishes, or Desserts. The home page uses these sections for browsing, and the recipe book automatically groups recipes under the same headings.
+
+## Recipe book
+
+Open `/FamilyRecipes/book` or choose **Recipe book** in the site header. The book is assembled in the browser from the same recipe data as the site, including a cover, About page, table of contents, themed section dividers, and recipe pages. Choose **Save book as PDF**, then select **Save as PDF** in the browser print dialog. New recipes appear in the book automatically after the updated site is deployed; no separate book file needs to be regenerated or checked into the repository.
 
 ## Local preview
 

@@ -1,20 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-
-type Ingredient = {
-  amount?: number;
-  range?: [number, number];
-  unit?: string;
-  pluralUnit?: string;
-  item: string;
-  approximate?: boolean;
-};
+import {
+  formatIngredientAmount,
+  formatRecipeNumber,
+  ingredientUnit,
+} from '@/lib/recipe-format';
+import type { RecipeIngredient } from '@/lib/recipes';
 
 type RecipeScalerProps = {
   baseYield: [number, number];
   yieldUnit: string;
-  ingredients: Ingredient[];
+  ingredients: RecipeIngredient[];
 };
 
 const scaleOptions = [
@@ -24,48 +21,13 @@ const scaleOptions = [
   { value: 2, label: 'Double' },
 ] as const;
 
-function formatNumber(value: number) {
-  const rounded = Math.round(value * 4) / 4;
-  const whole = Math.floor(rounded);
-  const remainder = rounded - whole;
-  const fraction =
-    remainder === 0.25
-      ? '¼'
-      : remainder === 0.5
-        ? '½'
-        : remainder === 0.75
-          ? '¾'
-          : '';
-
-  if (!whole) return fraction || String(rounded);
-  return `${whole}${fraction}`;
-}
-
-function formatAmount(ingredient: Ingredient, scale: number) {
-  if (ingredient.range) {
-    return `${formatNumber(ingredient.range[0] * scale)}–${formatNumber(ingredient.range[1] * scale)}`;
-  }
-
-  return ingredient.amount === undefined
-    ? ''
-    : formatNumber(ingredient.amount * scale);
-}
-
-function ingredientUnit(ingredient: Ingredient, scale: number) {
-  if (!ingredient.unit) return '';
-  const largestAmount = ingredient.range?.[1] ?? ingredient.amount ?? 0;
-  return largestAmount * scale > 1
-    ? (ingredient.pluralUnit ?? ingredient.unit)
-    : ingredient.unit;
-}
-
 export function RecipeScaler({
   baseYield,
   yieldUnit,
   ingredients,
 }: RecipeScalerProps) {
   const [scale, setScale] = useState(1);
-  const scaledYield = `${formatNumber(baseYield[0] * scale)}–${formatNumber(baseYield[1] * scale)}`;
+  const scaledYield = `${formatRecipeNumber(baseYield[0] * scale)}–${formatRecipeNumber(baseYield[1] * scale)}`;
 
   return (
     <div className="recipe-scaler">
@@ -93,7 +55,7 @@ export function RecipeScaler({
       </div>
       <ul aria-label={`Ingredients for about ${scaledYield} ${yieldUnit}`}>
         {ingredients.map((ingredient) => {
-          const amount = formatAmount(ingredient, scale);
+          const amount = formatIngredientAmount(ingredient, scale);
           const unit = ingredientUnit(ingredient, scale);
 
           return (

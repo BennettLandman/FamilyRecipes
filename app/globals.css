@@ -207,6 +207,75 @@ h3 { font-size: 1.45rem; }
 .gallery-grid img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 .gallery-grid figcaption { padding: .8rem .7rem 0; font-family: "Bradley Hand", "Segoe Print", cursive; }
 
+.book-shell { min-height: 100vh; background: var(--oat); }
+.book-toolbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--rule); background: rgba(255,250,240,.94); backdrop-filter: blur(14px); }
+.book-toolbar-inner { min-height: 92px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2rem; }
+.book-toolbar .back-link { margin: 0; white-space: nowrap; }
+.book-toolbar-inner > div:not(.book-actions) { display: grid; }
+.book-toolbar-inner > div > strong { font-family: Georgia, serif; }
+.book-toolbar-inner > div > span { color: var(--ink-soft); font-size: .8rem; }
+.book-actions { display: flex; align-items: center; gap: 1rem; }
+.book-actions p { max-width: 145px; margin: 0; color: var(--ink-soft); font-size: .72rem; line-height: 1.25; }
+.book-pages { display: grid; gap: 2.5rem; padding-block: 3rem 5rem; }
+.book-page { position: relative; width: min(816px, calc(100% - 32px)); min-height: 1056px; margin-inline: auto; overflow: hidden; padding: 72px; background: var(--paper); box-shadow: 0 18px 50px rgba(52,43,31,.18); }
+.book-kicker { margin-bottom: .8rem; color: var(--tomato-dark); font-size: .7rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.book-cover { display: flex; flex-direction: column; justify-content: center; border: 18px solid var(--ink); background: radial-gradient(circle at 75% 18%, rgba(239,198,108,.4), transparent 15rem), var(--paper); }
+.book-cover-rule { position: absolute; inset: 34px; border: 2px solid var(--tomato); pointer-events: none; }
+.book-cover h1 { position: relative; z-index: 1; max-width: 650px; margin: 0; font-size: clamp(4.8rem, 10vw, 7.5rem); line-height: .86; }
+.book-subtitle { position: relative; z-index: 1; margin: 1.5rem 0 0; color: var(--tomato-dark); font-family: "Bradley Hand", "Segoe Print", cursive; font-size: 1.55rem; transform: rotate(-1deg); }
+.book-cover-cat { position: absolute; right: 42px; bottom: 76px; width: 205px; border-radius: 48%; mix-blend-mode: multiply; transform: rotate(3deg); }
+.book-cover footer { position: absolute; left: 72px; right: 72px; bottom: 52px; display: flex; justify-content: space-between; color: var(--ink-soft); font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.book-about h2, .book-toc h2 { max-width: 600px; font-size: 4.8rem; }
+.book-about-copy { max-width: 560px; margin-top: 4rem; }
+.book-about-copy p { margin-bottom: 1.5rem; font-family: Georgia, serif; font-size: 1.25rem; line-height: 1.7; }
+.book-margin-note { position: absolute; left: 74px; bottom: 85px; max-width: 330px; padding: 1rem 1.2rem; background: var(--butter); font-family: "Bradley Hand", "Segoe Print", cursive; transform: rotate(-1deg); }
+.book-page-cat { position: absolute; right: 62px; bottom: 54px; width: 155px; border-radius: 46%; mix-blend-mode: multiply; opacity: .8; }
+.book-toc > ol { list-style: none; margin: 3.5rem 0 0; padding: 0; }
+.book-toc > ol > li { padding: 1rem 0; border-top: 1px solid var(--rule); }
+.book-toc > ol > li > a { display: flex; justify-content: space-between; gap: 2rem; color: var(--tomato-dark); font-family: Georgia, serif; font-size: 1.45rem; font-weight: 700; }
+.book-toc em { color: var(--ink-soft); font-family: Avenir, sans-serif; font-size: .72rem; font-style: normal; letter-spacing: .08em; text-transform: uppercase; }
+.book-toc ul { margin: .6rem 0 0 1.2rem; padding: 0; color: var(--ink-soft); font-size: .9rem; }
+.book-toc ul li { margin: .25rem 0; }
+.book-toc ul span { font-style: italic; }
+.book-coming-soon { position: absolute; left: 72px; right: 220px; bottom: 70px; color: var(--ink-soft); font-size: .82rem; }
+.toc-cat { width: 125px; }
+.book-section-cover { display: flex; flex-direction: column; justify-content: center; color: #fffaf0; }
+.book-section-cover::before { content: ""; position: absolute; inset: 34px; border: 1px solid rgba(255,255,255,.48); }
+.book-section-cover h2 { position: relative; z-index: 1; max-width: 680px; margin: 0 0 1.5rem; color: inherit; font-size: 7rem; }
+.book-section-cover > p:not(.book-kicker) { position: relative; z-index: 1; max-width: 490px; font-family: Georgia, serif; font-size: 1.35rem; line-height: 1.55; }
+.book-section-cover .book-kicker { position: relative; z-index: 1; color: var(--butter); }
+.section-count { position: absolute; left: 72px; bottom: 65px; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.book-section-cat { position: absolute; right: 55px; bottom: 44px; width: 185px; border-radius: 48%; mix-blend-mode: screen; opacity: .48; }
+.book-section-breakfast { background: #9b603b; }
+.book-section-lunch { background: var(--sage); }
+.book-section-dinner { background: var(--ink); }
+.book-section-appetizers { background: var(--tomato-dark); }
+.book-section-side-dishes { background: #6d745c; }
+.book-section-desserts { background: #7b4f55; }
+.book-recipe { padding: 54px 62px; }
+.book-recipe-header { display: grid; grid-template-columns: 1.08fr .92fr; gap: 2rem; padding-bottom: 1.6rem; border-bottom: 2px solid var(--ink); }
+.book-recipe-header h2 { margin-bottom: .65rem; font-size: 3.5rem; }
+.book-recipe-header > div > p:not(.book-kicker) { color: var(--ink-soft); font-family: Georgia, serif; font-size: .95rem; line-height: 1.45; }
+.book-recipe-header > img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transform: rotate(1deg); box-shadow: 5px 5px 0 var(--butter); }
+.book-recipe dl { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 1rem 0 0; }
+.book-recipe dl div { display: grid; }
+.book-recipe dt { color: var(--ink-soft); font-size: .58rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.book-recipe dd { margin: 0; font-size: .72rem; }
+.book-recipe-body { display: grid; grid-template-columns: .82fr 1.18fr; gap: 2.4rem; padding-top: 1.8rem; }
+.book-recipe-body h3 { margin-bottom: .75rem; color: var(--tomato-dark); font-size: 1.55rem; }
+.book-recipe-body ul, .book-recipe-body ol { margin: 0; padding: 0; list-style: none; }
+.book-recipe-body ul li { padding: .4rem 0; border-bottom: 1px solid rgba(107,84,55,.16); font-size: .82rem; }
+.book-recipe-body ul li::before { content: "•"; margin-right: .45rem; color: var(--tomato); }
+.book-recipe-body ol { display: grid; gap: .75rem; }
+.book-recipe-body ol li { display: grid; grid-template-columns: 25px 1fr; gap: .6rem; font-size: .78rem; }
+.book-recipe-body ol li > span { display: grid; place-items: center; width: 23px; height: 23px; border: 1px solid var(--tomato); border-radius: 50%; color: var(--tomato-dark); font-weight: 800; }
+.book-recipe-body ol strong { font-family: Georgia, serif; font-size: .9rem; }
+.book-recipe-body ol p { margin: .15rem 0 0; color: var(--ink-soft); line-height: 1.45; }
+.book-recipe-body aside { margin-top: 1rem; padding: .75rem; background: var(--butter); font-size: .72rem; transform: rotate(.5deg); }
+.book-recipe-body aside p { margin: .2rem 0 0; }
+.book-family-note { border-left: 4px solid var(--tomato); background: var(--sage-pale) !important; transform: none !important; }
+.book-recipe-cat { position: absolute; right: 20px; bottom: 16px; width: 70px; border-radius: 48%; mix-blend-mode: multiply; opacity: .42; }
+
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 58px; }
   .hero-photo { justify-self: start; width: min(590px, 92%); }
@@ -219,6 +288,9 @@ h3 { font-size: 1.45rem; }
   .recipe-cat { left: auto; right: 0; bottom: 5px; }
   .recipe-content { grid-template-columns: 1fr; gap: 4rem; }
   .ingredients-card { max-width: 650px; }
+  .book-toolbar-inner { grid-template-columns: 1fr auto; padding-block: 1rem; }
+  .book-toolbar-inner > div:not(.book-actions) { display: none; }
+  .book-page { min-height: auto; }
 }
 
 @media (max-width: 620px) {
@@ -245,6 +317,21 @@ h3 { font-size: 1.45rem; }
   .ingredients-card { padding: 2.4rem 1.5rem 2rem; }
   .scale-controls { grid-template-columns: 1fr 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
+  .site-header nav { font-size: .76rem; }
+  .book-toolbar-inner { grid-template-columns: 1fr; gap: .8rem; }
+  .book-actions { justify-content: space-between; }
+  .book-page { width: calc(100% - 20px); padding: 44px 30px; }
+  .book-cover { min-height: 84vh; }
+  .book-cover h1 { font-size: 4rem; }
+  .book-cover-cat { width: 125px; }
+  .book-about h2, .book-toc h2 { font-size: 3.3rem; }
+  .book-about-copy { margin-top: 2rem; }
+  .book-about-copy p { font-size: 1.05rem; }
+  .book-margin-note, .book-coming-soon { position: static; margin-top: 2rem; }
+  .book-page-cat { position: static; width: 110px; margin: 2rem 0 0 auto; }
+  .book-section-cover { min-height: 76vh; }
+  .book-section-cover h2 { font-size: 4.2rem; }
+  .book-recipe-header, .book-recipe-body { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -277,4 +364,23 @@ h3 { font-size: 1.45rem; }
   .method li > span { width: .23in; height: .23in; border-color: #000; color: #000; font-size: 9pt; }
   .method li h3 { margin: 0; font-size: 12pt; }
   .favorite-note { margin-top: .15in; padding: .1in; border: 1px solid #888; background: transparent; }
+}
+
+@media print {
+  @page { size: letter; margin: 0; }
+  html, body { margin: 0; background: #fff; }
+  body:has(.book-shell) { font-size: 10pt; }
+  .book-shell, .book-pages { display: block; margin: 0; padding: 0; background: #fff; }
+  .book-page { width: 8.5in; height: 11in; min-height: 11in; margin: 0; padding: .7in; overflow: hidden; box-shadow: none; break-after: page; page-break-after: always; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .book-page:last-child { break-after: auto; page-break-after: auto; }
+  .book-cover { border-width: .18in; }
+  .book-cover-rule { inset: .34in; }
+  .book-cover h1 { font-size: 62pt; }
+  .book-cover-cat { width: 1.9in; }
+  .book-about h2, .book-toc h2 { font-size: 40pt; }
+  .book-about-copy { margin-top: .45in; }
+  .book-about-copy p { font-size: 13pt; }
+  .book-section-cover h2 { font-size: 62pt; }
+  .book-recipe { padding: .48in .58in; }
+  .book-recipe-header h2 { font-size: 32pt; }
 }

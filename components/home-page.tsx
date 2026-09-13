@@ -4,13 +4,13 @@
 
 import { Search, UtensilsCrossed } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { Input } from '@/components/ui/input';
 import { SiteHeader } from '@/components/site-header';
-import { assetPath, recipes } from '@/lib/recipes';
+import { assetPath, recipes, recipeSections } from '@/lib/recipes';
 
-type Filter = { kind: 'all' } | { kind: 'meal' | 'ingredient'; value: string };
+type Filter =
+  | { kind: 'all' }
+  | { kind: 'section' | 'ingredient'; value: string };
 
-const meals = ['Breakfast', 'Lunch', 'Dinner'];
 const commonIngredients = ['Eggs', 'Bread', 'Milk', 'Cinnamon'];
 
 export function HomePage() {
@@ -22,22 +22,32 @@ export function HomePage() {
     return recipes.filter((recipe) => {
       const matchesQuery =
         !needle ||
-        [recipe.title, recipe.description, recipe.author, ...recipe.meals, ...recipe.commonIngredients, ...recipe.badges]
+        [
+          recipe.title,
+          recipe.description,
+          recipe.author,
+          recipe.section,
+          ...recipe.meals,
+          ...recipe.commonIngredients,
+          ...recipe.badges,
+        ]
           .join(' ')
           .toLowerCase()
           .includes(needle);
       const matchesFilter =
         filter.kind === 'all' ||
-        (filter.kind === 'meal'
-          ? recipe.meals.includes(filter.value)
+        (filter.kind === 'section'
+          ? recipe.section === filter.value
           : recipe.commonIngredients.includes(filter.value));
       return matchesQuery && matchesFilter;
     });
   }, [filter, query]);
 
-  const chooseFilter = (kind: 'meal' | 'ingredient', value: string) => {
+  const chooseFilter = (kind: 'section' | 'ingredient', value: string) => {
     setFilter((current) =>
-      current.kind === kind && current.value === value ? { kind: 'all' } : { kind, value },
+      current.kind === kind && current.value === value
+        ? { kind: 'all' }
+        : { kind, value },
     );
     document.getElementById('recipes')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -51,33 +61,46 @@ export function HomePage() {
             <p className="eyebrow">From the center of the house</p>
             <h1 id="site-title">Brentwood Bunch Recipes</h1>
             <p className="hero-lede">
-              The things we actually cook, scribbled down before anyone forgets. A growing family cookbook with buttery fingerprints included.
+              The things we actually cook, scribbled down before anyone forgets.
+              A growing family cookbook with buttery fingerprints included.
             </p>
             <label className="search-box" htmlFor="recipe-search">
               <span className="sr-only">Search all recipes</span>
               <Search aria-hidden="true" />
-              <Input
+              <input
                 id="recipe-search"
                 type="search"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder="Search recipes or ingredients…"
               />
-              <span className="search-note">Try a dish, cook, or ingredient</span>
+              <span className="search-note">
+                Try a dish, cook, or ingredient
+              </span>
             </label>
           </div>
 
-          <a className="hero-photo" href={`${assetPath}/recipes/dads-french-toast`}>
+          <a
+            className="hero-photo"
+            href={`${assetPath}/recipes/dads-french-toast`}
+          >
             <img
               src={`${assetPath}/photos/dads-french-toast-finished.webp`}
               alt="Two pieces of Dad’s French toast dusted with cinnamon sugar"
             />
             <span className="photo-tape" aria-hidden="true" />
-            <span className="hero-photo-caption"><strong>First in the book</strong>Dad’s French Toast</span>
+            <span className="hero-photo-caption">
+              <strong>First in the book</strong>Dad’s French Toast
+            </span>
           </a>
           <figure className="cat-art cat-home">
-            <img src={`${assetPath}/cats/ink-kitchen-cat.webp`} alt="A playful ink-drawn cat stretching in the kitchen" />
-            <figcaption>waiting for crumbs</figcaption>
+            <img
+              src={`${assetPath}/cats/ink-kitchen-cat.webp`}
+              alt="A playful ink-drawn cat stretching in the kitchen"
+            />
+            <figcaption className="sr-only">
+              A quiet kitchen companion waiting for crumbs.
+            </figcaption>
           </figure>
         </section>
 
@@ -86,21 +109,35 @@ export function HomePage() {
             <div>
               <p className="eyebrow">Open the cupboard</p>
               <h2 id="browse-title">Browse the family way</h2>
-              <p>Start with what you have, or with the meal everyone is asking about.</p>
+              <p>
+                Start with what you have, or with the meal everyone is asking
+                about.
+              </p>
             </div>
             <div className="browse-group">
-              <h3>By meal</h3>
+              <h3>By meal or course</h3>
               <div className="filter-row">
-                {meals.map((meal) => (
+                {recipeSections.map((section) => (
                   <button
-                    className={filter.kind === 'meal' && filter.value === meal ? 'active' : ''}
-                    key={meal}
+                    className={
+                      filter.kind === 'section' && filter.value === section
+                        ? 'active'
+                        : ''
+                    }
+                    key={section}
                     type="button"
-                    aria-pressed={filter.kind === 'meal' && filter.value === meal}
-                    onClick={() => chooseFilter('meal', meal)}
+                    aria-pressed={
+                      filter.kind === 'section' && filter.value === section
+                    }
+                    onClick={() => chooseFilter('section', section)}
                   >
-                    <span>{meal}</span>
-                    <small>{recipes.filter((recipe) => recipe.meals.includes(meal)).length}</small>
+                    <span>{section}</span>
+                    <small>
+                      {
+                        recipes.filter((recipe) => recipe.section === section)
+                          .length
+                      }
+                    </small>
                   </button>
                 ))}
               </div>
@@ -110,10 +147,18 @@ export function HomePage() {
               <div className="ingredient-row">
                 {commonIngredients.map((ingredient) => (
                   <button
-                    className={filter.kind === 'ingredient' && filter.value === ingredient ? 'active' : ''}
+                    className={
+                      filter.kind === 'ingredient' &&
+                      filter.value === ingredient
+                        ? 'active'
+                        : ''
+                    }
                     key={ingredient}
                     type="button"
-                    aria-pressed={filter.kind === 'ingredient' && filter.value === ingredient}
+                    aria-pressed={
+                      filter.kind === 'ingredient' &&
+                      filter.value === ingredient
+                    }
                     onClick={() => chooseFilter('ingredient', ingredient)}
                   >
                     {ingredient}
@@ -124,14 +169,27 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="recipes-section wrap" id="recipes" aria-labelledby="recipes-title">
+        <section
+          className="recipes-section wrap"
+          id="recipes"
+          aria-labelledby="recipes-title"
+        >
           <div className="section-heading">
             <div>
               <p className="eyebrow">The recipe box</p>
-              <h2 id="recipes-title">{filter.kind === 'all' ? 'What we’re cooking' : filter.value}</h2>
+              <h2 id="recipes-title">
+                {filter.kind === 'all' ? 'What we’re cooking' : filter.value}
+              </h2>
             </div>
             {(filter.kind !== 'all' || query) && (
-              <button type="button" className="clear-button" onClick={() => { setFilter({ kind: 'all' }); setQuery(''); }}>
+              <button
+                type="button"
+                className="clear-button"
+                onClick={() => {
+                  setFilter({ kind: 'all' });
+                  setQuery('');
+                }}
+              >
                 Clear search
               </button>
             )}
@@ -143,14 +201,22 @@ export function HomePage() {
                 <article className="recipe-card" key={recipe.slug}>
                   <a href={`${assetPath}/recipes/${recipe.slug}`}>
                     <div className="recipe-card-photo">
-                      <img src={`${assetPath}${recipe.heroImage}`} alt={recipe.heroAlt} />
+                      <img
+                        src={`${assetPath}${recipe.heroImage}`}
+                        alt={recipe.heroAlt}
+                      />
                       <span className="badge">{recipe.badges[0]}</span>
                     </div>
                     <div className="recipe-card-body">
-                      <div className="recipe-card-meta"><span>{recipe.meals.join(' · ')}</span><span>By {recipe.author}</span></div>
+                      <div className="recipe-card-meta">
+                        <span>{recipe.meals.join(' · ')}</span>
+                        <span>By {recipe.author}</span>
+                      </div>
                       <h3>{recipe.title}</h3>
                       <p>{recipe.description}</p>
-                      <span className="read-recipe">Open recipe <span aria-hidden="true">→</span></span>
+                      <span className="read-recipe">
+                        Open recipe <span aria-hidden="true">→</span>
+                      </span>
                     </div>
                   </a>
                 </article>
@@ -160,12 +226,20 @@ export function HomePage() {
             <div className="empty-state">
               <UtensilsCrossed aria-hidden="true" />
               <h3>Nothing on that stained page yet.</h3>
-              <p>Try another ingredient or clear the search. This cookbook is just getting started.</p>
+              <p>
+                Try another ingredient or clear the search. This cookbook is
+                just getting started.
+              </p>
             </div>
           )}
         </section>
       </main>
-      <footer className="site-footer"><div className="wrap"><p>Made around one well-used kitchen table.</p><span>Brentwood Bunch Recipes · Since 2026</span></div></footer>
+      <footer className="site-footer">
+        <div className="wrap">
+          <p>Made around one well-used kitchen table.</p>
+          <span>Brentwood Bunch Recipes · Since 2026</span>
+        </div>
+      </footer>
     </div>
   );
 }
