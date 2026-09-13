@@ -1,7 +1,16 @@
-import { copyFile, mkdir, readdir } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readdir } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 
 const outputRoot = new URL('../dist/client/', import.meta.url).pathname;
+
+// Vinext writes prefixed client assets beneath the repository name. GitHub
+// Pages already mounts this artifact at /FamilyRecipes, so copy the assets to
+// the artifact root to avoid a duplicated /FamilyRecipes/FamilyRecipes path.
+await cp(
+  join(outputRoot, 'FamilyRecipes', '_next'),
+  join(outputRoot, '_next'),
+  { recursive: true },
+);
 
 async function collectHtml(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
