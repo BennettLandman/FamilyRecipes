@@ -327,9 +327,67 @@ export const recipes: Recipe[] = [
       text: 'Use a cookie sheet that fits easily in the dishwasher. The parchment makes cleanup simpler and can double as a wall between mild and spicy vegetables.',
     },
   },
+  {
+    slug: 'moms-toasties',
+    title: 'Mom’s Toasties',
+    description:
+      'Thin, diagonally sliced baguette toasties, broiled simply and ready for whatever spread comes next.',
+    author: 'Mom',
+    yield: 'One baguette',
+    yieldRange: [1, 1],
+    yieldUnit: 'baguette',
+    yieldPluralUnit: 'baguettes',
+    added: 'September 13, 2026',
+    updated: 'September 13, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers'],
+    commonIngredients: ['Bread', 'Baguette', 'Olive oil'],
+    badges: ['Mom’s recipe'],
+    heroImage: '/photos/moms-toasties-finished.webp',
+    heroAlt:
+      'A broiler-safe tray filled with diagonally sliced baguette toasties browned to different levels',
+    catImage: '/cats/moms-toasties-linocut-cat.webp',
+    catAlt: 'A handmade linocut-style cat inspecting a tiny toastie',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'baguette',
+        pluralUnit: 'baguettes',
+        item: 'for slicing',
+      },
+      { item: 'Olive oil, optional' },
+    ],
+    steps: [
+      {
+        title: 'Slice on the diagonal',
+        text: 'Cut the baguette diagonally into thin slices, about ⅓ to ½ inch thick.',
+      },
+      {
+        title: 'Choose oil or no oil',
+        text: 'For a richer taste, lightly brush the slices with olive oil. To let the flavor of the eventual spread show through, leave them plain.',
+      },
+      {
+        title: 'Arrange for broiling',
+        text: 'Place the slices in a single layer on a broiler-safe pan.',
+      },
+      {
+        title: 'Broil low and watch',
+        text: 'Broil on low until the toasties are done to your liking. They can darken quickly, so stay close.',
+      },
+      {
+        title: 'Flip only if fancy',
+        text: 'For more even browning, carefully flip the toasties and briefly broil the second side—but do not burn yourself.',
+      },
+    ],
+    houseNote: {
+      title: 'Let the spread decide',
+      text: 'Oil makes a richer toastie. Leaving the bread plain gives honey goat cheese or another flavorful spread the whole stage.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
 export const classicCrepes = recipes[1];
 export const orindasHoneyGoatCheese = recipes[2];
 export const momsRoastedOkra = recipes[3];
+export const momsToasties = recipes[4];

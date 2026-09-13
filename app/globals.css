@@ -214,6 +214,9 @@ h3 { font-size: 1.45rem; }
 .goat-cheese-cat { width: 105px; opacity: .72; transform: rotate(2deg); }
 .okra-hero-photo { transform: rotate(-.7deg); }
 .okra-cat { width: 112px; opacity: .68; transform: rotate(-2deg); }
+.toasties-hero-photo { transform: rotate(.9deg); }
+.toasties-cat { width: 122px; opacity: .74; transform: rotate(2deg); }
+.toasties-cat img { border-radius: 0; mix-blend-mode: multiply; }
 
 .book-shell { min-height: 100vh; background: var(--oat); }
 .book-toolbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--rule); background: rgba(255,250,240,.94); backdrop-filter: blur(14px); }
