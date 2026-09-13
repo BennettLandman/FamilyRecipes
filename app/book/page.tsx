@@ -86,7 +86,7 @@ export default function RecipeBookPage() {
 
         <section className="book-page book-about">
           <p className="book-kicker">A note from the kitchen</p>
-          <h2>About this book</h2>
+          <h2>About us</h2>
           <div className="book-about-copy">
             <p>
               This is the working cookbook of the Brentwood Bunch: the
