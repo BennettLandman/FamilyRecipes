@@ -206,6 +206,10 @@ h3 { font-size: 1.45rem; }
 .gallery-grid figure:last-child { transform: rotate(.7deg); }
 .gallery-grid img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 .gallery-grid figcaption { padding: .8rem .7rem 0; font-family: "Bradley Hand", "Segoe Print", cursive; }
+.gallery-grid-three figure:last-child { grid-column: 1 / -1; }
+.gallery-grid-three figure:last-child img { aspect-ratio: 16 / 7; }
+.crepes-hero-photo { transform: rotate(-1deg); }
+.crepes-cat { width: 116px; opacity: .82; transform: rotate(-3deg); }
 
 .book-shell { min-height: 100vh; background: var(--oat); }
 .book-toolbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--rule); background: rgba(255,250,240,.94); backdrop-filter: blur(14px); }
@@ -317,6 +321,8 @@ h3 { font-size: 1.45rem; }
   .ingredients-card { padding: 2.4rem 1.5rem 2rem; }
   .scale-controls { grid-template-columns: 1fr 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid-three figure:last-child { grid-column: auto; }
+  .gallery-grid-three figure:last-child img { aspect-ratio: 16 / 10; }
   .site-header nav { font-size: .76rem; }
   .book-toolbar-inner { grid-template-columns: 1fr; gap: .8rem; }
   .book-actions { justify-content: space-between; }

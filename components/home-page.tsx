@@ -11,7 +11,7 @@ type Filter =
   | { kind: 'all' }
   | { kind: 'section' | 'ingredient'; value: string };
 
-const commonIngredients = ['Eggs', 'Bread', 'Milk', 'Cinnamon'];
+const commonIngredients = ['Eggs', 'Flour', 'Bread', 'Milk', 'Cinnamon'];
 
 export function HomePage() {
   const [query, setQuery] = useState('');

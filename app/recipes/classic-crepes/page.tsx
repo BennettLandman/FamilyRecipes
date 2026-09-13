@@ -5,31 +5,31 @@ import { PrintButton } from '@/components/print-button';
 import { RecipeScaler } from '@/components/recipe-scaler';
 import { SiteHeader } from '@/components/site-header';
 import { formatIngredient } from '@/lib/recipe-format';
-import { assetPath, dadsFrenchToast as recipe } from '@/lib/recipes';
+import { assetPath, classicCrepes as recipe } from '@/lib/recipes';
 
 export const dynamic = 'force-static';
+
+const canonicalUrl =
+  'https://bennettlandman.github.io/FamilyRecipes/recipes/classic-crepes';
+const heroUrl =
+  'https://bennettlandman.github.io/FamilyRecipes/photos/classic-crepes-finished.webp';
 
 export const metadata: Metadata = {
   title: recipe.title,
   description: recipe.description,
+  alternates: { canonical: canonicalUrl },
   openGraph: {
     title: recipe.title,
     description: recipe.description,
     type: 'article',
-    images: [
-      {
-        url: 'https://bennettlandman.github.io/FamilyRecipes/photos/dads-french-toast-finished.webp',
-        alt: recipe.heroAlt,
-      },
-    ],
+    url: canonicalUrl,
+    images: [{ url: heroUrl, alt: recipe.heroAlt }],
   },
   twitter: {
     card: 'summary_large_image',
     title: recipe.title,
     description: recipe.description,
-    images: [
-      'https://bennettlandman.github.io/FamilyRecipes/photos/dads-french-toast-finished.webp',
-    ],
+    images: [heroUrl],
   },
 };
 
@@ -41,21 +41,20 @@ const structuredRecipe = {
   datePublished: '2026-09-13',
   dateModified: '2026-09-13',
   description: recipe.description,
-  image: [
-    'https://bennettlandman.github.io/FamilyRecipes/photos/dads-french-toast-finished.webp',
-  ],
-  recipeCategory: 'Breakfast',
+  image: [heroUrl],
+  recipeCategory: recipe.section,
   recipeYield: recipe.yield,
   recipeIngredient: recipe.ingredients.map((ingredient) =>
     formatIngredient(ingredient),
   ),
   recipeInstructions: recipe.steps.map((step) => ({
     '@type': 'HowToStep',
+    name: step.title,
     text: step.text,
   })),
 };
 
-export default function DadsFrenchToastPage() {
+export default function ClassicCrepesPage() {
   return (
     <div className="site-shell recipe-page">
       <SiteHeader />
@@ -90,18 +89,16 @@ export default function DadsFrenchToastPage() {
               </dl>
               <PrintButton />
             </div>
-            <figure className="recipe-hero-photo">
+            <figure className="recipe-hero-photo crepes-hero-photo">
               <img
                 src={`${assetPath}${recipe.heroImage}`}
                 alt={recipe.heroAlt}
               />
-              <figcaption>
-                Finished, dusted, and ready before anyone gets impatient.
-              </figcaption>
+              <figcaption>Rolled, folded, filled—and disappearing.</figcaption>
             </figure>
-            <figure className="cat-art recipe-cat">
+            <figure className="cat-art recipe-cat crepes-cat">
               <img src={`${assetPath}${recipe.catImage}`} alt={recipe.catAlt} />
-              <figcaption>breakfast supervisor</figcaption>
+              <figcaption>quality control</figcaption>
             </figure>
           </header>
 
@@ -111,7 +108,7 @@ export default function DadsFrenchToastPage() {
               aria-labelledby="ingredients-title"
             >
               <div className="paperclip" aria-hidden="true" />
-              <p className="handwritten">Pull these out first</p>
+              <p className="handwritten">A thin-batter morning</p>
               <h2 id="ingredients-title">Ingredients</h2>
               <RecipeScaler
                 baseYield={recipe.yieldRange}
@@ -158,28 +155,35 @@ export default function DadsFrenchToastPage() {
           >
             <div className="section-heading">
               <div>
-                <p className="eyebrow">A little evidence</p>
-                <h2 id="process-title">From the kitchen</h2>
+                <p className="eyebrow">Evidence from the stove</p>
+                <h2 id="process-title">Thin, golden, gone</h2>
               </div>
-              <p>Not styled. Not spotless. Definitely breakfast.</p>
+              <p>Consistency matters more than measuring the final splash.</p>
             </div>
-            <div className="gallery-grid">
+            <div className="gallery-grid gallery-grid-three">
               <figure>
                 <img
-                  src={`${assetPath}/photos/dads-french-toast-cinnamon-sugar.webp`}
-                  alt="A small glass bowl of homemade cinnamon sugar on the kitchen counter"
+                  src={`${assetPath}/photos/classic-crepes-batter.webp`}
+                  alt="Smooth pale crepe batter with a whisk in a mixing bowl"
+                />
+                <figcaption>Whisk smooth, then judge the batter.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src={`${assetPath}/photos/classic-crepes-pan.webp`}
+                  alt="A thin crepe cooking until golden in a skillet"
                 />
                 <figcaption>
-                  The jar mixture: sugar, plenty of cinnamon, shake.
+                  Golden on one side means it is time to flip.
                 </figcaption>
               </figure>
               <figure>
                 <img
-                  src={`${assetPath}/photos/dads-french-toast-soaking.webp`}
-                  alt="Bread soaking in French toast custard in a stainless steel mixing bowl"
+                  src={`${assetPath}/photos/classic-crepes-french-toast-bridge.webp`}
+                  alt="A folded crepe beside a piece of French toast on a plate"
                 />
                 <figcaption>
-                  Soak until custardy, but rescue it before collapse.
+                  The French-toast-to-crepe breakfast compromise.
                 </figcaption>
               </figure>
             </div>

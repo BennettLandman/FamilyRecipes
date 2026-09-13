@@ -255,8 +255,8 @@ export default function RecipeBookPage() {
                   </div>
                   <img
                     className="book-recipe-cat"
-                    src={`${assetPath}/cats/midcentury-kitchen-cat.webp`}
-                    alt="A small cat illustration in the page margin"
+                    src={`${assetPath}${recipe.catImage}`}
+                    alt={recipe.catAlt}
                   />
                 </section>
               ))}
