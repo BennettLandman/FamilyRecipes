@@ -266,8 +266,70 @@ export const recipes: Recipe[] = [
       text: 'The honey and milk are guided by taste and texture: fully coat the cheese, then add milk only until the consistency feels right.',
     },
   },
+  {
+    slug: 'moms-roasted-okra',
+    title: 'Mom’s Roasted Okra',
+    description:
+      'Garden okra and peppers roasted simply with olive oil, Lawry’s, and black pepper until tender.',
+    author: 'Mom',
+    yield: 'One sheet-pan batch',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'September 13, 2026',
+    updated: 'September 13, 2026',
+    section: 'Side dishes',
+    meals: ['Side dishes'],
+    commonIngredients: [
+      'Okra',
+      'Peppers',
+      'Olive oil',
+      'Lawry’s Seasoned Salt',
+      'Black pepper',
+    ],
+    badges: ['Mom’s garden recipe'],
+    heroImage: '/photos/moms-roasted-okra-finished.webp',
+    heroAlt:
+      'Whole roasted okra seasoned with black pepper in a white bowl with blue stars',
+    catImage: '/cats/ink-kitchen-cat.webp',
+    catAlt: 'A small ink-drawn cat stretching near the recipe',
+    ingredients: [
+      { item: 'Fresh okra' },
+      { item: 'Other vegetables, such as spicy peppers, optional' },
+      { item: 'Olive oil, as needed' },
+      { item: 'Lawry’s Seasoned Salt, to taste' },
+      { item: 'Black pepper, to taste' },
+    ],
+    steps: [
+      {
+        title: 'Pick, preheat, and line',
+        text: 'Pick the okra and any other vegetables. Preheat the oven to 400°F. Choose a cookie sheet that can handle 400°F and fits easily in the dishwasher, then line it with parchment paper.',
+      },
+      {
+        title: 'Wash well',
+        text: 'Thoroughly wash the okra and other vegetables, making sure to remove the dirt. Put the vegetables on the parchment while they are still dripping wet.',
+      },
+      {
+        title: 'Build a little wall',
+        text: 'If some vegetables are spicy, fold a small parchment-paper wall to keep the peppers separate from the okra.',
+      },
+      {
+        title: 'Season every side',
+        text: 'Drizzle first with olive oil so the seasoning sticks; the water left from washing helps too. Sprinkle with Lawry’s Seasoned Salt and black pepper, then stir so every side gets coated.',
+      },
+      {
+        title: 'Roast until soft',
+        text: 'Roast in the hot oven for at least 10 minutes. Larger okra may need considerably longer at 400°F. Test it by touch and take it out when the okra is soft.',
+      },
+    ],
+    houseNote: {
+      title: 'Choose the practical pan',
+      text: 'Use a cookie sheet that fits easily in the dishwasher. The parchment makes cleanup simpler and can double as a wall between mild and spicy vegetables.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
 export const classicCrepes = recipes[1];
 export const orindasHoneyGoatCheese = recipes[2];
+export const momsRoastedOkra = recipes[3];
