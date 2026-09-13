@@ -5,14 +5,14 @@ import { PrintButton } from '@/components/print-button';
 import { RecipeScaler } from '@/components/recipe-scaler';
 import { SiteHeader } from '@/components/site-header';
 import { formatIngredient } from '@/lib/recipe-format';
-import { assetPath, classicCrepes as recipe } from '@/lib/recipes';
+import { assetPath, orindasHoneyGoatCheese as recipe } from '@/lib/recipes';
 
 export const dynamic = 'force-static';
 
 const canonicalUrl =
-  'https://bennettlandman.github.io/FamilyRecipes/recipes/classic-crepes';
+  'https://bennettlandman.github.io/FamilyRecipes/recipes/orindas-honey-goat-cheese';
 const heroUrl =
-  'https://bennettlandman.github.io/FamilyRecipes/photos/classic-crepes-finished.webp';
+  'https://bennettlandman.github.io/FamilyRecipes/photos/orindas-honey-goat-cheese-finished.webp';
 
 export const metadata: Metadata = {
   title: recipe.title,
@@ -54,7 +54,7 @@ const structuredRecipe = {
   })),
 };
 
-export default function ClassicCrepesPage() {
+export default function OrindasHoneyGoatCheesePage() {
   return (
     <div className="site-shell recipe-page">
       <SiteHeader />
@@ -65,7 +65,7 @@ export default function ClassicCrepesPage() {
         <article>
           <header className="recipe-hero">
             <div className="recipe-hero-copy">
-              <p className="eyebrow">{recipe.meals.join(' · ')}</p>
+              <p className="eyebrow">{recipe.section}</p>
               <div className="recipe-badges">
                 {recipe.badges.map((badge) => (
                   <span key={badge}>{badge}</span>
@@ -89,16 +89,16 @@ export default function ClassicCrepesPage() {
               </dl>
               <PrintButton />
             </div>
-            <figure className="recipe-hero-photo crepes-hero-photo">
+            <figure className="recipe-hero-photo goat-cheese-hero-photo">
               <img
                 src={`${assetPath}${recipe.heroImage}`}
                 alt={recipe.heroAlt}
               />
-              <figcaption>Rolled, folded, filled—and disappearing.</figcaption>
+              <figcaption>Fig flowers make their own centerpiece.</figcaption>
             </figure>
-            <figure className="cat-art recipe-cat crepes-cat">
+            <figure className="cat-art recipe-cat goat-cheese-cat">
               <img src={`${assetPath}${recipe.catImage}`} alt={recipe.catAlt} />
-              <figcaption>quality control</figcaption>
+              <figcaption>cheese-board observer</figcaption>
             </figure>
           </header>
 
@@ -108,7 +108,7 @@ export default function ClassicCrepesPage() {
               aria-labelledby="ingredients-title"
             >
               <div className="paperclip" aria-hidden="true" />
-              <p className="handwritten">A thin-batter morning</p>
+              <p className="handwritten">Sweet, tangy, ready to share</p>
               <h2 id="ingredients-title">Ingredients</h2>
               <RecipeScaler
                 baseYield={recipe.yieldRange}
@@ -125,7 +125,7 @@ export default function ClassicCrepesPage() {
             </section>
 
             <section className="method" aria-labelledby="method-title">
-              <p className="eyebrow">What Dad did</p>
+              <p className="eyebrow">What Orinda did</p>
               <h2 id="method-title">Method</h2>
               <ol>
                 {recipe.steps.map((step, index) => (
@@ -138,15 +138,6 @@ export default function ClassicCrepesPage() {
                   </li>
                 ))}
               </ol>
-              {recipe.familyNote && (
-                <aside className="favorite-note">
-                  <span aria-hidden="true">★</span>
-                  <p>
-                    <strong>{recipe.familyNote.title}</strong>{' '}
-                    {recipe.familyNote.text}
-                  </p>
-                </aside>
-              )}
             </section>
           </div>
 
@@ -156,36 +147,27 @@ export default function ClassicCrepesPage() {
           >
             <div className="section-heading">
               <div>
-                <p className="eyebrow">Evidence from the stove</p>
-                <h2 id="process-title">Thin, golden, gone</h2>
+                <p className="eyebrow">From garden to board</p>
+                <h2 id="process-title">The bright parts</h2>
               </div>
-              <p>Consistency matters more than measuring the final splash.</p>
+              <p>Fresh figs, lemon zest, and a little hands-on mixing.</p>
             </div>
-            <div className="gallery-grid gallery-grid-three">
+            <div className="gallery-grid">
               <figure>
                 <img
-                  src={`${assetPath}/photos/classic-crepes-batter.webp`}
-                  alt="Smooth pale crepe batter with a whisk in a mixing bowl"
-                />
-                <figcaption>Whisk smooth, then judge the batter.</figcaption>
-              </figure>
-              <figure>
-                <img
-                  src={`${assetPath}/photos/classic-crepes-pan.webp`}
-                  alt="A thin crepe cooking until golden in a skillet"
+                  src={`${assetPath}/photos/orindas-honey-goat-cheese-figs.webp`}
+                  alt="Fresh purple figs gathered beneath a fig tree"
                 />
                 <figcaption>
-                  Golden on one side means it is time to flip.
+                  Figs from outside, flowers on the board.
                 </figcaption>
               </figure>
               <figure>
                 <img
-                  src={`${assetPath}/photos/classic-crepes-french-toast-bridge.webp`}
-                  alt="A folded crepe beside a piece of French toast on a plate"
+                  src={`${assetPath}/photos/orindas-honey-goat-cheese-mixing.webp`}
+                  alt="An eight-ounce goat cheese log drizzled with honey and covered with fresh lemon zest"
                 />
-                <figcaption>
-                  The French-toast-to-crepe breakfast compromise.
-                </figcaption>
+                <figcaption>Coat with honey, then zest generously.</figcaption>
               </figure>
             </div>
           </section>

@@ -29,6 +29,7 @@ export type Recipe = {
   yield: string;
   yieldRange: [number, number];
   yieldUnit: string;
+  yieldPluralUnit: string;
   added: string;
   updated: string;
   section: RecipeSection;
@@ -54,7 +55,8 @@ export const recipes: Recipe[] = [
     author: 'Dad',
     yield: 'About 4–5 pieces',
     yieldRange: [4, 5],
-    yieldUnit: 'pieces',
+    yieldUnit: 'piece',
+    yieldPluralUnit: 'pieces',
     added: 'September 13, 2026',
     updated: 'September 13, 2026',
     section: 'Breakfast',
@@ -125,7 +127,8 @@ export const recipes: Recipe[] = [
     author: 'Dad',
     yield: 'About 12–16 crepes',
     yieldRange: [12, 16],
-    yieldUnit: 'crepes',
+    yieldUnit: 'crepe',
+    yieldPluralUnit: 'crepes',
     added: 'September 13, 2026',
     updated: 'September 13, 2026',
     section: 'Breakfast',
@@ -190,7 +193,81 @@ export const recipes: Recipe[] = [
       text: 'The kids like their crepes rolled. Dad prefers them folded into squares, more French-style. S’more crepes—marshmallow pieces and chocolate chips—are Pascal’s invention.',
     },
   },
+  {
+    slug: 'orindas-honey-goat-cheese',
+    title: 'Orinda’s Honey Goat Cheese',
+    description:
+      'Honeyed, lemon-zested goat cheese shaped by hand and dressed with fresh fig flowers.',
+    author: 'Orinda',
+    yield: 'One 8-ounce appetizer',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'September 13, 2026',
+    updated: 'September 13, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers'],
+    commonIngredients: ['Goat cheese', 'Honey', 'Lemon', 'Milk', 'Figs'],
+    badges: ['Orinda’s recipe'],
+    heroImage: '/photos/orindas-honey-goat-cheese-finished.webp',
+    heroAlt:
+      'Honey goat cheese on a wooden serving board decorated with fresh fig flowers',
+    catImage: '/cats/collage-kitchen-cat.webp',
+    catAlt: 'A small collage-style cat sitting quietly in the kitchen',
+    ingredients: [
+      {
+        amount: 1,
+        unit: '8-ounce log',
+        pluralUnit: '8-ounce logs',
+        item: 'goat cheese',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'honey, or to taste',
+      },
+      { item: 'Lemon zest, to taste' },
+      { item: 'A dash of milk, plus more as needed' },
+      { item: 'Fresh figs, optional' },
+    ],
+    steps: [
+      {
+        title: 'Coat the cheese',
+        text: 'Take the goat cheese out of its package and place it in a bowl. Drizzle with the honey until fully coated, or until it reaches the amount you like.',
+      },
+      {
+        title: 'Add the lemon',
+        text: 'Zest lemon directly over the goat cheese.',
+      },
+      {
+        title: 'Mix by hand',
+        text: 'Use your fingers to mix the goat cheese, honey, and lemon zest until fully combined.',
+      },
+      {
+        title: 'Adjust the consistency',
+        text: 'Add milk a dash at a time until the mixture reaches the consistency you want.',
+      },
+      {
+        title: 'Shape it',
+        text: 'Line the bottom of a small container with parchment. Spoon in the mixture and pat it down lightly.',
+      },
+      {
+        title: 'Turn it out',
+        text: 'Slide a knife around the edges, invert the container, and pat the bottom until the goat cheese releases.',
+      },
+      {
+        title: 'Make fig flowers',
+        text: 'Optional: cut the figs into quarters. Arrange groups of 5 to 7 fig pieces like flowers on top of and around the goat cheese.',
+      },
+    ],
+    houseNote: {
+      title: 'Orinda’s measure',
+      text: 'The honey and milk are guided by taste and texture: fully coat the cheese, then add milk only until the consistency feels right.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
 export const classicCrepes = recipes[1];
+export const orindasHoneyGoatCheese = recipes[2];

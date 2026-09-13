@@ -210,6 +210,8 @@ h3 { font-size: 1.45rem; }
 .gallery-grid-three figure:last-child img { aspect-ratio: 16 / 7; }
 .crepes-hero-photo { transform: rotate(-1deg); }
 .crepes-cat { width: 116px; opacity: .82; transform: rotate(-3deg); }
+.goat-cheese-hero-photo { transform: rotate(.6deg); }
+.goat-cheese-cat { width: 105px; opacity: .72; transform: rotate(2deg); }
 
 .book-shell { min-height: 100vh; background: var(--oat); }
 .book-toolbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--rule); background: rgba(255,250,240,.94); backdrop-filter: blur(14px); }

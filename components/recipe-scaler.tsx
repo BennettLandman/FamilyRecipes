@@ -11,6 +11,7 @@ import type { RecipeIngredient } from '@/lib/recipes';
 type RecipeScalerProps = {
   baseYield: [number, number];
   yieldUnit: string;
+  yieldPluralUnit: string;
   ingredients: RecipeIngredient[];
 };
 
@@ -24,10 +25,17 @@ const scaleOptions = [
 export function RecipeScaler({
   baseYield,
   yieldUnit,
+  yieldPluralUnit,
   ingredients,
 }: RecipeScalerProps) {
   const [scale, setScale] = useState(1);
-  const scaledYield = `${formatRecipeNumber(baseYield[0] * scale)}–${formatRecipeNumber(baseYield[1] * scale)}`;
+  const scaledMinimum = baseYield[0] * scale;
+  const scaledMaximum = baseYield[1] * scale;
+  const scaledYield =
+    scaledMinimum === scaledMaximum
+      ? formatRecipeNumber(scaledMinimum)
+      : `${formatRecipeNumber(scaledMinimum)}–${formatRecipeNumber(scaledMaximum)}`;
+  const scaledYieldUnit = scaledMaximum <= 1 ? yieldUnit : yieldPluralUnit;
 
   return (
     <div className="recipe-scaler">
@@ -35,7 +43,7 @@ export function RecipeScaler({
         <p className="scaled-yield" aria-live="polite">
           <span>Makes about</span>
           <strong>
-            {scaledYield} {yieldUnit}
+            {scaledYield} {scaledYieldUnit}
           </strong>
         </p>
         <fieldset className="scale-controls no-print">
@@ -53,7 +61,9 @@ export function RecipeScaler({
           ))}
         </fieldset>
       </div>
-      <ul aria-label={`Ingredients for about ${scaledYield} ${yieldUnit}`}>
+      <ul
+        aria-label={`Ingredients for about ${scaledYield} ${scaledYieldUnit}`}
+      >
         {ingredients.map((ingredient) => {
           const amount = formatIngredientAmount(ingredient, scale);
           const unit = ingredientUnit(ingredient, scale);

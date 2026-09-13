@@ -116,6 +116,7 @@ export default function DadsFrenchToastPage() {
               <RecipeScaler
                 baseYield={recipe.yieldRange}
                 yieldUnit={recipe.yieldUnit}
+                yieldPluralUnit={recipe.yieldPluralUnit}
                 ingredients={recipe.ingredients}
               />
               {recipe.houseNote && (
