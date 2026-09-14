@@ -486,6 +486,76 @@ export const recipes: Recipe[] = [
       text: 'Pascal adds barbecue sauce. Dad considers that a separate issue and is not putting it on his. The lamb makes excellent leftovers; larger pieces can be seared again on the second day so a fresh surface gets a new crust.',
     },
   },
+  {
+    slug: 'egg-mcdad',
+    title: 'Egg McDad',
+    description:
+      'A fast toasted-bagel breakfast sandwich with a fluffy microwave egg and whatever good toppings are waiting in the fridge.',
+    author: 'Dad',
+    yield: '1 sandwich',
+    yieldRange: [1, 1],
+    yieldUnit: 'sandwich',
+    yieldPluralUnit: 'sandwiches',
+    added: 'September 14, 2026',
+    updated: 'September 14, 2026',
+    section: 'Breakfast',
+    meals: ['Breakfast', 'Lunch'],
+    commonIngredients: ['Eggs', 'Bagel', 'Cheese'],
+    badges: ['One of Dad’s favorites'],
+    heroImage: '/photos/egg-mcdad-finished.webp',
+    heroAlt:
+      'An Egg McDad sandwich with egg, cheddar, and salami on a toasted everything bagel',
+    catImage: '/cats/egg-mcdad-microwave-cat.webp',
+    catAlt:
+      'An ink-drawn kitchen cat holding a timer and watching an egg puff in a microwave',
+    ingredients: [
+      { amount: 1, item: 'bagel' },
+      {
+        range: [1, 2],
+        unit: 'egg',
+        pluralUnit: 'eggs',
+        item: 'or the equivalent amount of egg whites',
+      },
+      { item: 'Salt and black pepper, if desired' },
+      {
+        item: 'Toppings such as cheddar or Mexican-blend cheese, salami, steak, or other leftovers',
+      },
+    ],
+    steps: [
+      {
+        title: 'Defrost and toast the bagel',
+        text: 'Microwave a frozen bagel for about 30 seconds, until it is still cold but defrosted. Slice it carefully and toast both halves.',
+      },
+      {
+        title: 'Prepare the egg',
+        text: 'While the bagel toasts, put 1 to 2 eggs—or the equivalent amount of egg whites—in a microwave-safe bowl. Add salt and pepper if desired. If using whole eggs, scramble them with a fork.',
+      },
+      {
+        title: 'Microwave until puffed',
+        text: 'Microwave for 60 to 70 seconds, depending on the bowl and microwave. The egg will puff as it cooks. Continue only until it is cooked or nearly cooked.',
+      },
+      {
+        title: 'Add the toppings',
+        text: 'Top the egg with cheese, salami, steak, or whatever leftovers look good. Microwave for about 10 seconds more to warm the toppings and finish the egg.',
+      },
+      {
+        title: 'Release the sandwich',
+        text: 'Carefully remove the hot bowl. Place the top half of the bagel on the egg and press down slightly. Turn it gently until the egg releases from the bowl, then invert the bowl to make an upside-down sandwich.',
+      },
+      {
+        title: 'Flip, finish, and poof',
+        text: 'Add the bottom half of the bagel, flip the sandwich right side up, and poof—you have an Egg McDad.',
+      },
+    ],
+    houseNote: {
+      title: 'Choose the bowl wisely',
+      text: 'A microwave-safe bowl close to the width of the bagel makes a tidy round egg. The bowl and steam will be hot, so handle them carefully.',
+    },
+    familyNote: {
+      title: 'One of Dad’s favorites',
+      text: 'The topping changes with the leftovers, but the bagel-on-bowl flip is the essential Egg McDad maneuver.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -494,3 +564,4 @@ export const orindasHoneyGoatCheese = recipes[2];
 export const momsRoastedOkra = recipes[3];
 export const momsToasties = recipes[4];
 export const dadsLambGyros = recipes[5];
+export const eggMcDad = recipes[6];

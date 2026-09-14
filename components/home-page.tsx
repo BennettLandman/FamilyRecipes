@@ -22,6 +22,8 @@ const commonIngredients = [
   'Honey',
   'Figs',
   'Okra',
+  'Bagel',
+  'Cheese',
 ];
 
 export function HomePage() {

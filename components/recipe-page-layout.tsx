@@ -80,7 +80,9 @@ export function RecipePageLayout({
     image: [heroUrl],
     recipeCategory: recipe.section,
     recipeYield: recipe.yield,
-    recipeIngredient: recipe.ingredients.map(formatIngredient),
+    recipeIngredient: recipe.ingredients.map((ingredient) =>
+      formatIngredient(ingredient),
+    ),
     recipeInstructions: recipe.steps.map((step) => ({
       '@type': 'HowToStep',
       name: step.title,
