@@ -384,6 +384,108 @@ export const recipes: Recipe[] = [
       text: 'Oil makes a richer toastie. Leaving the bread plain gives honey goat cheese or another flavorful spread the whole stage.',
     },
   },
+  {
+    slug: 'dads-lamb-gyros',
+    title: 'Dad’s Lamb Gyros',
+    description:
+      'Herb-packed sous-vide lamb, flashed over a roaring-hot grill and piled into warm naan with garden vegetables and feta.',
+    author: 'Dad',
+    yield: 'About 5 pounds of lamb for gyros',
+    yieldRange: [5, 5],
+    yieldUnit: 'pound of lamb',
+    yieldPluralUnit: 'pounds of lamb',
+    added: 'September 13, 2026',
+    updated: 'September 13, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Lamb',
+      'Sage',
+      'Chives',
+      'Naan',
+      'Feta',
+      'Cucumber',
+      'Tomatoes',
+      'Tzatziki',
+    ],
+    badges: ['Dad’s recipe'],
+    heroImage: '/photos/dads-lamb-gyros-chopped.webp',
+    heroAlt: 'Medium-rare grilled lamb chopped into pieces for filling gyros',
+    catImage: '/cats/dads-lamb-gyros-grill-cat.webp',
+    catAlt:
+      'A small painted cat using very long tongs to tend a tiny flaming grill',
+    ingredients: [
+      {
+        amount: 5,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'boneless leg of lamb, casing removed',
+        approximate: true,
+      },
+      {
+        amount: 1,
+        unit: 'large handful',
+        pluralUnit: 'large handfuls',
+        item: 'fresh sage',
+      },
+      {
+        amount: 1,
+        unit: 'large handful',
+        pluralUnit: 'large handfuls',
+        item: 'garlic chives',
+      },
+      {
+        amount: 1,
+        unit: 'large handful',
+        pluralUnit: 'large handfuls',
+        item: 'regular chives',
+      },
+      { item: 'Cutting celery, if available' },
+      { item: 'Salt and black pepper, for seasoning' },
+      { item: 'Store-bought naan and ghee, for serving' },
+      { item: 'Onions, for grilling' },
+      { item: 'Cucumbers and fresh tomatoes, chopped' },
+      { item: 'Crumbled feta cheese and tzatziki sauce' },
+    ],
+    steps: [
+      {
+        title: 'Season and pack with herbs',
+        text: 'Remove any casing from the lamb. For a faster cook, cut the leg into four pieces; with more time, leave it whole. Season every side with salt and pepper, then stuff and surround the lamb with the sage, garlic chives, regular chives, and cutting celery.',
+      },
+      {
+        title: 'Sous vide at 132.5°F',
+        text: 'Seal the lamb and herbs in bags. Sous vide at 132.5°F for at least 3 hours, continuing until the center of the meat has reached 132.5°F.',
+      },
+      {
+        title: 'Drain and heat the grill',
+        text: 'Remove the lamb from the bags. Discard the herbs and cooking liquid. Heat the grill as hot as it will go for at least 15 minutes; Dad’s registers about 800°F. A very hot cast-iron pan also works.',
+      },
+      {
+        title: 'Sear fast—and stand back',
+        text: 'Using long tongs, sear the lamb for 30 to 90 seconds per side. The fat can cause flare-ups, so stay back and keep the meat moving. Aim for a golden crust and grill marks without letting it turn black, smoky, or burned.',
+      },
+      {
+        title: 'Rest, then chop',
+        text: 'Rest the lamb for at least 10 minutes, then slice or chop it into pieces that fit easily inside the naan.',
+      },
+      {
+        title: 'Warm the naan',
+        text: 'While the lamb rests, brush store-bought naan with ghee and bake directly on the oven rack at 400°F for 3 to 4 minutes.',
+      },
+      {
+        title: 'Build the gyros',
+        text: 'Grill the onions over fairly indirect heat after the lamb. Fill the warm naan with lamb, grilled onions, chopped cucumber, fresh tomatoes, crumbled feta, and tzatziki. Peel garden cucumbers first if their skins are bitter.',
+      },
+    ],
+    houseNote: {
+      title: 'Golden, not singed',
+      text: 'This is a very fast final sear. Use long tongs, expect the fatty lamb to flare up, and stay back from the grill while chasing a browned crust—not smoke or black edges.',
+    },
+    familyNote: {
+      title: 'The barbecue-sauce situation',
+      text: 'Pascal adds barbecue sauce. Dad considers that a separate issue and is not putting it on his. The lamb makes excellent leftovers; larger pieces can be seared again on the second day so a fresh surface gets a new crust.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -391,3 +493,4 @@ export const classicCrepes = recipes[1];
 export const orindasHoneyGoatCheese = recipes[2];
 export const momsRoastedOkra = recipes[3];
 export const momsToasties = recipes[4];
+export const dadsLambGyros = recipes[5];

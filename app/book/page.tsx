@@ -184,7 +184,11 @@ export default function RecipeBookPage() {
 
               {sectionRecipes.map((recipe) => (
                 <section
-                  className="book-page book-recipe"
+                  className={`book-page book-recipe ${
+                    recipe.ingredients.length + recipe.steps.length > 15
+                      ? 'book-recipe-compact'
+                      : ''
+                  }`}
                   key={recipe.slug}
                   id={`recipe-${recipe.slug}`}
                 >

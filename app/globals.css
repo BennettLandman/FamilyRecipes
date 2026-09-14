@@ -217,6 +217,9 @@ h3 { font-size: 1.45rem; }
 .toasties-hero-photo { transform: rotate(.9deg); }
 .toasties-cat { width: 122px; opacity: .74; transform: rotate(2deg); }
 .toasties-cat img { border-radius: 0; mix-blend-mode: multiply; }
+.lamb-gyros-hero-photo { transform: rotate(-.8deg); }
+.lamb-gyros-cat { width: 150px; opacity: .72; transform: rotate(-2deg); }
+.lamb-gyros-cat img { border-radius: 0; }
 
 .book-shell { min-height: 100vh; background: var(--oat); }
 .book-toolbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--rule); background: rgba(255,250,240,.94); backdrop-filter: blur(14px); }
@@ -286,6 +289,15 @@ h3 { font-size: 1.45rem; }
 .book-recipe-body aside p { margin: .2rem 0 0; }
 .book-family-note { border-left: 4px solid var(--tomato); background: var(--sage-pale) !important; transform: none !important; }
 .book-recipe-cat { position: absolute; right: 20px; bottom: 16px; width: 70px; border-radius: 48%; mix-blend-mode: multiply; opacity: .42; }
+.book-recipe-compact { padding: 46px 56px; }
+.book-recipe-compact .book-recipe-header { gap: 1.6rem; padding-bottom: 1.25rem; }
+.book-recipe-compact .book-recipe-header h2 { font-size: 3.15rem; }
+.book-recipe-compact .book-recipe-body { gap: 2rem; padding-top: 1.35rem; }
+.book-recipe-compact .book-recipe-body ul li { padding: .3rem 0; font-size: .76rem; }
+.book-recipe-compact .book-recipe-body ol { gap: .55rem; }
+.book-recipe-compact .book-recipe-body ol li { font-size: .72rem; }
+.book-recipe-compact .book-recipe-body ol strong { font-size: .84rem; }
+.book-recipe-compact .book-recipe-body aside { margin-top: .7rem; padding: .62rem; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 58px; }
