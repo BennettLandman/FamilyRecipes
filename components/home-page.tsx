@@ -93,20 +93,6 @@ export function HomePage() {
               The things we actually cook, scribbled down before anyone forgets.
               A growing family cookbook with buttery fingerprints included.
             </p>
-            <label className="search-box" htmlFor="recipe-search">
-              <span className="sr-only">Search all recipes</span>
-              <Search aria-hidden="true" />
-              <input
-                id="recipe-search"
-                type="search"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Search recipes or ingredients…"
-              />
-              <span className="search-note">
-                Try a dish, cook, or ingredient
-              </span>
-            </label>
           </div>
 
           <a
@@ -224,6 +210,22 @@ export function HomePage() {
               </button>
             )}
           </div>
+
+          <label
+            className="search-box recipe-search-box"
+            htmlFor="recipe-search"
+          >
+            <span className="sr-only">Search all recipes</span>
+            <Search aria-hidden="true" />
+            <input
+              id="recipe-search"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search recipes or ingredients…"
+            />
+            <span className="search-note">Try a dish, cook, or ingredient</span>
+          </label>
 
           {visibleRecipes.length ? (
             <div className="recipe-grid">

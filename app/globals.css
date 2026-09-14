@@ -123,6 +123,8 @@ h3 { font-size: 1.45rem; }
 .recipes-section { padding-block: 86px 116px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 2.2rem; }
 .section-heading h2 { margin-bottom: 0; }
+.recipes-section > .section-heading { margin-bottom: 1.25rem; }
+.recipe-search-box { max-width: 760px; margin-bottom: 2.4rem; }
 .clear-button { padding: .55rem .8rem; border: 0; border-bottom: 1px solid var(--tomato); background: transparent; color: var(--tomato-dark); cursor: pointer; }
 .recipe-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
 .recipe-card { max-width: 520px; border: 1px solid rgba(107,84,55,.2); background: rgba(255,250,240,.72); box-shadow: 0 14px 34px rgba(74,54,31,.08); transition: transform .25s ease, box-shadow .25s ease; }
