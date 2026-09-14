@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { PrintButton } from '@/components/print-button';
 import { RecipeScaler } from '@/components/recipe-scaler';
 import { SiteHeader } from '@/components/site-header';
+import { SiteFooter } from '@/components/site-footer';
 import { formatIngredient } from '@/lib/recipe-format';
 import { assetPath, dadsFrenchToast as recipe } from '@/lib/recipes';
 
@@ -187,12 +188,7 @@ export default function DadsFrenchToastPage() {
           </section>
         </article>
       </main>
-      <footer className="site-footer no-print">
-        <div className="wrap">
-          <p>Made around one well-used kitchen table.</p>
-          <span>Brentwood Bunch Recipes · Since 2026</span>
-        </div>
-      </footer>
+      <SiteFooter hideWhenPrinting />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredRecipe) }}

@@ -3,7 +3,8 @@
 /* eslint-disable next/no-img-element -- Photographs and generated cat art are already optimized WebP assets. */
 
 import { Search, UtensilsCrossed } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { assetPath, recipes, recipeSections } from '@/lib/recipes';
 
@@ -26,6 +27,24 @@ const commonIngredients = [
 export function HomePage() {
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<Filter>({ kind: 'all' });
+  const [featuredRecipe, setFeaturedRecipe] = useState(recipes[0]);
+
+  useEffect(() => {
+    if (recipes.length < 2) return;
+
+    const previousIndex = Number(
+      window.sessionStorage.getItem('featured-recipe-index'),
+    );
+    const choices = recipes
+      .map((recipe, index) => ({ recipe, index }))
+      .filter(({ index }) => index !== previousIndex);
+    const next = choices[Math.floor(Math.random() * choices.length)];
+
+    window.sessionStorage.setItem('featured-recipe-index', String(next.index));
+    const update = window.setTimeout(() => setFeaturedRecipe(next.recipe), 0);
+
+    return () => window.clearTimeout(update);
+  }, []);
 
   const visibleRecipes = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -92,15 +111,16 @@ export function HomePage() {
 
           <a
             className="hero-photo"
-            href={`${assetPath}/recipes/dads-french-toast`}
+            href={`${assetPath}/recipes/${featuredRecipe.slug}`}
           >
             <img
-              src={`${assetPath}/photos/dads-french-toast-finished.webp`}
-              alt="Two pieces of Dad’s French toast dusted with cinnamon sugar"
+              src={`${assetPath}${featuredRecipe.heroImage}`}
+              alt={featuredRecipe.heroAlt}
             />
             <span className="photo-tape" aria-hidden="true" />
             <span className="hero-photo-caption">
-              <strong>First in the book</strong>Dad’s French Toast
+              <strong>Today’s page</strong>
+              {featuredRecipe.title}
             </span>
           </a>
           <figure className="cat-art cat-home">
@@ -244,12 +264,7 @@ export function HomePage() {
           )}
         </section>
       </main>
-      <footer className="site-footer">
-        <div className="wrap">
-          <p>Made around one well-used kitchen table.</p>
-          <span>Brentwood Bunch Recipes · Since 2026</span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -107,6 +107,9 @@ export default function RecipeBookPage() {
           <aside className="book-margin-note">
             A little stained. Still legible. Usually delicious.
           </aside>
+          <p className="book-copyright">
+            © 2026 Brentwood Bunch Recipes. All rights reserved.
+          </p>
           <img
             className="book-page-cat"
             src={`${assetPath}/cats/watercolor-kitchen-cat.webp`}
