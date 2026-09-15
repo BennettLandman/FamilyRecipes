@@ -556,6 +556,248 @@ export const recipes: Recipe[] = [
       text: 'The topping changes with the leftovers, but the bagel-on-bowl flip is the essential Egg McDad maneuver.',
     },
   },
+  {
+    slug: 'dads-baked-tofu-bites',
+    title: 'Dad’s Baked Tofu Bites',
+    description:
+      'Teriyaki-marinated tofu with a lightly crisp crust—cut it thin for chewy and meaty, or thicker for tender and savory.',
+    author: 'Dad',
+    yield: 'About 4 servings',
+    yieldRange: [4, 4],
+    yieldUnit: 'serving',
+    yieldPluralUnit: 'servings',
+    added: 'September 14, 2026',
+    updated: 'September 14, 2026',
+    section: 'Dinner',
+    meals: ['Dinner', 'Lunch'],
+    commonIngredients: ['Tofu', 'Teriyaki sauce', 'Cornstarch'],
+    badges: ['Dad’s recipe', 'Crispy edges'],
+    heroImage: '/photos/dads-baked-tofu-bites-finished.webp',
+    heroAlt:
+      'Golden brown teriyaki tofu bites baked on a parchment-lined sheet pan',
+    catImage: '/cats/dads-baked-tofu-bites-linocut-cat.webp',
+    catAlt:
+      'A warm brown linocut-style cat watching a tray of baked tofu bites',
+    ingredients: [
+      { amount: 1, item: 'package (16 ounces) firm tofu' },
+      { item: 'Teriyaki sauce, enough to coat the tofu' },
+      {
+        item: 'Cornstarch, for a light coating (or flour if that is what you have)',
+      },
+    ],
+    steps: [
+      {
+        title: 'Drain and slice the tofu',
+        text: 'Drain the package of firm tofu. Slice it flatways into slabs, then slice crossways to make approximate cubes. Make the slabs thinner for a chewier, meatier bite, or thicker for a more tender and savory one.',
+      },
+      {
+        title: 'Marinate',
+        text: 'Add teriyaki sauce and let the tofu marinate for as long as you have time.',
+      },
+      {
+        title: 'Make a little crust',
+        text: 'When ready to bake, toss the tofu with just a little starch to dry the surfaces and help form a better crust. Dad prefers cornstarch; flour works when the cornstarch is out.',
+      },
+      {
+        title: 'Bake the first side',
+        text: 'Spread the bites on a parchment-lined baking sheet and bake at 325°F for 20 minutes.',
+      },
+      {
+        title: 'Flip, raise the heat, and finish',
+        text: 'Flip the bites with a spatula. Raise the oven to 375°F and bake for 20 minutes more, until they reach the brownness and consistency you want.',
+      },
+    ],
+    houseNote: {
+      title: 'The slice is the texture control',
+      text: 'Thin tofu cooks up chewier and meatier. Thicker pieces stay more tender and savory, so choose the cut before the teriyaki goes on.',
+    },
+    familyNote: {
+      title: 'Dad’s starch preference',
+      text: 'Cornstarch is the first choice for the crust. On this tray, flour stepped in and still did the job.',
+    },
+  },
+  {
+    slug: 'moms-burned-broccoli',
+    title: 'Burned Broccoli',
+    description:
+      'Bite-sized broccoli roasted until the edges get properly dark and deeply savory—Orinda’s favorite.',
+    author: 'Mom',
+    yield: 'One sheet-pan batch',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'September 14, 2026',
+    updated: 'September 14, 2026',
+    section: 'Side dishes',
+    meals: ['Side dishes', 'Dinner'],
+    commonIngredients: ['Broccoli', 'Olive oil', 'Worcestershire sauce'],
+    badges: ['Orinda’s favorite', 'Mom’s recipe'],
+    heroImage: '/photos/moms-burned-broccoli-finished.webp',
+    heroAlt:
+      'Broccoli florets with deeply browned edges on a foil-lined baking sheet',
+    catImage: '/cats/moms-burned-broccoli-seedpacket-cat.webp',
+    catAlt:
+      'A retro seed-packet-style cat watching a sheet pan of roasted broccoli',
+    ingredients: [
+      { item: 'Broccoli, chopped into bite-sized pieces or a little larger' },
+      { item: 'Olive oil, for a light coating' },
+      { item: 'Mom’s special Worcestershire sauce, for a light coating' },
+    ],
+    steps: [
+      {
+        title: 'Chop the broccoli',
+        text: 'Cut the broccoli into bite-sized pieces or a little larger. Spread it on a sheet pan.',
+      },
+      {
+        title: 'Choose the coating',
+        text: 'Lightly coat the broccoli with a little olive oil or Mom’s special Worcestershire sauce. Toss it around until the pieces are evenly coated.',
+      },
+      {
+        title: 'Burn it nicely',
+        text: 'Bake at 375°F for about 20 minutes, until the florets are as deeply browned as you like them.',
+      },
+    ],
+    houseNote: {
+      title: 'A little larger is fine',
+      text: 'This is not fussy broccoli. Bite-sized pieces are perfect, but slightly larger florets are welcome too—just get every piece lightly coated.',
+    },
+    familyNote: {
+      title: 'Orinda’s favorite',
+      text: 'The dark, toasty edges are the point. Keep an eye on the pan near the end, but do not pull it just because the broccoli looks a little burned.',
+    },
+  },
+  {
+    slug: 'dads-trout-two-ways',
+    title: 'Dad’s Trout Two Ways',
+    description:
+      'One steelhead trout, split down the middle: bright lemon and pepper on one half, basil, onion, and Parmesan on the other.',
+    author: 'Dad',
+    yield: 'One 3½-pound trout',
+    yieldRange: [3.5, 3.5],
+    yieldUnit: 'pound of trout',
+    yieldPluralUnit: 'pounds of trout',
+    added: 'September 14, 2026',
+    updated: 'September 14, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Steelhead trout',
+      'Basil',
+      'Onion',
+      'Parmesan',
+      'Lemons',
+    ],
+    badges: ['Dad’s recipe', 'Two ways'],
+    heroImage: '/photos/dads-trout-two-ways-finished.webp',
+    heroAlt:
+      'Baked steelhead trout with lemon slices on one half and a basil Parmesan topping on the other',
+    catImage: '/cats/dads-trout-two-ways-fieldguide-cat.webp',
+    catAlt:
+      'A natural-history-style cat studying a baking sheet with two styles of trout',
+    ingredients: [
+      {
+        amount: 3.5,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'steelhead trout',
+      },
+      { item: 'Basil, minced' },
+      {
+        amount: 0.25,
+        unit: 'onion',
+        pluralUnit: 'onions',
+        item: 'minced',
+      },
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'grated Parmesan cheese',
+      },
+      { item: 'Cracked pepper, to taste' },
+      { item: 'Salt and pepper, to taste' },
+      { item: 'Lemons, sliced' },
+    ],
+    steps: [
+      {
+        title: 'Prepare the trout',
+        text: 'Place the 3½-pound steelhead trout on a parchment-lined baking sheet. Mentally divide it into two halves.',
+      },
+      {
+        title: 'Make the basil Parmesan side',
+        text: 'Mince the basil and ¼ onion, then mix them with about 1 cup grated Parmesan. Coat one half of the trout with the mixture and add a little cracked pepper.',
+      },
+      {
+        title: 'Make the lemon side',
+        text: 'On the other half, add a little salt, pepper, and cracked pepper. Cover it with sliced lemons.',
+      },
+      {
+        title: 'Bake until firm',
+        text: 'Bake at 375°F for about 40 minutes, or until the fish is firm.',
+      },
+    ],
+    houseNote: {
+      title: 'Two halves, no debate',
+      text: 'The division is intentional: the lemon half stays simple and bright, while the basil–onion–Parmesan half gets more savory and rich.',
+    },
+    familyNote: {
+      title: 'Dad’s insurance policy',
+      text: 'Dad makes trout two ways so everyone has half the fish in case they hate the other half.',
+    },
+  },
+  {
+    slug: 'valens-rice',
+    title: 'Valen’s Rice',
+    description:
+      'A rice-cooker ratio Valen measures by uncanny spout timing, with Mom’s useful advice about when not to rinse.',
+    author: 'Valen',
+    yield: 'One rice-cooker batch',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'September 14, 2026',
+    updated: 'September 14, 2026',
+    section: 'Side dishes',
+    meals: ['Side dishes', 'Dinner'],
+    commonIngredients: ['Rice', 'Water'],
+    badges: ['Valen’s recipe', 'Mom’s tip'],
+    heroImage: '/photos/valens-rice-finished.webp',
+    heroAlt: 'Glossy white rice in the open bowl of a rice cooker',
+    catImage: '/cats/valens-rice-colored-pencil-cat.webp',
+    catAlt:
+      'A colored-pencil cat watching an open rice cooker full of white rice',
+    ingredients: [
+      {
+        amount: 0.75,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'rice',
+      },
+      { amount: 1, unit: 'cup', pluralUnit: 'cups', item: 'water' },
+    ],
+    steps: [
+      {
+        title: 'Decide whether to rinse',
+        text: 'Rinse the rice if you want it less glutinous. Do not rinse it if you want it stickier.',
+      },
+      {
+        title: 'Use Valen’s ratio',
+        text: 'For every ¾ cup rice, add 1 cup water to the rice-cooker bowl.',
+      },
+      {
+        title: 'Time the spout',
+        text: 'Valen magically times the water coming from the spout so it matches the rice exactly. Start the rice cooker and let it do its work.',
+      },
+    ],
+    houseNote: {
+      title: 'Mom’s tip',
+      text: 'Rinse for less glutinous rice; do not rinse for stickier rice.',
+    },
+    familyNote: {
+      title: 'The precision method',
+      text: 'Valen can apparently time the water from the spout perfectly. This is completely not helpful, but it does make good rice.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -565,3 +807,7 @@ export const momsRoastedOkra = recipes[3];
 export const momsToasties = recipes[4];
 export const dadsLambGyros = recipes[5];
 export const eggMcDad = recipes[6];
+export const dadsBakedTofuBites = recipes[7];
+export const momsBurnedBroccoli = recipes[8];
+export const dadsTroutTwoWays = recipes[9];
+export const valensRice = recipes[10];
