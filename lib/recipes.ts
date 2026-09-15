@@ -798,6 +798,131 @@ export const recipes: Recipe[] = [
       text: 'Valen can apparently time the water from the spout perfectly. This is completely not helpful, but it does make good rice.',
     },
   },
+  {
+    slug: 'great-grandma-ednas-steak-sandwiches',
+    title: 'Great Grandma Edna’s Steak Sandwiches',
+    description:
+      'Thin, quickly browned steak on a single juice-soaked slice of toast—the small step that makes the sandwich.',
+    author: 'Edna',
+    yield: 'One skillet batch',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'September 15, 2026',
+    updated: 'September 15, 2026',
+    section: 'Lunch',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: ['Steak', 'Garlic salt', 'Bread', 'Butter', 'Cheese'],
+    badges: ['Great Grandma Edna’s recipe', 'Dad’s current version'],
+    heroImage: '/photos/great-grandma-ednas-steak-sandwiches-finished.webp',
+    heroAlt: 'A thin steak sandwich on toasted rosemary Parmesan bread',
+    catImage: '/cats/great-grandma-ednas-steak-sandwiches-diner-cat.webp',
+    catAlt:
+      'A mid-century diner-style cat watching an open-face steak sandwich',
+    ingredients: [
+      {
+        item: 'Thin steak, about ¼ to ⅜ inch thick, or thin bulgogi steak',
+      },
+      { item: 'Garlic salt, for seasoning' },
+      {
+        item: 'Or equal parts onion powder, pepper, and salt, for seasoning',
+      },
+      { item: 'Butter, for a regular skillet if needed' },
+      { item: 'Cheese, optional' },
+      { item: 'One slice of toast for each sandwich' },
+    ],
+    steps: [
+      {
+        title: 'Make the steak thin',
+        text: 'Start with a steak about ¼ to ⅜ inch thick. Like Great Grandma Edna, pound it thin with a meat mallet. If using thin bulgogi steak, do not pound it—it is already thin enough and will just disappear.',
+      },
+      {
+        title: 'Season lightly',
+        text: 'Use garlic salt, or make a simple seasoning with roughly equal parts onion powder, pepper, and salt. Lightly sprinkle the meat on both sides.',
+      },
+      {
+        title: 'Fry fast',
+        text: 'Quickly fry the steak in a nonstick pan, or use a little butter in a regular pan. Cook until browned on both sides.',
+      },
+      {
+        title: 'Add cheese if wanted',
+        text: 'If you want cheese, put it on the steak and let it melt. Dad tends to skip it, but some of the kids like it.',
+      },
+      {
+        title: 'Make the sandwich',
+        text: 'Put the steak on one slice of toast. Before serving, use that piece of bread to soak up the meat juices in the pan. That extra-flavorful bread is the key to Great Grandma Edna’s steak sandwiches.',
+      },
+    ],
+    houseNote: {
+      title: 'The bread is not an afterthought',
+      text: 'Here, Dad used rosemary Parmesan toast. Any good slice works, as long as it gets a pass through the pan juices before it meets the steak.',
+    },
+    familyNote: {
+      title: 'Great Grandma Edna’s move',
+      text: 'The sandwich uses one slice of toast, not two. Let it soak up the juice—the bread carries the flavor all the way to the plate.',
+    },
+  },
+  {
+    slug: 'brentwood-cheesesteak-a-la-valen',
+    title: 'Brentwood Cheesesteak Sandwiches à la Valen',
+    description:
+      'Thin steak, slow-browned onions, and gooey Swiss cheese tucked into a toasted baguette—Valen’s idea.',
+    author: 'Valen',
+    yield: 'One skillet batch',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'September 15, 2026',
+    updated: 'September 15, 2026',
+    section: 'Lunch',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: ['Steak', 'Onion', 'Swiss cheese', 'Baguette'],
+    badges: ['Valen’s idea', 'Gooey mess'],
+    heroImage: '/photos/brentwood-cheesesteak-a-la-valen-finished.webp',
+    heroAlt:
+      'A toasted baguette stuffed with thin steak, browned onions, and melted Swiss cheese',
+    catImage: '/cats/brentwood-cheesesteak-a-la-valen-cutpaper-cat.webp',
+    catAlt: 'A layered cut-paper cat quietly watching a cheesesteak sandwich',
+    ingredients: [
+      {
+        amount: 0.5,
+        unit: 'onion',
+        pluralUnit: 'onions',
+        item: 'sliced',
+      },
+      { item: 'Salt, for the onions and steak' },
+      { item: 'Thinly sliced steak' },
+      { item: 'Onion powder and pepper, for seasoning the steak' },
+      { item: 'Swiss cheese' },
+      { item: 'Baguette, sliced and toasted' },
+    ],
+    steps: [
+      {
+        title: 'Brown the onions slowly',
+        text: 'Slice ½ onion and cook it over medium-low heat with just a tiny bit of salt to help it brown. When the onions are browned, move them to the side of the pan.',
+      },
+      {
+        title: 'Cook the steak',
+        text: 'Season the thinly sliced steak with a little onion powder, pepper, and salt. Cook it until it is essentially done and a little brown.',
+      },
+      {
+        title: 'Bring it together',
+        text: 'Add the onions back to the steak and top with Swiss cheese. Move everything around until the cheese melts into a proper gooey mess.',
+      },
+      {
+        title: 'Fill the baguette',
+        text: 'Serve the steak, onions, and melted cheese in a toasted, sliced baguette. Enjoy the gooey mess.',
+      },
+    ],
+    houseNote: {
+      title: 'Let the onion take its time',
+      text: 'The steak cooks quickly. The onions are the patient part: medium-low heat and a tiny bit of salt are all they need.',
+    },
+    familyNote: {
+      title: 'À la Valen',
+      text: 'This is Valen’s idea: do not fuss over a perfectly tidy sandwich. The cheese is supposed to get gooey.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -811,3 +936,5 @@ export const dadsBakedTofuBites = recipes[7];
 export const momsBurnedBroccoli = recipes[8];
 export const dadsTroutTwoWays = recipes[9];
 export const valensRice = recipes[10];
+export const greatGrandmaEdnasSteakSandwiches = recipes[11];
+export const brentwoodCheesesteakALaValen = recipes[12];
