@@ -270,6 +270,62 @@ export default function RecipeBookPage() {
             </Fragment>
           );
         })}
+
+        <section className="book-page book-build-about">
+          <p className="book-kicker">The last page, on purpose</p>
+          <h2>How this cookbook is made</h2>
+          <div className="book-build-grid">
+            <div className="book-build-copy">
+              <p>
+                Brentwood Bunch Recipes is a static React site built with Vinext
+                and published on GitHub Pages. Custom styling, family food
+                photography, and a steadily expanding kitchen-cat staff give it
+                its character.
+              </p>
+              <p>
+                Each recipe begins with real dictated cooking notes and
+                food-only photographs. After names, yield, section, privacy, and
+                any unclear wording are settled, the complete recipe is added as
+                one structured record.
+              </p>
+              <p>
+                That single record powers homepage search, browsing filters,
+                serving scaling, the recipe page, and this book. Add the recipe
+                once, check the build, and it appears everywhere—including the
+                next PDF edition.
+              </p>
+            </div>
+            <ol className="book-build-steps">
+              <li>
+                <span>1</span> Capture the cook’s words and food photos.
+              </li>
+              <li>
+                <span>2</span> Resolve details and protect family privacy.
+              </li>
+              <li>
+                <span>3</span> Add one shared recipe record.
+              </li>
+              <li>
+                <span>4</span> Add captions, humor, and a new cat.
+              </li>
+              <li>
+                <span>5</span> Verify the site and living book.
+              </li>
+            </ol>
+          </div>
+          <figure className="book-build-cats">
+            <img
+              src={`${assetPath}/cats/about-kitchen-crew.webp`}
+              alt="Seven illustrated cats working together in a busy family kitchen"
+            />
+            <figcaption>
+              Editorial meeting, recipe test, and lunch rush—all at once.
+            </figcaption>
+          </figure>
+          <p className="book-build-footer">
+            Food first. Family voice intact. Cats under light supervision.
+          </p>
+        </section>
       </main>
     </div>
   );

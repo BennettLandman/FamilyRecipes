@@ -147,8 +147,38 @@ h3 { font-size: 1.45rem; }
 .site-footer .wrap { min-height: 128px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .site-footer p { margin: 0; font-family: Georgia, serif; font-size: 1.2rem; }
 .site-footer span { color: rgba(255,250,240,.58); font-size: .74rem; letter-spacing: .09em; text-transform: uppercase; }
+.site-footer-about { display: grid; gap: .4rem; }
+.site-footer-about a { width: fit-content; color: var(--butter); font-size: .78rem; font-weight: 800; letter-spacing: .04em; }
+.site-footer-about a:hover, .site-footer-about a:focus-visible { text-decoration: underline; text-underline-offset: .24rem; }
 .site-footer-legal { display: grid; gap: .35rem; justify-items: end; text-align: right; }
 .site-footer-legal small { color: rgba(255,250,240,.48); font-size: .68rem; }
+
+.about-hero { min-height: 740px; display: grid; grid-template-columns: .84fr 1.16fr; align-items: center; gap: clamp(2.5rem, 6vw, 6rem); padding-block: 70px 100px; }
+.about-hero-copy h1 { max-width: 620px; margin: .5rem 0 1.5rem; }
+.about-lede { max-width: 570px; color: var(--ink-soft); font-family: Georgia, serif; font-size: clamp(1.1rem, 2vw, 1.35rem); line-height: 1.65; }
+.about-crew-art { position: relative; margin: 0; padding: 13px 13px 65px; background: #fffdf7; box-shadow: var(--shadow); transform: rotate(1deg); }
+.about-crew-art img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.about-crew-art figcaption { position: absolute; left: 25px; bottom: 18px; font-family: "Bradley Hand", "Segoe Print", cursive; font-size: .98rem; transform: rotate(-1deg); }
+.about-foundation { border-block: 1px solid rgba(107,84,55,.2); background: var(--sage); color: #fffaf0; }
+.about-foundation-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(2rem, 7vw, 7rem); padding-block: 72px; }
+.about-foundation .eyebrow { color: var(--butter); }
+.about-foundation h2 { max-width: 430px; margin: 0; color: #fffaf0; }
+.about-foundation-copy { max-width: 680px; }
+.about-foundation-copy p { color: rgba(255,250,240,.84); font-family: Georgia, serif; font-size: 1.1rem; line-height: 1.7; }
+.about-foundation-copy p:last-child { margin-bottom: 0; }
+.about-process { padding-block: 90px 110px; }
+.about-process .section-heading > p { max-width: 280px; color: var(--ink-soft); font-family: "Bradley Hand", "Segoe Print", cursive; transform: rotate(-1deg); }
+.about-process-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.about-process-list li { display: grid; grid-template-columns: 48px 1fr; gap: 1rem; padding: 1.5rem; border: 1px solid rgba(107,84,55,.2); background: rgba(255,250,240,.7); }
+.about-process-list li:last-child { grid-column: 1 / -1; max-width: calc(50% - .5rem); }
+.about-process-list li > span { color: var(--tomato); font-family: Georgia, serif; font-size: 1.25rem; font-weight: 800; }
+.about-process-list h3 { margin-bottom: .45rem; }
+.about-process-list p { margin: 0; color: var(--ink-soft); }
+.about-promise { padding-block: 80px; background: var(--butter); }
+.about-promise-inner { max-width: 900px; }
+.about-promise h2 { margin-bottom: 1rem; }
+.about-promise p:not(.eyebrow) { max-width: 790px; font-family: Georgia, serif; font-size: 1.15rem; line-height: 1.7; }
+.about-book-link { display: inline-block; margin-top: 1rem; padding-bottom: .25rem; border-bottom: 2px solid var(--tomato-dark); color: var(--tomato-dark); font-weight: 800; }
 
 .recipe-wrap { padding-block: 34px 100px; }
 .back-link { display: inline-flex; align-items: center; gap: .5rem; margin: 0 0 28px; color: var(--tomato-dark); font-size: .85rem; font-weight: 800; }
@@ -303,6 +333,17 @@ h3 { font-size: 1.45rem; }
 .book-recipe-compact .book-recipe-body ol li { font-size: .72rem; }
 .book-recipe-compact .book-recipe-body ol strong { font-size: .84rem; }
 .book-recipe-compact .book-recipe-body aside { margin-top: .7rem; padding: .62rem; }
+.book-build-about { padding: 54px 62px; background: radial-gradient(circle at 90% 8%, rgba(239,198,108,.35), transparent 15rem), var(--paper); }
+.book-build-about h2 { max-width: 620px; margin-bottom: 1.35rem; font-size: 3.8rem; }
+.book-build-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.12fr .88fr; gap: 2rem; }
+.book-build-copy p { margin-bottom: .85rem; font-family: Georgia, serif; font-size: .9rem; line-height: 1.5; }
+.book-build-steps { display: grid; align-content: start; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.book-build-steps li { display: grid; grid-template-columns: 24px 1fr; gap: .55rem; align-items: center; color: var(--ink-soft); font-size: .75rem; }
+.book-build-steps span { display: grid; place-items: center; width: 22px; height: 22px; border: 1px solid var(--tomato); border-radius: 50%; color: var(--tomato-dark); font-weight: 800; }
+.book-build-cats { position: absolute; left: 62px; right: 62px; bottom: 76px; margin: 0; padding: 9px 9px 38px; background: #fffdf7; box-shadow: 5px 5px 0 var(--butter); transform: rotate(-.5deg); }
+.book-build-cats img { width: 100%; height: 295px; object-fit: cover; object-position: center 45%; }
+.book-build-cats figcaption { position: absolute; left: 20px; bottom: 9px; font-family: "Bradley Hand", "Segoe Print", cursive; font-size: .78rem; }
+.book-build-footer { position: absolute; right: 62px; bottom: 28px; margin: 0; color: var(--ink-soft); font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 58px; }
@@ -319,6 +360,8 @@ h3 { font-size: 1.45rem; }
   .book-toolbar-inner { grid-template-columns: 1fr auto; padding-block: 1rem; }
   .book-toolbar-inner > div:not(.book-actions) { display: none; }
   .book-page { min-height: auto; }
+  .about-hero { min-height: auto; grid-template-columns: 1fr; }
+  .about-crew-art { max-width: 760px; }
 }
 
 @media (max-width: 620px) {
@@ -339,6 +382,10 @@ h3 { font-size: 1.45rem; }
   .section-heading { align-items: start; flex-direction: column; }
   .site-footer .wrap { align-items: flex-start; flex-direction: column; justify-content: center; }
   .site-footer-legal { justify-items: start; text-align: left; }
+  .about-hero { padding-block: 48px 70px; }
+  .about-foundation-grid { grid-template-columns: 1fr; }
+  .about-process-list { grid-template-columns: 1fr; }
+  .about-process-list li:last-child { grid-column: auto; max-width: none; }
   .recipe-wrap { padding-top: 22px; }
   .recipe-hero { padding-bottom: 100px; }
   .recipe-hero-copy h1 { font-size: clamp(3.4rem, 17vw, 5.4rem); }
@@ -363,6 +410,9 @@ h3 { font-size: 1.45rem; }
   .book-section-cover { min-height: 76vh; }
   .book-section-cover h2 { font-size: 4.2rem; }
   .book-recipe-header, .book-recipe-body { grid-template-columns: 1fr; }
+  .book-build-grid { grid-template-columns: 1fr; }
+  .book-build-cats { position: static; margin-top: 2rem; }
+  .book-build-footer { position: static; margin-top: 2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -414,4 +464,9 @@ h3 { font-size: 1.45rem; }
   .book-section-cover h2 { font-size: 62pt; }
   .book-recipe { padding: .48in .58in; }
   .book-recipe-header h2 { font-size: 32pt; }
+  .book-build-about { padding: .52in .6in; }
+  .book-build-about h2 { font-size: 34pt; }
+  .book-build-cats { left: .6in; right: .6in; bottom: .68in; }
+  .book-build-cats img { height: 2.85in; }
+  .book-build-footer { right: .6in; bottom: .22in; }
 }

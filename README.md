@@ -10,7 +10,7 @@ Recipes use one of six sections: Breakfast, Lunch, Dinner, Appetizers, Side dish
 
 ## Recipe book
 
-Open `/FamilyRecipes/book` or choose **Recipe book** in the site header. The book is assembled in the browser from the same recipe data as the site, including a cover, About page, table of contents, themed section dividers, and recipe pages. Choose **Save book as PDF**, then select **Save as PDF** in the browser print dialog. New recipes appear in the book automatically after the updated site is deployed; no separate book file needs to be regenerated or checked into the repository.
+Open `/FamilyRecipes/book` or choose **Recipe book** in the site header. The book is assembled in the browser from the same recipe data as the site, including a cover, family introduction, table of contents, themed section dividers, recipe pages, and a final About page explaining how the cookbook is made. Choose **Save book as PDF**, then select **Save as PDF** in the browser print dialog. New recipes appear in the book automatically after the updated site is deployed; no separate book file needs to be regenerated or checked into the repository.
 
 ## Local preview
 
