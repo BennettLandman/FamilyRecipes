@@ -467,6 +467,6 @@ h3 { font-size: 1.45rem; }
   .book-build-about { padding: .52in .6in; }
   .book-build-about h2 { font-size: 34pt; }
   .book-build-cats { left: .6in; right: .6in; bottom: .68in; }
-  .book-build-cats img { height: 2.85in; }
+  .book-build-cats img { height: 2.85in; object-fit: contain; object-position: center top; background: #f4ead7; }
   .book-build-footer { right: .6in; bottom: .22in; }
 }
