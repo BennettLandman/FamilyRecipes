@@ -7,6 +7,7 @@ export const recipeSections = [
   'Appetizers',
   'Side dishes',
   'Desserts',
+  'Pantry',
 ] as const;
 export type RecipeSection = (typeof recipeSections)[number];
 
@@ -923,6 +924,180 @@ export const recipes: Recipe[] = [
       text: 'This is Valen’s idea: do not fuss over a perfectly tidy sandwich. The cheese is supposed to get gooey.',
     },
   },
+  {
+    slug: 'homemade-vanilla',
+    title: 'Homemade Vanilla',
+    description:
+      'Vanilla beans steeped patiently in vodka or Tennessee whiskey for a deeply fragrant homemade extract.',
+    author: 'Brentwood Bunch',
+    yield: 'One 1.75-liter jar',
+    yieldRange: [1.75, 1.75],
+    yieldUnit: 'liter',
+    yieldPluralUnit: 'liters',
+    added: 'September 15, 2026',
+    updated: 'September 15, 2026',
+    section: 'Pantry',
+    meals: ['Pantry'],
+    commonIngredients: ['Vanilla beans', 'Vodka', 'Whiskey'],
+    badges: ['Six-month extraction', 'Two ways'],
+    heroImage: '/photos/homemade-vanilla-vodka.webp',
+    heroAlt:
+      'A 1.75-liter bottle holding vanilla beans for a homemade extract beside a whiskey bottle',
+    catImage: '/cats/homemade-vanilla-letterpress-cat.webp',
+    catAlt:
+      'A sepia letterpress-style cat inspecting a bottle of steeping vanilla beans',
+    ingredients: [
+      {
+        amount: 25,
+        item: 'vanilla beans, Grade B or Grade A',
+      },
+      {
+        amount: 1.75,
+        unit: 'liter',
+        pluralUnit: 'liters',
+        item: 'Tito’s vodka, for a traditional Mexican-style extract',
+      },
+      {
+        item: 'Or 1.75 liters Jack Daniel’s whiskey, for a warmer, rounder Tennessee special',
+      },
+    ],
+    steps: [
+      {
+        title: 'Choose your beans',
+        text: 'Buy vanilla beans in bulk. Grade B is less expensive and works beautifully for a long extraction; Grade A also makes a clean-tasting vanilla.',
+      },
+      {
+        title: 'Choose your spirit',
+        text: 'Put about 25 vanilla beans into a 1.75-liter jar or bottle. Cover them with Tito’s vodka for a traditional Mexican-style extract, or use Jack Daniel’s whiskey for a Tennessee special with a warmer, rounder flavor.',
+      },
+      {
+        title: 'Let it steep',
+        text: 'Store the bottle in a dark cabinet for at least six months before using the extract.',
+      },
+      {
+        title: 'Shake gently now and then',
+        text: 'Occasionally give the bottle a gentle shake to agitate the beans while the vanilla develops.',
+      },
+    ],
+    houseNote: {
+      title: 'Grade B is the practical choice',
+      text: 'Grade B beans are less expensive and especially good when the extract will have plenty of time to steep. Grade A beans also work well when a clean-tasting vanilla is the goal.',
+    },
+    familyNote: {
+      title: 'The Tennessee special',
+      text: 'Jack Daniel’s makes a vanilla that is warmer and rounder than the vodka version. Both start with the same easy ratio: about 25 beans to a 1.75-liter bottle.',
+    },
+  },
+  {
+    slug: 'valens-cookie-cake',
+    title: 'Valen’s Cookie Cake',
+    description:
+      'A thick chocolate-chip cookie cake with Valen’s optional oat twist, baked low and slow for a proper birthday-cookie-cake center.',
+    author: 'Valen',
+    yield: 'One cookie cake',
+    yieldRange: [1, 1],
+    yieldUnit: 'cake',
+    yieldPluralUnit: 'cakes',
+    added: 'September 15, 2026',
+    updated: 'September 15, 2026',
+    section: 'Desserts',
+    meals: ['Desserts'],
+    commonIngredients: ['Butter', 'Brown sugar', 'Chocolate chips', 'Oats'],
+    badges: ['Valen’s recipe', 'Grandpa Gary’s favorite'],
+    heroImage: '/photos/valens-cookie-cake-oven.webp',
+    heroAlt:
+      'A large chocolate-chip cookie cake baking on a parchment-lined sheet pan',
+    catImage: '/cats/valens-cookie-cake-screenprint-cat.webp',
+    catAlt:
+      'A vintage screen-print cat watching a chocolate-chip cookie cake with a birthday candle',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'unsalted butter, softened',
+      },
+      {
+        amount: 0.75,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'granulated white sugar',
+      },
+      {
+        amount: 0.75,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'brown sugar, measured generously',
+      },
+      { amount: 2, item: 'eggs' },
+      { item: 'A splash of homemade vanilla' },
+      {
+        amount: 0.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'salt',
+      },
+      {
+        amount: 1,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'baking soda',
+        approximate: true,
+      },
+      {
+        amount: 2.25,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'all-purpose flour',
+      },
+      {
+        amount: 2,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'chocolate chips',
+      },
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'rolled oats, optional',
+      },
+    ],
+    steps: [
+      {
+        title: 'Heat the oven',
+        text: 'Preheat the oven to 325°F convection. Line a baking sheet with parchment paper.',
+      },
+      {
+        title: 'Cream butter and sugar',
+        text: 'Beat the softened butter with the granulated sugar and generously measured brown sugar until smooth.',
+      },
+      {
+        title: 'Add the wet ingredients',
+        text: 'Beat in the eggs, then add a splash of homemade vanilla. If you are quick, Valen says you can make the entire recipe without stopping the mixer.',
+      },
+      {
+        title: 'Add the dry ingredients gently',
+        text: 'Mix in the salt and about a teaspoon of baking soda. Slowly beat in the flour, stopping as soon as it is incorporated so the dough does not get stiff.',
+      },
+      {
+        title: 'Fold in the good parts',
+        text: 'Slowly fold in the chocolate chips so there are lovely pockets of chocolate and pockets of dough. If you want Valen’s variation, fold in the rolled oats instead of chopped nuts.',
+      },
+      {
+        title: 'Shape and bake',
+        text: 'Spread or pat the dough into one thick cookie cake on the prepared sheet. Bake for 20–30 minutes, rotating the pan halfway through, until it is baked through and lightly golden.',
+      },
+    ],
+    houseNote: {
+      title: 'Do not overmix the flour',
+      text: 'The dough is supposed to stay tender. Add the flour slowly and stop mixing as soon as it disappears into the dough.',
+    },
+    familyNote: {
+      title: 'Birthday-cookie-cake history',
+      text: 'This cookie cake was modeled after Grandpa Gary’s favorite birthday cookie cakes. Valen’s only real departure from the recipe is the optional cup of oats at the end.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -938,3 +1113,5 @@ export const dadsTroutTwoWays = recipes[9];
 export const valensRice = recipes[10];
 export const greatGrandmaEdnasSteakSandwiches = recipes[11];
 export const brentwoodCheesesteakALaValen = recipes[12];
+export const homemadeVanilla = recipes[13];
+export const valensCookieCake = recipes[14];

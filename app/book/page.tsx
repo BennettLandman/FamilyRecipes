@@ -29,6 +29,8 @@ const sectionDescriptions: Record<RecipeSection, string> = {
     'Small bites, first plates, and the things that disappear before dinner.',
   'Side dishes': 'The supporting cast that sometimes steals the whole meal.',
   Desserts: 'Something sweet, because there should usually be something sweet.',
+  Pantry:
+    'The patient jars and staples that quietly make everything else better.',
 };
 
 const sectionCat = [

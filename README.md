@@ -6,7 +6,7 @@ A warm, practical family recipe collection published with GitHub Pages.
 
 Each recipe has its complete structured record in `lib/recipes.ts` and its own printable page under `app/recipes/`. Photographs live in `public/photos/` as metadata-free WebP files. New recipes should retain the cook’s phrasing and practical cues while separating ingredients, method, and family notes. Use the shared `RecipeScaler` component for ingredient quantities and yield so every recipe can be resized in the browser and printed at the selected scale.
 
-Recipes use one of six sections: Breakfast, Lunch, Dinner, Appetizers, Side dishes, or Desserts. The home page uses these sections for browsing, and the recipe book automatically groups recipes under the same headings.
+Recipes use one of seven sections: Breakfast, Lunch, Dinner, Appetizers, Side dishes, Desserts, or Pantry. The home page uses these sections for browsing, and the recipe book automatically groups recipes under the same headings.
 
 ## Recipe book
 
