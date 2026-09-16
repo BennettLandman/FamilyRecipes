@@ -1004,9 +1004,9 @@ export const recipes: Recipe[] = [
     meals: ['Desserts'],
     commonIngredients: ['Butter', 'Brown sugar', 'Chocolate chips', 'Oats'],
     badges: ['Valen’s recipe', 'Grandpa Gary’s favorite'],
-    heroImage: '/photos/valens-cookie-cake-oven.webp',
+    heroImage: '/photos/valens-cookie-cake-finished.webp',
     heroAlt:
-      'A large chocolate-chip cookie cake baking on a parchment-lined sheet pan',
+      'A large finished chocolate-chip cookie cake on a parchment-lined sheet pan',
     catImage: '/cats/valens-cookie-cake-screenprint-cat.webp',
     catAlt:
       'A vintage screen-print cat watching a chocolate-chip cookie cake with a birthday candle',
