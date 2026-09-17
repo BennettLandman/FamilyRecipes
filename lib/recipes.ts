@@ -1098,6 +1098,125 @@ export const recipes: Recipe[] = [
       text: 'This cookie cake was modeled after Grandpa Gary’s favorite birthday cookie cakes. Valen’s only real departure from the recipe is the optional cup of oats at the end.',
     },
   },
+  {
+    slug: 'tennessee-thai-basil-curry',
+    title: 'Tennessee Thai-Basil Curry',
+    description:
+      'A generously sized, one-pot curry of rotisserie chicken, andouille chicken sausage, peppers, rice, and fresh Thai basil—made even better with leftover roasted okra.',
+    author: 'Brentwood Bunch',
+    yield: '20 large servings',
+    yieldRange: [20, 20],
+    yieldUnit: 'large serving',
+    yieldPluralUnit: 'large servings',
+    added: 'September 17, 2026',
+    updated: 'September 17, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Chicken',
+      'Andouille chicken sausage',
+      'Golden Curry mix',
+      'Thai basil',
+    ],
+    badges: ['One-pot supper', 'Thai basil', 'Leftover brilliance'],
+    heroImage: '/photos/tennessee-thai-basil-curry-finished.webp',
+    heroAlt:
+      'A large pot of Tennessee Thai-basil curry with chicken, andouille sausage, rice, peppers, okra, and basil',
+    catImage: '/cats/tennessee-thai-basil-curry-tile-cat.webp',
+    catAlt:
+      'A small cat beside a simmering curry pot in a hand-painted ceramic-tile kitchen',
+    ingredients: [
+      {
+        amount: 4,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'coconut oil',
+      },
+      {
+        amount: 20,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'andouille chicken sausage, sliced',
+      },
+      { amount: 2, item: 'rotisserie chicken breasts, white meat, diced' },
+      { amount: 1, item: 'onion, chopped' },
+      {
+        amount: 2,
+        item: 'handfuls of mini multicolored bell peppers, chopped',
+      },
+      {
+        amount: 6,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'tomato paste (one small can)',
+      },
+      { amount: 2, item: 'cubes Golden Curry mix' },
+      {
+        amount: 2.25,
+        unit: 'rice-cooker cup',
+        pluralUnit: 'rice-cooker cups',
+        item: 'long-grain white rice (three 0.75-cup measures)',
+      },
+      {
+        amount: 8,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'fresh chicken bone stock, plus more as needed',
+      },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'fresh Thai basil, chopped and divided',
+      },
+      {
+        range: [1, 2],
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'leftover softened roasted okra, with any tough pieces removed',
+      },
+      { item: 'For the bone stock: chicken carcass, wings, and skin' },
+      { item: 'Peppercorns and any fresh herbs you want to use' },
+    ],
+    steps: [
+      {
+        title: 'Make the bone stock, if needed',
+        text: 'Add the chicken carcass, wings, and skin to a pot of water with peppercorns. Boil for at least 20 minutes, until the water turns a rich color, then strain. If you have longer, add as many fresh herbs as you like from the garden or fridge.',
+      },
+      {
+        title: 'Start the onion',
+        text: 'Heat the coconut oil in a large pot over medium-high heat. Sauté the chopped onion until it begins to brown.',
+      },
+      {
+        title: 'Brown the chicken, sausage, and peppers',
+        text: 'Add the diced rotisserie chicken, sliced andouille chicken sausage, and chopped bell peppers. Cook until everything starts to pick up a little color.',
+      },
+      {
+        title: 'Build the curry',
+        text: 'Stir in the tomato paste and the two cubes of Golden Curry mix until the cubes begin to dissolve and the pot smells deeply savory.',
+      },
+      {
+        title: 'Add rice and stock',
+        text: 'Add the rice, 8 cups of chicken bone stock, and about half of the chopped Thai basil. Bring the pot to a simmer and cook until the rice is tender.',
+      },
+      {
+        title: 'Keep it curry-like',
+        text: 'As the rice cooks, add more stock as needed to keep the mixture loose and spoonable rather than thick and dry.',
+      },
+      {
+        title: 'Finish with the leftovers',
+        text: 'When the rice is nearly tender, fold in the softened roasted okra and the remaining Thai basil. Stir until hot and well combined, then serve.',
+      },
+    ],
+    houseNote: {
+      title: 'A rice-cooker cup is its own thing',
+      text: 'This uses three 0.75-cup rice measures—2.25 rice-cooker cups total—rather than three standard measuring cups.',
+    },
+    familyNote: {
+      title: 'Tennessee meets Thai basil',
+      text: 'Rotisserie chicken, andouille chicken sausage, garden Thai basil, and leftover roasted okra all get to belong in the same generous pot.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -1115,3 +1234,4 @@ export const greatGrandmaEdnasSteakSandwiches = recipes[11];
 export const brentwoodCheesesteakALaValen = recipes[12];
 export const homemadeVanilla = recipes[13];
 export const valensCookieCake = recipes[14];
+export const tennesseeThaiBasilCurry = recipes[15];
