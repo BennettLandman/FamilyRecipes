@@ -1217,6 +1217,186 @@ export const recipes: Recipe[] = [
       text: 'Rotisserie chicken, andouille chicken sausage, garden Thai basil, and leftover roasted okra all get to belong in the same generous pot.',
     },
   },
+  {
+    slug: 'shiitake-veggie-dumplings',
+    title: 'Shiitake-Veggie Dumplings',
+    description:
+      'Tofu, mushrooms, vegetables, ginger, and sesame become a savory dumpling filling that is equally happy steamed, potsticker-crisped, or air-fried.',
+    author: 'Bennett',
+    yield: '40 dumplings',
+    yieldRange: [40, 40],
+    yieldUnit: 'dumpling',
+    yieldPluralUnit: 'dumplings',
+    added: 'September 24, 2026',
+    updated: 'September 24, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers', 'Lunch'],
+    commonIngredients: [
+      'Tofu',
+      'Shiitake mushrooms',
+      'Napa cabbage',
+      'Dumpling wrappers',
+    ],
+    badges: ['Three cooking methods', 'Vegetarian', 'Leftover-ready'],
+    heroImage: '/photos/shiitake-veggie-dumplings-finished.webp',
+    heroAlt:
+      'A plate of shiitake-veggie dumplings prepared in several different ways',
+    catImage: '/cats/shiitake-veggie-dumplings-watercolor-cat.webp',
+    catAlt: 'A watercolor cat watching a bamboo steamer of vegetable dumplings',
+    ingredients: [
+      {
+        amount: 8,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'tofu, mashed',
+      },
+      { amount: 2, item: 'medium carrots, very finely grated' },
+      { amount: 4, item: 'green onions, thinly minced' },
+      {
+        amount: 2,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'Napa cabbage, thinly minced',
+      },
+      {
+        amount: 4,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'shiitake mushrooms, thinly minced',
+      },
+      {
+        amount: 4,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'oyster mushrooms, thinly minced',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'toasted sesame oil',
+        approximate: true,
+      },
+      {
+        amount: 4,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'soy sauce',
+      },
+      { item: 'A large pinch of white pepper' },
+      { item: 'One large thumb of fresh ginger, grated into a fine paste' },
+      {
+        amount: 12,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'dumpling wrappers (one package)',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'hoisin sauce, for serving',
+      },
+    ],
+    steps: [
+      {
+        title: 'Prepare the vegetables',
+        text: 'Mash the tofu. Very finely grate the carrots, and mince the green onions, Napa cabbage, shiitakes, and oyster mushrooms. Grate the ginger to a fine paste with a ceramic grater or a food processor.',
+      },
+      {
+        title: 'Make the filling',
+        text: 'Combine the tofu, vegetables, mushrooms, toasted sesame oil, soy sauce, white pepper, and ginger. Mix by hand until the tofu is fully broken up and the mixture becomes an even, consistent paste.',
+      },
+      {
+        title: 'Fill and shape',
+        text: 'Fill the dumpling wrappers and seal them into about 40 dumplings. A dumpling press makes quick work of it, but folding by hand is just as good.',
+      },
+      {
+        title: 'Potsticker method',
+        text: 'Add just enough water to coat the bottom of a skillet, then add the dumplings. When about half the water has evaporated, gently flip them once if your wrappers can take it. Let the remaining water evaporate so the bottoms crisp a little before serving.',
+      },
+      {
+        title: 'Steamer method',
+        text: 'Steam the dumplings over boiling water for 7–8 minutes, until heated through and the wrappers are tender and transparent.',
+      },
+      {
+        title: 'Air-fryer method',
+        text: 'For crispier dumplings, air-fry at 390°F for 4–5 minutes. They will be crisp on the outside with a more solid, compact filling.',
+      },
+      {
+        title: 'Use every bit of filling',
+        text: 'Cook any leftover filling in a frying pan until crisped, then spoon it over rice for lunch or another easy meal. Serve the dumplings with a little hoisin sauce.',
+      },
+    ],
+    houseNote: {
+      title: 'Thin wrappers need a gentle hand',
+      text: 'These wrappers were delicate, so flip potstickers only when they are sturdy enough to cooperate. The steamer and air fryer are forgiving backup plans.',
+    },
+    familyNote: {
+      title: 'Orinda’s dumpling field notes',
+      text: 'The potstickers are gooey in the middle and crispy outside. The steamed dumplings are mostly tender and warm all the way through, while the air-fried version is crispy, compact, and perfect for a quick bite.',
+    },
+  },
+  {
+    slug: 'moms-breakfast-burrito',
+    title: 'Mom’s Breakfast Burrito',
+    description:
+      'Soft scrambled eggs, tiny pieces of sausage, and shredded cheese rolled into a warm tortilla make a quick, satisfying breakfast.',
+    author: 'Mom',
+    yield: '1 burrito',
+    yieldRange: [1, 1],
+    yieldUnit: 'burrito',
+    yieldPluralUnit: 'burritos',
+    added: 'September 24, 2026',
+    updated: 'September 24, 2026',
+    section: 'Breakfast',
+    meals: ['Breakfast'],
+    commonIngredients: ['Eggs', 'Breakfast sausage', 'Tortilla', 'Cheese'],
+    badges: ['Weekday quick', 'Microwave assist', 'Mom’s recipe'],
+    heroImage: '/photos/moms-breakfast-burrito-finished.webp',
+    heroAlt: 'A finished breakfast burrito on a plate',
+    catImage: '/cats/moms-breakfast-burrito-crayon-cat.webp',
+    catAlt:
+      'A colored-pencil cat watching a breakfast burrito with scrambled eggs and sausage',
+    ingredients: [
+      { amount: 2, item: 'eggs' },
+      { item: 'Salt and pepper' },
+      { amount: 2, item: 'frozen breakfast sausages' },
+      { item: 'One dry paper towel and one damp paper towel' },
+      { amount: 1, item: 'large burrito-size tortilla' },
+      { item: 'Shredded cheese' },
+    ],
+    steps: [
+      {
+        title: 'Scramble the eggs',
+        text: 'Heat a nonstick pan, then crack in the eggs. Season with salt and pepper and scramble until cooked to your liking.',
+      },
+      {
+        title: 'Warm the sausages',
+        text: 'Set the frozen sausages on a dry paper towel and cover with a damp paper towel. Microwave according to the package instructions, about 60 seconds, until hot throughout.',
+      },
+      {
+        title: 'Make tiny sausage pieces',
+        text: 'Slice each sausage lengthwise and then crosswise into lots of little bite-size bits. Stir them into the scrambled eggs if you have time, so everything becomes one happy mash.',
+      },
+      {
+        title: 'Fill the tortilla',
+        text: 'Lay the tortilla on a plate. Add the egg-and-sausage mixture down the center and scatter shredded cheese over the top.',
+      },
+      {
+        title: 'Fold and roll',
+        text: 'Starting at the bottom third, fold up the tortilla, fold the two ends inward, then roll it up into a burrito. Bon appétit.',
+      },
+    ],
+    houseNote: {
+      title: 'A dry towel and a damp towel',
+      text: 'The dry towel catches microwave sausage grease, while the damp towel helps keep the sausages from drying out.',
+    },
+    familyNote: {
+      title: 'Tiny pieces, maximum burrito coverage',
+      text: 'Slicing the sausages lengthwise and then crosswise makes sure every bite gets a little sausage, egg, and cheese.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -1235,3 +1415,5 @@ export const brentwoodCheesesteakALaValen = recipes[12];
 export const homemadeVanilla = recipes[13];
 export const valensCookieCake = recipes[14];
 export const tennesseeThaiBasilCurry = recipes[15];
+export const shiitakeVeggieDumplings = recipes[16];
+export const momsBreakfastBurrito = recipes[17];
