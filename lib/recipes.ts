@@ -1397,6 +1397,279 @@ export const recipes: Recipe[] = [
       text: 'Slicing the sausages lengthwise and then crosswise makes sure every bite gets a little sausage, egg, and cheese.',
     },
   },
+  {
+    slug: 'simply-amazing-shrimp-scampi',
+    title: 'Simply Amazing Shrimp Scampi',
+    description:
+      'Buttery shrimp, a favorite pasta shape, and plenty of finely grated Parmesan make a fast, thoroughly kid-approved dinner.',
+    author: 'Brentwood Bunch',
+    yield: '4 servings',
+    yieldRange: [4, 4],
+    yieldUnit: 'serving',
+    yieldPluralUnit: 'servings',
+    added: 'September 25, 2026',
+    updated: 'September 25, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: ['Shrimp', 'Unsalted butter', 'Pasta', 'Parmesan'],
+    badges: ['Fast dinner', 'Kid-approved', 'Weeknight favorite'],
+    heroImage: '/photos/simply-amazing-shrimp-scampi-finished.webp',
+    heroAlt:
+      'Shrimp and pasta tossed with finely grated Parmesan in a serving bowl',
+    catImage: '/cats/simply-amazing-shrimp-scampi-gouache-cat.webp',
+    catAlt: 'An ink-and-gouache cat peeking at a bowl of shrimp pasta',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'shrimp, nearly defrosted',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'unsalted butter',
+        approximate: true,
+      },
+      { item: 'Salt and pepper, to taste' },
+      { item: 'A pasta shape of your preference' },
+      {
+        amount: 2,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'freshly grated Parmesan cheese, divided',
+      },
+    ],
+    steps: [
+      {
+        title: 'Start the pasta',
+        text: 'Bring a pot of water to a boil and cook your chosen pasta according to the package directions. Aim for the shrimp and pasta to finish at about the same time.',
+      },
+      {
+        title: 'Sauté the shrimp',
+        text: 'Melt the unsalted butter in a skillet over medium heat. Add the nearly defrosted shrimp, season with salt and pepper, and sauté until opaque and cooked through. The shrimp may release plenty of water—that is okay.',
+      },
+      {
+        title: 'Taste and drain',
+        text: 'Taste the pasta before draining; use a spoon, blow carefully, and do not burn yourself. When the shrimp is essentially done, drain away the excess liquid, then heat it briefly and carefully to dry the shrimp a little.',
+      },
+      {
+        title: 'Toss, layer, and serve',
+        text: 'Put the drained pasta in a serving bowl and toss with half the Parmesan. Layer the shrimp on top, then sprinkle over the remaining Parmesan. Serve immediately and watch it disappear.',
+      },
+    ],
+    houseNote: {
+      title: 'Nearly defrosted is part of the plan',
+      text: 'Do not worry when the shrimp releases water. Just drain it once the shrimp is cooked, then give the pan a short final heat to dry things out.',
+    },
+    familyNote: {
+      title: 'Dinner with a vanishing act',
+      text: 'A big serving bowl, lots of grated Parmesan, and somehow the kids have already eaten all of it.',
+    },
+  },
+  {
+    slug: 'teriyaki-mushroom-pork-dumplings',
+    title: 'Teriyaki Mushroom Pork Dumplings',
+    description:
+      'Pork, two kinds of mushrooms, and scallions are folded into wonton wrappers with a glossy sesame-honey teriyaki sauce, then steamed until tender.',
+    author: 'Brentwood Bunch',
+    yield: 'One package of dumplings',
+    yieldRange: [1, 1],
+    yieldUnit: 'package',
+    yieldPluralUnit: 'packages',
+    added: 'September 25, 2026',
+    updated: 'September 25, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers', 'Lunch'],
+    commonIngredients: [
+      'Ground pork',
+      'Shiitake mushrooms',
+      'Wonton wrappers',
+      'Soy sauce',
+    ],
+    badges: ['Steamed', 'Sesame-honey teriyaki', 'Mushroom-packed'],
+    heroImage: '/photos/teriyaki-mushroom-pork-dumplings-steamed.webp',
+    heroAlt: 'Teriyaki mushroom pork dumplings steaming in a bamboo basket',
+    catImage: '/cats/teriyaki-mushroom-pork-dumplings-woodblock-cat.webp',
+    catAlt: 'A woodblock-style cat looking at a bamboo steamer of dumplings',
+    ingredients: [
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'sesame oil',
+      },
+      {
+        amount: 0.25,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'honey',
+      },
+      {
+        amount: 0.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'soy sauce',
+      },
+      {
+        range: [2, 3],
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'sesame seeds',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'ground ginger, or more to taste',
+      },
+      {
+        range: [1, 2],
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'rice wine vinegar or light white vinegar',
+      },
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'ground pork',
+      },
+      {
+        amount: 8,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'shiitake mushroom caps, thinly diced (no stems)',
+      },
+      {
+        amount: 8,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'cremini mushrooms, thinly diced, with dry stem portions discarded',
+      },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'green onions, minced',
+      },
+      { item: 'One package wonton wrappers' },
+      { item: 'Water, for sealing the wrappers' },
+    ],
+    steps: [
+      {
+        title: 'Make the teriyaki sauce',
+        text: 'Combine the sesame oil, honey, soy sauce, sesame seeds, ground ginger, and vinegar in a small pan. Heat over low to medium-low heat, whisking gently with a heat-proof whisk, just until the mixture begins to boil and the flavors fuse. Let cool.',
+      },
+      {
+        title: 'Mix the filling',
+        text: 'In a bowl, combine the ground pork, diced shiitake caps, diced creminis, and minced green onions. Pour in the cooled teriyaki sauce and mix carefully until fully blended.',
+      },
+      {
+        title: 'Fill and fold',
+        text: 'Open the wonton wrappers. Moisten the edges of one wrapper with a thin line of water, then add about a teaspoon or a little more of filling. Fold it into a triangle, then bring the two long corners along the hypotenuse together to make a little basket shape. Repeat.',
+      },
+      {
+        title: 'Steam until done',
+        text: 'Steam the dumplings for 8–10 minutes, until the wrappers are tender and the pork filling is fully cooked. Enjoy.',
+      },
+    ],
+    houseNote: {
+      title: 'Cremini is a small portobello',
+      text: 'Use the caps and tender parts of the cremini stems; discard any dry, woody stem portions before mincing.',
+    },
+    familyNote: {
+      title: 'The little basket fold',
+      text: 'The triangle starts simply. Bringing those two long corners together turns it into a cheerful little dumpling basket.',
+    },
+  },
+  {
+    slug: 'sweet-shrimp-and-pork-dumplings',
+    title: 'Sweet Shrimp and Pork Dumplings',
+    description:
+      'Ground pork, shrimp, Napa cabbage, and fresh ginger are folded into wonton wrappers and steamed, then served with hoisin for a sweet finish.',
+    author: 'Brentwood Bunch',
+    yield: 'One package of dumplings',
+    yieldRange: [1, 1],
+    yieldUnit: 'package',
+    yieldPluralUnit: 'packages',
+    added: 'September 25, 2026',
+    updated: 'September 25, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers', 'Lunch'],
+    commonIngredients: [
+      'Ground pork',
+      'Shrimp',
+      'Napa cabbage',
+      'Hoisin sauce',
+    ],
+    badges: ['Steamed', 'Sweet hoisin finish', 'Shrimp and pork'],
+    heroImage: '/photos/sweet-shrimp-pork-dumplings-finished.webp',
+    heroAlt: 'A plate of steamed shrimp and pork dumplings',
+    catImage: '/cats/sweet-shrimp-pork-dumplings-paper-collage-cat.webp',
+    catAlt:
+      'A paper-collage cat sitting beside shrimp and pork dumplings with hoisin sauce',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'ground pork',
+      },
+      {
+        amount: 1.5,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'shrimp, minced or coarsely diced',
+        approximate: true,
+      },
+      {
+        range: [1, 2],
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'Napa cabbage, thinly chopped',
+        approximate: true,
+      },
+      {
+        amount: 0.25,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'low-sodium soy sauce',
+        approximate: true,
+      },
+      { item: 'Two thumbs of fresh ginger, finely minced or finely grated' },
+      { item: 'One package wonton wrappers' },
+      { item: 'Water, for moistening wrapper edges' },
+      { item: 'Hoisin sauce, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Make the filling',
+        text: 'Combine the ground pork, minced or coarsely diced shrimp, thinly chopped Napa cabbage, low-sodium soy sauce, and finely minced ginger. A ceramic rubbing grater makes an extra-fine ginger grate. Mix until fully homogeneous.',
+      },
+      {
+        title: 'Fill and fold',
+        text: 'Place about 1 teaspoon of filling in each wonton wrapper. Moisten the edges with water, fold the wrapper into a triangle, then bring the two corners adjacent to the hypotenuse together to make a little basket shape. Repeat.',
+      },
+      {
+        title: 'Steam',
+        text: 'Steam the dumplings for 8–10 minutes, until the wrappers are tender and the pork-and-shrimp filling is fully cooked.',
+      },
+      {
+        title: 'Serve sweet',
+        text: 'Serve with hoisin sauce for an extra-sweet complement to the other dumplings. Enjoy.',
+      },
+    ],
+    houseNote: {
+      title: 'The ceramic grater earns its place',
+      text: 'A rubbing grater turns fresh ginger into a fine paste that disappears evenly through the shrimp-and-pork filling.',
+    },
+    familyNote: {
+      title: 'The sweeter dumpling plate',
+      text: 'Hoisin sauce makes this the sweet counterpoint when several kinds of dumplings share the table.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -1417,3 +1690,6 @@ export const valensCookieCake = recipes[14];
 export const tennesseeThaiBasilCurry = recipes[15];
 export const shiitakeVeggieDumplings = recipes[16];
 export const momsBreakfastBurrito = recipes[17];
+export const simplyAmazingShrimpScampi = recipes[18];
+export const teriyakiMushroomPorkDumplings = recipes[19];
+export const sweetShrimpAndPorkDumplings = recipes[20];
