@@ -1670,6 +1670,245 @@ export const recipes: Recipe[] = [
       text: 'Hoisin sauce makes this the sweet counterpoint when several kinds of dumplings share the table.',
     },
   },
+  {
+    slug: 'dads-famous-pizza-dogs',
+    title: 'Dad’s Famous Pizza Dogs',
+    description:
+      'Fully cooked dogs wrapped in a soft homemade pizza-style dough and baked until lightly golden.',
+    author: 'Dad',
+    yield: 'One package of pizza dogs (about 6–8)',
+    yieldRange: [6, 8],
+    yieldUnit: 'pizza dog',
+    yieldPluralUnit: 'pizza dogs',
+    added: 'October 3, 2026',
+    updated: 'October 3, 2026',
+    section: 'Lunch',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: ['Hot dogs', 'Yeast', 'Flour', 'Honey'],
+    badges: ['Dad’s recipe', 'Homemade dough', 'Kid-approved'],
+    heroImage: '/photos/dads-famous-pizza-dogs-finished.webp',
+    heroAlt: 'Golden baked pizza dogs on a parchment-lined baking sheet',
+    catImage: '/cats/dads-famous-pizza-dogs-gouache-cat.webp',
+    catAlt:
+      'An orange-and-white cat beside a homemade pizza dog on a wooden board',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'active dry yeast',
+      },
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'warm water, about 100–110°F',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'honey, or white or brown sugar',
+      },
+      {
+        amount: 1,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'salt',
+      },
+      {
+        amount: 2.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'all-purpose flour (bread flour works even better)',
+      },
+      {
+        range: [6, 8],
+        unit: 'fully cooked hot dog',
+        pluralUnit: 'fully cooked hot dogs',
+        item: 'or other ready-to-eat sausage',
+      },
+      { item: 'Parchment paper, for the baking sheet' },
+    ],
+    steps: [
+      {
+        title: 'Wake up the yeast',
+        text: 'Stir the yeast into warm-to-the-touch water, about 100–110°F, with the honey or sugar. Let it sit for 10–15 minutes, depending on the room temperature, until the mixture looks frothy. The water should be pleasantly warm, never scalding.',
+      },
+      {
+        title: 'Mix and knead the dough',
+        text: 'Add the salt and flour. With a dough hook, mix until the dough forms a ball, then continue on medium speed for about 5 minutes. Keep an eye on the mixer: an unbalanced mixer can walk right off the counter.',
+      },
+      {
+        title: 'Let it rise',
+        text: 'Cover the dough and let it rest for about 30 minutes. Use a damp cloth on a very dry, hot day; a dry cloth is fine when the kitchen is humid.',
+      },
+      {
+        title: 'Dry the dogs completely',
+        text: 'Meanwhile, pat the fully cooked hot dogs or sausages absolutely dry with paper towels. This works with ready-to-eat chicken dogs or sausages, too. If using something that needs cooking, cook it first, cool it completely, and dry it thoroughly. Sticky or humid dogs will not wrap well.',
+      },
+      {
+        title: 'Wrap and proof again',
+        text: 'Take small pieces of dough and stretch each one a little longer and wider than its hot dog. Wrap the dough around the dog and set it seam-side down on a parchment-lined baking sheet. Dad prefers a thicker blanket of dough, while the kids like theirs thin. Let the wrapped dogs rise for another 10–15 minutes.',
+      },
+      {
+        title: 'Bake until lightly golden',
+        text: 'Bake at 350°F for 10–15 minutes, until lightly golden brown. In a hotter oven, rotate the pan about halfway through; you can also bake at a slightly lower temperature for a little longer.',
+      },
+    ],
+    houseNote: {
+      title: 'One dough, two thicknesses',
+      text: 'This dough can make two packages of thin pizza dogs or one package of thicker ones. Stretch accordingly.',
+    },
+    familyNote: {
+      title: 'The drying rule',
+      text: 'The most important non-dough step is drying the dogs. A completely dry surface gives the dough something to hold on to.',
+    },
+  },
+  {
+    slug: 'impossibly-good-cheeseburger-buns',
+    title: 'Impossibly Good Cheeseburger Buns',
+    description:
+      'Mushroom-loaded plant-based cheeseburger filling tucked into soft homemade dough and baked until lightly golden.',
+    author: 'Bennett',
+    yield: '5 cheeseburger buns',
+    yieldRange: [5, 5],
+    yieldUnit: 'cheeseburger bun',
+    yieldPluralUnit: 'cheeseburger buns',
+    added: 'October 3, 2026',
+    updated: 'October 3, 2026',
+    section: 'Lunch',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: [
+      'Plant-based ground beef',
+      'Mushrooms',
+      'Cheese',
+      'Flour',
+    ],
+    badges: ['Bennett’s recipe', 'Mushroom-loaded', 'Plant-based'],
+    heroImage: '/photos/impossibly-good-cheeseburger-buns-finished.webp',
+    heroAlt:
+      'Five lightly golden cheeseburger buns on a parchment-lined baking sheet',
+    catImage: '/cats/impossibly-good-cheeseburger-buns-linocut-cat.webp',
+    catAlt:
+      'A tuxedo cat near a mushroom-and-cheese cheeseburger bun in a linocut-style kitchen scene',
+    ingredients: [
+      {
+        amount: 8,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'mushrooms, roughly chopped',
+      },
+      { item: 'Salt, for the mushrooms' },
+      { item: 'Soy sauce, for the mushrooms' },
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'Impossible beef or other plant-based ground beef',
+      },
+      {
+        amount: 0.25,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'dried chopped onions',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'Turkish oregano',
+      },
+      {
+        amount: 1,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'smoked paprika',
+      },
+      {
+        amount: 0.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'white pepper',
+      },
+      { item: 'A couple dashes California seasoned pepper' },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'shredded cheese',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'active dry yeast',
+      },
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'warm water',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'honey, or another sugar',
+      },
+      {
+        amount: 2.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'all-purpose flour (bread flour works even better)',
+      },
+      {
+        amount: 1,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'salt',
+      },
+      { item: 'Parchment paper, for the baking sheet' },
+    ],
+    steps: [
+      {
+        title: 'Cook the mushrooms dry',
+        text: 'Sauté the roughly chopped mushrooms with a little salt and soy sauce until they are basically dry. The goal is to cook away as much water as possible. Set them aside.',
+      },
+      {
+        title: 'Build the cheeseburger filling',
+        text: 'Add the plant-based beef to the pan with the dried onions, Turkish oregano, smoked paprika, white pepper, and California seasoned pepper. Brown until nearly cooked, return the mushrooms, and stir until evenly combined. Cook through, scatter the cheese over the top, and let the filling cool.',
+      },
+      {
+        title: 'Wake up the yeast',
+        text: 'Stir the yeast into the warm water with the honey or other sugar. Let it stand for about 10 minutes, until frothy.',
+      },
+      {
+        title: 'Mix and knead the dough',
+        text: 'Add the flour and salt. With a dough hook, mix until a ball forms, then knead for about 5 more minutes to develop the right texture.',
+      },
+      {
+        title: 'Let it rise',
+        text: 'Cover the dough with a cloth and let it rise for about 30 minutes, until roughly doubled in volume.',
+      },
+      {
+        title: 'Fill the buns',
+        text: 'Press pieces of dough into palm-size circles, or a little larger. Place a generous mound of cooled cheeseburger filling in the middle, pull the dough up around it, and pinch it sealed. Set seam-side down on a parchment-lined baking sheet.',
+      },
+      {
+        title: 'Rise once more and bake',
+        text: 'Let the filled buns rise for 10 minutes. Bake at 350°F for about 15 minutes, until lightly golden brown. This batch makes 5 thinner, filling-forward buns with about half the dough; use thicker dough for a more bread-forward bun.',
+      },
+    ],
+    houseNote: {
+      title: 'The dry-mushroom rule',
+      text: 'Cooking the mushrooms until nearly dry keeps the filling rich and savory instead of wet inside the dough.',
+    },
+    familyNote: {
+      title: 'Thin bun, big filling',
+      text: 'The kids prefer a lighter blanket of dough. If you want a thicker bun, simply give each pocket more dough before sealing.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -1693,3 +1932,5 @@ export const momsBreakfastBurrito = recipes[17];
 export const simplyAmazingShrimpScampi = recipes[18];
 export const teriyakiMushroomPorkDumplings = recipes[19];
 export const sweetShrimpAndPorkDumplings = recipes[20];
+export const dadsFamousPizzaDogs = recipes[21];
+export const impossiblyGoodCheeseburgerBuns = recipes[22];
