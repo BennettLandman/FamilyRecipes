@@ -1909,6 +1909,129 @@ export const recipes: Recipe[] = [
       text: 'The kids prefer a lighter blanket of dough. If you want a thicker bun, simply give each pocket more dough before sealing.',
     },
   },
+  {
+    slug: 'end-of-season-beef-and-okra-stew',
+    title: 'End-of-Season Beef and Okra Stew',
+    description:
+      'A deeply savory, thick beef-and-okra dinner that gives oversized late-season pods a very good second act.',
+    author: 'Bennett',
+    yield: 'One large pot of stew',
+    yieldRange: [1, 1],
+    yieldUnit: 'pot',
+    yieldPluralUnit: 'pots',
+    added: 'October 3, 2026',
+    updated: 'October 3, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: ['Ground beef', 'Okra', 'Mushrooms', 'Chicken stock'],
+    badges: ['Bennett’s recipe', 'Late-season harvest', 'Definitely not soup'],
+    heroImage: '/photos/end-season-beef-and-okra-stew-finished.webp',
+    heroAlt:
+      'A thick beef, okra, mushroom, and celery stew in a pan on the stove',
+    catImage: '/cats/end-season-beef-and-okra-stew-field-journal-cat.webp',
+    catAlt:
+      'A striped tabby cat watching a pot of beef and okra stew in a field-journal-style kitchen illustration',
+    ingredients: [
+      {
+        amount: 2,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'ground beef',
+      },
+      {
+        amount: 3,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'large, late-season okra pods',
+      },
+      {
+        amount: 0.25,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'dried minced onion',
+      },
+      {
+        amount: 1,
+        unit: 'medium',
+        pluralUnit: 'medium',
+        item: 'leek, chopped',
+      },
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'celery, diced',
+      },
+      {
+        amount: 12,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'baby mushrooms, stems removed and broken into bite-size pieces',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'butter',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'smoked paprika',
+      },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground white pepper',
+      },
+      { amount: 1, unit: 'whole', pluralUnit: 'whole', item: 'bay leaf' },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'salt, plus more to taste',
+      },
+      {
+        amount: 5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'rich homemade chicken stock, plus a splash for deglazing as needed',
+      },
+      { item: 'Black pepper, to taste' },
+    ],
+    steps: [
+      {
+        title: 'Roast and salvage the okra',
+        text: 'Roast the large okra pods at 400°F for about 30 minutes, then let them cool until you can handle them. Chop the tender, edible pods into a bowl. For the woody ones, save the seeds and any soft interior, discarding the tough outer portions. You should have about 3 cups of usable roasted okra.',
+      },
+      {
+        title: 'Brown and drain the beef',
+        text: 'Brown the ground beef, breaking it up well, then drain the fat into a grease jar. If starting with mostly frozen beef, add a little chicken stock to help it thaw and break apart in the pan.',
+      },
+      {
+        title: 'Brown the vegetables',
+        text: 'In a separate pan, brown the mushrooms in the butter. Brown the chopped leek with the celery. Add a splash of chicken stock while the mushrooms and leeks cook to deglaze the pans, loosen the fond, and soften the vegetables a little.',
+      },
+      {
+        title: 'Build the stew',
+        text: 'Combine the drained beef, mushrooms, leek, celery, dried onion, smoked paprika, white pepper, bay leaf, salt, roasted okra, and 5 cups of chicken stock. Stir well and season with more salt and pepper to taste.',
+      },
+      {
+        title: 'Simmer until dinner',
+        text: 'Simmer for about 1 hour, until the flavors are fully blended and the stew is thick and hearty. Remove the bay leaf before serving. This is most definitely not a soup.',
+      },
+    ],
+    houseNote: {
+      title: 'The oversized-okra plan',
+      text: 'When an end-of-season pod is too woody to chop, the soft interior and seeds still belong in the stew.',
+    },
+    familyNote: {
+      title: 'Kid report: approved',
+      text: 'The kids liked it, and the thick, substantial texture earned its official classification: stew.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -1934,3 +2057,4 @@ export const teriyakiMushroomPorkDumplings = recipes[19];
 export const sweetShrimpAndPorkDumplings = recipes[20];
 export const dadsFamousPizzaDogs = recipes[21];
 export const impossiblyGoodCheeseburgerBuns = recipes[22];
+export const endOfSeasonBeefAndOkraStew = recipes[23];
