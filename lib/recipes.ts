@@ -2032,6 +2032,62 @@ export const recipes: Recipe[] = [
       text: 'The kids liked it, and the thick, substantial texture earned its official classification: stew.',
     },
   },
+  {
+    slug: 'egg-white-crepe',
+    title: 'Egg White Crepe',
+    description:
+      'A thin, gently seasoned egg-white crepe for a light breakfast with vegetables, toast, or both.',
+    author: 'Bennett',
+    yield: '1 egg white crepe',
+    yieldRange: [1, 1],
+    yieldUnit: 'crepe',
+    yieldPluralUnit: 'crepes',
+    added: 'October 4, 2026',
+    updated: 'October 4, 2026',
+    section: 'Breakfast',
+    meals: ['Breakfast'],
+    commonIngredients: ['Egg whites', 'Butter', 'Salt', 'Black pepper'],
+    badges: ['Bennett’s recipe', 'Quick breakfast', 'Vegetable-friendly'],
+    heroImage: '/photos/egg-white-crepe-finished.webp',
+    heroAlt:
+      'A folded egg white crepe served with cherry tomatoes and mixed greens',
+    catImage: '/cats/egg-white-crepe-pastel-cat.webp',
+    catAlt:
+      'A small gray cat watching an egg white crepe, toast, tomatoes, and greens in a pastel chalk illustration',
+    ingredients: [
+      { item: 'Egg whites, gently shaken' },
+      { item: 'A tiny bit of butter' },
+      { item: 'Pink salt, to taste' },
+      { item: 'Freshly cracked black pepper, to taste (optional)' },
+      { item: 'Vegetables, toast, or both, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Warm the pan',
+        text: 'Heat a pan over medium heat. Add just enough butter to melt gently and lightly coat the surface.',
+      },
+      {
+        title: 'Make a thin round',
+        text: 'Gently shake the egg whites, then pour them into the pan in a circle. Season with a touch of pink salt. Add cracked pepper if you like it; use less, or none, for a milder crepe.',
+      },
+      {
+        title: 'Set, flip, and fold',
+        text: 'Cook until the top is solid. Flip the egg white round gently, then fold it into a crepe.',
+      },
+      {
+        title: 'Serve simply',
+        text: 'Serve gently with vegetables, toast, or both.',
+      },
+    ],
+    houseNote: {
+      title: 'The pepper dial',
+      text: 'Bennett likes plenty of freshly cracked pepper, but the crepe is just as happy with a lighter hand.',
+    },
+    familyNote: {
+      title: 'A light breakfast plate',
+      text: 'A few vegetables and a piece of toast turn one delicate crepe into an easy breakfast.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2058,3 +2114,4 @@ export const sweetShrimpAndPorkDumplings = recipes[20];
 export const dadsFamousPizzaDogs = recipes[21];
 export const impossiblyGoodCheeseburgerBuns = recipes[22];
 export const endOfSeasonBeefAndOkraStew = recipes[23];
+export const eggWhiteCrepe = recipes[24];
