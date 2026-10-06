@@ -2088,6 +2088,281 @@ export const recipes: Recipe[] = [
       text: 'A few vegetables and a piece of toast turn one delicate crepe into an easy breakfast.',
     },
   },
+  {
+    slug: 'quick-smoked-sausage',
+    title: 'Quick Smoked Sausage',
+    description:
+      'Golden pan-fried smoked sausage coins: an easy, more flavorful alternative to hot dogs for pasta, mac and cheese, or broccoli.',
+    author: 'Brentwood Bunch',
+    yield: '1 package of smoked sausage',
+    yieldRange: [1, 1],
+    yieldUnit: 'package',
+    yieldPluralUnit: 'packages',
+    added: 'October 5, 2026',
+    updated: 'October 5, 2026',
+    section: 'Lunch',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: ['Smoked sausage'],
+    badges: ['Quick meal', 'Weeknight staple', 'Golden-brown edges'],
+    heroImage: '/photos/quick-smoked-sausage-finished.webp',
+    heroAlt: 'Sliced smoked sausage browning in a skillet',
+    catImage: '/cats/quick-smoked-sausage-screenprint-cat.webp',
+    catAlt:
+      'An orange tabby cat beside a skillet of golden smoked sausage coins in a mid-century screenprint illustration',
+    ingredients: [{ item: '1 prepackaged smoked sausage or kielbasa' }],
+    steps: [
+      {
+        title: 'Slice the sausage',
+        text: 'Slice the prepackaged smoked sausage or kielbasa into coins.',
+      },
+      {
+        title: 'Pan-fry until golden',
+        text: 'Cook the sausage coins in a skillet, turning them as needed, until golden brown on both sides.',
+      },
+      {
+        title: 'Add it to dinner',
+        text: 'Serve the sausage with broccoli, or stir it into cooked pasta or mac and cheese. It is an easy way to make a quick meal feel more substantial—and tastier than hot dogs.',
+      },
+    ],
+    houseNote: {
+      title: 'Wait for the golden edges',
+      text: 'The sausage is already simple; browning both cut sides is the move that gives it extra flavor.',
+    },
+    familyNote: {
+      title: 'A flexible little dinner helper',
+      text: 'Keep this one in the back pocket for pasta night, mac and cheese, or a simple plate of broccoli.',
+    },
+  },
+  {
+    slug: 'steamed-asparagus',
+    title: 'Steamed Asparagus',
+    description:
+      'A quick steel-pan steam that uses asparagus’s natural snap point to leave the woody ends behind.',
+    author: 'Brentwood Bunch',
+    yield: '1 pan of asparagus',
+    yieldRange: [1, 1],
+    yieldUnit: 'pan',
+    yieldPluralUnit: 'pans',
+    added: 'October 5, 2026',
+    updated: 'October 5, 2026',
+    section: 'Side dishes',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: ['Asparagus', 'Salt', 'Black pepper'],
+    badges: ['Quick side', 'Steel-pan steam', 'Natural snap trim'],
+    heroImage: '/photos/steamed-asparagus-finished.webp',
+    heroAlt: 'Steamed asparagus in a shallow steel pan',
+    catImage: '/cats/steamed-asparagus-botanical-woodblock-cat.webp',
+    catAlt:
+      'A black-and-white cat beside a pan of steamed asparagus in a botanical woodblock illustration',
+    ingredients: [
+      { item: 'Asparagus' },
+      { item: 'Salt, to taste' },
+      { item: 'Black pepper, used lightly, to taste' },
+      { item: 'Hot water, for steaming' },
+    ],
+    steps: [
+      {
+        title: 'Snap off the woody ends',
+        text: 'Hold each asparagus spear near its end and gently bend it away from the tip. It should make a quick, natural break at the place where the woodiness ends. Discard the tough ends.',
+      },
+      {
+        title: 'Season in a steel pan',
+        text: 'Place the trimmed asparagus in a steel pan—do not use nonstick. Season lightly with salt and pepper; a little pepper goes a long way.',
+      },
+      {
+        title: 'Steam quickly',
+        text: 'Add hot water, cover the pan, and steam over medium-high heat. Keep an eye on the pan so it does not burn.',
+      },
+      {
+        title: 'Watch the tips',
+        text: 'The asparagus is ready quickly, when tiny bubbles begin to emerge from the cut ends. Serve right away.',
+      },
+    ],
+    houseNote: {
+      title: 'The snap knows',
+      text: 'Snapping rather than cutting lets each spear show you exactly where its tender portion begins.',
+    },
+    familyNote: {
+      title: 'Less pepper than the photo',
+      text: 'The asparagus in the process photo is generously peppered. This recipe is better with a lighter hand.',
+    },
+  },
+  {
+    slug: 'moms-mashed-potatoes',
+    title: "Mom's Mashed Potatoes",
+    description:
+      'Creamy or sturdy, these mashed potatoes are made to stand on their own or crown a shepherd’s pie.',
+    author: 'Mom',
+    yield: '1 large bowl',
+    yieldRange: [1, 1],
+    yieldUnit: 'bowl',
+    yieldPluralUnit: 'bowls',
+    added: 'October 5, 2026',
+    updated: 'October 5, 2026',
+    section: 'Side dishes',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: [
+      'Potatoes',
+      'Butter',
+      'Cheese',
+      'Milk',
+      'Sour cream',
+      'Yogurt',
+    ],
+    badges: ['Mom’s recipe', 'Shepherd’s-pie ready', 'Flexible texture'],
+    heroImage: '/photos/moms-mashed-potatoes-cheese.webp',
+    heroAlt: 'Shredded cheese being added to mashed potatoes in a mixing bowl',
+    catImage: '/cats/moms-mashed-potatoes-paper-collage-cat.webp',
+    catAlt:
+      'A calico cat beside a bowl of buttery mashed potatoes in a hand-cut paper-collage illustration',
+    ingredients: [
+      {
+        item: 'Potatoes (peel Idaho potatoes; leave thin-skinned potatoes unpeeled)',
+      },
+      { item: 'Salt, for the cooking water and to taste' },
+      {
+        amount: 1,
+        range: [1, 2],
+        unit: 'stick',
+        pluralUnit: 'sticks',
+        item: 'butter, depending on the quantity of potatoes',
+      },
+      { item: 'Black pepper, to taste' },
+      { item: 'Shredded cheese, to taste' },
+      { item: 'Milk, as needed to soften the potatoes (optional)' },
+      { item: 'Sour cream or yogurt, for extra creaminess (optional)' },
+    ],
+    steps: [
+      {
+        title: 'Prepare the potatoes',
+        text: 'Peel Idaho potatoes; thin-skinned potatoes can stay unpeeled. Wash them and cut them into roughly 1-inch cubes, keeping the pieces close to the same size.',
+      },
+      {
+        title: 'Boil until fork tender',
+        text: 'Bring a large pot of salted water to a full, rolling boil. Add the potatoes and cook until fork tender: a fork should slide in easily and let a cube break into two. Do not overcook them.',
+      },
+      {
+        title: 'Set up the butter',
+        text: 'While the potatoes boil, place 1 or 2 sticks of butter in the bottom of a mixing bowl, according to how many potatoes you prepared. Drain the fork-tender potatoes in a colander, then add them to the bowl so their heat begins to melt the butter.',
+      },
+      {
+        title: 'Mix and season gently',
+        text: 'Start mixing gently, keeping the potatoes in the bowl. Add salt and pepper a little at a time, tasting as you go.',
+      },
+      {
+        title: 'Add cheese before cool ingredients',
+        text: 'Add cheese while the potatoes are still hot so it can melt. Remember that cheese adds salt, so avoid over-salting the potatoes.',
+      },
+      {
+        title: 'Choose the texture',
+        text: 'For softer, more malleable potatoes, add a little milk as needed. Add sour cream or yogurt for extra creaminess. Because milk, sour cream, and yogurt cool the potatoes, add the butter and cheese first.',
+      },
+    ],
+    houseNote: {
+      title: 'Fork tender, not waterlogged',
+      text: 'The moment a fork easily splits a cube, drain the potatoes. That keeps their flavor and texture where they belong.',
+    },
+    familyNote: {
+      title: 'A side dish or a topping',
+      text: 'Make them as a cozy bowl on their own, or use the same potatoes as the soft, golden top of a shepherd’s pie.',
+    },
+  },
+  {
+    slug: 'short-grain-stir-fry-rice',
+    title: 'Short-Grain Stir-Fry Rice',
+    description:
+      'Chilled short-grain rice, leeks, and shiitakes cooked until the bottom crisps and caramelizes in a skillet.',
+    author: 'Brentwood Bunch',
+    yield: '1 skillet of stir-fry rice',
+    yieldRange: [1, 1],
+    yieldUnit: 'skillet',
+    yieldPluralUnit: 'skillets',
+    added: 'October 5, 2026',
+    updated: 'October 5, 2026',
+    section: 'Side dishes',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: [
+      'Short-grain rice',
+      'Chicken stock',
+      'Leek',
+      'Shiitake mushrooms',
+      'Sesame oil',
+      'Soy sauce',
+      'Ginger',
+    ],
+    badges: ['Leftover rice', 'Crisp-bottomed', 'One skillet'],
+    heroImage: '/photos/short-grain-stir-fry-rice-finished.webp',
+    heroAlt:
+      'Short-grain stir-fry rice with leeks and shiitake mushrooms in a skillet',
+    catImage: '/cats/short-grain-stir-fry-rice-sumi-e-cat.webp',
+    catAlt:
+      'A ginger tabby cat beside a skillet of short-grain stir-fry rice in a sumi-e ink-wash illustration',
+    ingredients: [
+      {
+        amount: 3.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'leftover short-grain rice, cooked with chicken stock and chilled',
+      },
+      { amount: 1, item: 'large leek, chopped' },
+      {
+        range: [2, 3],
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'sesame oil',
+      },
+      {
+        amount: 5,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'shiitake mushrooms, chopped',
+      },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground ginger',
+      },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'soy sauce, plus more as needed',
+      },
+    ],
+    steps: [
+      {
+        title: 'Warm the leeks',
+        text: 'Cook the chopped leek in 2 to 3 tablespoons of sesame oil in a large skillet.',
+      },
+      {
+        title: 'Wilt the mushrooms',
+        text: 'Add the shiitakes and ground ginger. Add about 1½ teaspoons of soy sauce to help the vegetables cook, then stir until the leeks and mushrooms are wilted.',
+      },
+      {
+        title: 'Break up the cold rice',
+        text: 'Add the chilled rice, breaking it into the finest grains you can as it goes into the skillet. Mix thoroughly with a wooden spoon.',
+      },
+      {
+        title: 'Crisp, mix, and repeat',
+        text: 'Let the rice cook undisturbed for 3 to 4 minutes to crisp the bottom, then mix. Add a small splash of soy sauce as needed to steam, caramelize, and season the rice, taking care not to over-salt. Crisp the bottom 2 or 3 times total, mixing between rounds.',
+      },
+      {
+        title: 'Serve warm',
+        text: 'Serve warm as soon as the rice is hot, caramelized, and flecked with crisp bits.',
+      },
+    ],
+    houseNote: {
+      title: 'Cold rice is the starting point',
+      text: 'The chilled, leftover rice breaks apart and crisps better than freshly cooked rice.',
+    },
+    familyNote: {
+      title: 'The crisp-bottom rhythm',
+      text: 'Let the skillet do its work, then mix with a wooden spoon and give it another chance to caramelize.',
+    },
+  },
+  {
+    slug: 'pink-fish-and-pineapple', title: 'Pink Fish and Pineapple', description: 'Salmon two ways: chili-sugar-salt on one half, pineapple on the other.', author: 'Brentwood Bunch', yield: '1 salmon fillet', yieldRange: [1, 1], yieldUnit: 'fillet', yieldPluralUnit: 'fillets', added: 'October 5, 2026', updated: 'October 5, 2026', section: 'Dinner', meals: ['Dinner'], commonIngredients: ['Salmon', 'Pineapple', 'Chili powder', 'Brown sugar', 'Kosher salt'], badges: ['Salmon two ways', 'Sweet heat'], heroImage: '/photos/pink-fish-and-pineapple-salmon.webp', heroAlt: 'Salmon fillet split between chili sugar seasoning and pineapple', catImage: '/cats/pink-fish-and-pineapple-botanical-cat.webp', catAlt: 'A silver tabby cat beside salmon and pineapple in a botanical illustration', ingredients: [{ item: 'Salmon fillet' }, { item: 'Chili powder' }, { item: 'Brown sugar' }, { item: 'Kosher salt' }, { item: 'Pineapple, thinly sliced' }, { item: 'Black pepper, to taste' }], steps: [{ title: 'Heat the oven', text: 'Preheat the oven to 375°F. Set the salmon fillet on a parchment-lined baking sheet.' }, { title: 'Make the chili sugar salt', text: 'Mix roughly equal volumes chili powder, brown sugar, and kosher salt.' }, { title: 'Season both halves', text: 'Dust one half of the salmon with the chili-sugar-salt mixture. Lightly dust the other half with salt, then arrange thin pineapple slices on it and add a slight amount of pepper and salt.' }, { title: 'Bake until flaky', text: 'Bake at 375°F until the fish is fully cooked and flakes easily, and the sugar mixture has lightly caramelized.' }], houseNote: { title: 'Kosher salt is the move', text: 'Kosher salt gives the seasoning mix a less-salty feel while keeping the three parts balanced.' }, familyNote: { title: 'Two sides, one pan', text: 'Pink fish, pineapple, and a sweet-hot crust make one salmon fillet feel like two dinners.' } },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2115,3 +2390,8 @@ export const dadsFamousPizzaDogs = recipes[21];
 export const impossiblyGoodCheeseburgerBuns = recipes[22];
 export const endOfSeasonBeefAndOkraStew = recipes[23];
 export const eggWhiteCrepe = recipes[24];
+export const quickSmokedSausage = recipes[25];
+export const steamedAsparagus = recipes[26];
+export const momsMashedPotatoes = recipes[27];
+export const shortGrainStirFryRice = recipes[28];
+export const pinkFishAndPineapple = recipes[29];
