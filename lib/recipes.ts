@@ -2362,7 +2362,138 @@ export const recipes: Recipe[] = [
     },
   },
   {
-    slug: 'pink-fish-and-pineapple', title: 'Pink Fish and Pineapple', description: 'Salmon two ways: chili-sugar-salt on one half, pineapple on the other.', author: 'Brentwood Bunch', yield: '1 salmon fillet', yieldRange: [1, 1], yieldUnit: 'fillet', yieldPluralUnit: 'fillets', added: 'October 5, 2026', updated: 'October 5, 2026', section: 'Dinner', meals: ['Dinner'], commonIngredients: ['Salmon', 'Pineapple', 'Chili powder', 'Brown sugar', 'Kosher salt'], badges: ['Salmon two ways', 'Sweet heat'], heroImage: '/photos/pink-fish-and-pineapple-salmon.webp', heroAlt: 'Salmon fillet split between chili sugar seasoning and pineapple', catImage: '/cats/pink-fish-and-pineapple-botanical-cat.webp', catAlt: 'A silver tabby cat beside salmon and pineapple in a botanical illustration', ingredients: [{ item: 'Salmon fillet' }, { item: 'Chili powder' }, { item: 'Brown sugar' }, { item: 'Kosher salt' }, { item: 'Pineapple, thinly sliced' }, { item: 'Black pepper, to taste' }], steps: [{ title: 'Heat the oven', text: 'Preheat the oven to 375°F. Set the salmon fillet on a parchment-lined baking sheet.' }, { title: 'Make the chili sugar salt', text: 'Mix roughly equal volumes chili powder, brown sugar, and kosher salt.' }, { title: 'Season both halves', text: 'Dust one half of the salmon with the chili-sugar-salt mixture. Lightly dust the other half with salt, then arrange thin pineapple slices on it and add a slight amount of pepper and salt.' }, { title: 'Bake until flaky', text: 'Bake at 375°F until the fish is fully cooked and flakes easily, and the sugar mixture has lightly caramelized.' }], houseNote: { title: 'Kosher salt is the move', text: 'Kosher salt gives the seasoning mix a less-salty feel while keeping the three parts balanced.' }, familyNote: { title: 'Two sides, one pan', text: 'Pink fish, pineapple, and a sweet-hot crust make one salmon fillet feel like two dinners.' } },
+    slug: 'pink-fish-and-pineapple',
+    title: 'Pink Fish and Pineapple',
+    description:
+      'Salmon two ways: chili-sugar-salt on one half, pineapple on the other.',
+    author: 'Brentwood Bunch',
+    yield: '1 salmon fillet',
+    yieldRange: [1, 1],
+    yieldUnit: 'fillet',
+    yieldPluralUnit: 'fillets',
+    added: 'October 5, 2026',
+    updated: 'October 5, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Salmon',
+      'Pineapple',
+      'Chili powder',
+      'Brown sugar',
+      'Kosher salt',
+    ],
+    badges: ['Salmon two ways', 'Sweet heat'],
+    heroImage: '/photos/pink-fish-and-pineapple-salmon.webp',
+    heroAlt: 'Salmon fillet split between chili sugar seasoning and pineapple',
+    catImage: '/cats/pink-fish-and-pineapple-botanical-cat.webp',
+    catAlt:
+      'A silver tabby cat beside salmon and pineapple in a botanical illustration',
+    ingredients: [
+      { item: 'Salmon fillet' },
+      { item: 'Chili powder' },
+      { item: 'Brown sugar' },
+      { item: 'Kosher salt' },
+      { item: 'Pineapple, thinly sliced' },
+      { item: 'Black pepper, to taste' },
+    ],
+    steps: [
+      {
+        title: 'Heat the oven',
+        text: 'Preheat the oven to 375°F. Set the salmon fillet on a parchment-lined baking sheet.',
+      },
+      {
+        title: 'Make the chili sugar salt',
+        text: 'Mix roughly equal volumes chili powder, brown sugar, and kosher salt.',
+      },
+      {
+        title: 'Season both halves',
+        text: 'Dust one half of the salmon with the chili-sugar-salt mixture. Lightly dust the other half with salt, then arrange thin pineapple slices on it and add a slight amount of pepper and salt.',
+      },
+      {
+        title: 'Bake until flaky',
+        text: 'Bake at 375°F until the fish is fully cooked and flakes easily, and the sugar mixture has lightly caramelized.',
+      },
+    ],
+    houseNote: {
+      title: 'Kosher salt is the move',
+      text: 'Kosher salt gives the seasoning mix a less-salty feel while keeping the three parts balanced.',
+    },
+    familyNote: {
+      title: 'Two sides, one pan',
+      text: 'Pink fish, pineapple, and a sweet-hot crust make one salmon fillet feel like two dinners.',
+    },
+  },
+  {
+    slug: 'blistered-cherry-tomatoes',
+    title: 'Blistered Cherry Tomatoes',
+    description:
+      'Quick, caramelized cherry tomatoes with balsamic vinegar and purple basil.',
+    author: 'Brentwood Bunch',
+    yield: '1 skillet',
+    yieldRange: [1, 1],
+    yieldUnit: 'skillet',
+    yieldPluralUnit: 'skillets',
+    added: 'October 7, 2026',
+    updated: 'October 7, 2026',
+    section: 'Side dishes',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: [
+      'Cherry tomatoes',
+      'Olive oil',
+      'Balsamic vinegar',
+      'Purple basil',
+    ],
+    badges: ['Quick side', 'Seven-minute skillet'],
+    heroImage: '/photos/blistered-cherry-tomatoes-finished.webp',
+    heroAlt: 'Blistered yellow and red cherry tomatoes with purple basil',
+    catImage: '/cats/blistered-cherry-tomatoes-charcoal-cat.webp',
+    catAlt:
+      'A black cat beside blistered tomatoes and purple basil in a charcoal-and-pastel sketch',
+    ingredients: [
+      {
+        range: [2, 3],
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'fresh cherry tomatoes, washed',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'olive oil',
+      },
+      { item: 'Salt, to taste' },
+      { item: 'Extra-thick balsamic vinegar, for drizzling' },
+      {
+        amount: 0.75,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'purple basil, chopped',
+      },
+    ],
+    steps: [
+      {
+        title: 'Start the tomatoes',
+        text: 'Heat the olive oil in a skillet over medium-high heat. Add the washed cherry tomatoes and season lightly with salt.',
+      },
+      {
+        title: 'Blister both sides',
+        text: 'Leave the tomatoes undisturbed until they begin to caramelize on one side, then stir and let them caramelize on another side. This takes about 7 to 8 minutes.',
+      },
+      {
+        title: 'Finish and serve',
+        text: 'Drizzle with extra-thick balsamic vinegar and finish with the chopped purple basil. Serve warm.',
+      },
+    ],
+    houseNote: {
+      title: 'Let the pan work',
+      text: 'Resist stirring too early so the tomatoes have time to blister and caramelize.',
+    },
+    familyNote: {
+      title: 'A bright little finish',
+      text: 'Purple basil makes the sweet tomatoes especially lively.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2395,3 +2526,4 @@ export const steamedAsparagus = recipes[26];
 export const momsMashedPotatoes = recipes[27];
 export const shortGrainStirFryRice = recipes[28];
 export const pinkFishAndPineapple = recipes[29];
+export const blisteredCherryTomatoes = recipes[30];
