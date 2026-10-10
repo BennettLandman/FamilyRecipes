@@ -2596,6 +2596,61 @@ export const recipes: Recipe[] = [
       text: 'Three cheeses, smoked paprika, and a deeply browned top make this the warmest kind of potato gratin.',
     },
   },
+  {
+    slug: 'pascals-nearly-homemade-tacos',
+    title: "Pascal's Nearly Homemade Tacos",
+    description:
+      'A Costco taco-kit shortcut: warm the meat gently, fold in lime sauce and salsa, and serve in soft tortillas.',
+    author: 'Pascal',
+    yield: '1 taco kit',
+    yieldRange: [1, 1],
+    yieldUnit: 'taco kit',
+    yieldPluralUnit: 'taco kits',
+    added: 'October 10, 2026',
+    updated: 'October 10, 2026',
+    section: 'Lunch',
+    meals: ['Lunch', 'Dinner'],
+    commonIngredients: ['Costco taco kit', 'Tortillas', 'Lime sauce', 'Salsa'],
+    badges: ['Quick meal', 'Taco kit', 'Weeknight easy'],
+    heroImage: '/photos/pascals-nearly-homemade-tacos-finished.webp',
+    heroAlt: 'Two warm tacos with shredded cabbage, cheese, and browned meat',
+    catImage: '/cats/pascals-nearly-homemade-tacos-embroidery-cat.webp',
+    catAlt:
+      'A calico cat beside two tacos in an embroidered textile illustration',
+    ingredients: [
+      {
+        amount: 1,
+        item: 'Costco taco kit, with meat, tortillas, lime sauce, salsa, and toppings',
+      },
+      { item: 'Paper towel, dampened' },
+    ],
+    steps: [
+      {
+        title: 'Warm the meat',
+        text: 'Remove the meat from the taco kit and put it in a skillet over medium to medium-low heat. Warm it through and let it brown just slightly; there is no need to take it too far.',
+      },
+      {
+        title: 'Soften the tortillas',
+        text: 'While the meat warms, place the tortillas in a microwave-safe bowl and cover with a damp paper towel. Microwave for about 1 minute, until warm and pliable. The damp towel helps keep the tortillas fresh.',
+      },
+      {
+        title: 'Make it saucy',
+        text: 'When the meat is hot and lightly browned, add half of the lime sauce and half of the salsa. Stir until the texture is even, keeping the heat gentle so the sauce does not overheat or scald.',
+      },
+      {
+        title: 'Assemble and enjoy',
+        text: 'Fill the warm tortillas with the saucy meat and the taco-kit toppings. Serve as soon as everything is hot.',
+      },
+    ],
+    houseNote: {
+      title: 'A damp towel makes the difference',
+      text: 'Covering the tortillas while they microwave keeps them flexible instead of dry.',
+    },
+    familyNote: {
+      title: 'Nearly homemade, very fast',
+      text: 'A little skillet browning and a gentle sauce finish turn a prepared taco kit into dinner.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2630,3 +2685,4 @@ export const shortGrainStirFryRice = recipes[28];
 export const pinkFishAndPineapple = recipes[29];
 export const blisteredCherryTomatoes = recipes[30];
 export const tennesseePotatoesAGratin = recipes[31];
+export const pascalsNearlyHomemadeTacos = recipes[32];
