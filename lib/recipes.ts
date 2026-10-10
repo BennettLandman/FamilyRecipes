@@ -2495,8 +2495,8 @@ export const recipes: Recipe[] = [
     },
   },
   {
-    slug: 'tennessee-potato-zaga',
-    title: 'Tennessee Potato Zaga',
+    slug: 'tennessee-potatoes-a-gratin',
+    title: 'Tennessee Potatoes a Gratin',
     description:
       'A smoked-paprika, three-cheese potato gratin with a microwave shortcut and a deeply browned finish.',
     author: 'Brentwood Bunch',
@@ -2518,9 +2518,10 @@ export const recipes: Recipe[] = [
       'Smoked paprika',
     ],
     badges: ['Potato gratin', 'Three cheeses', 'Smoky'],
-    heroImage: '/photos/tennessee-potato-zaga-finished.webp',
-    heroAlt: 'Deeply browned Tennessee potato zaga in a glass baking dish',
-    catImage: '/cats/tennessee-potato-zaga-ceramic-mosaic-cat.webp',
+    heroImage: '/photos/tennessee-potatoes-a-gratin-finished.webp',
+    heroAlt:
+      'Deeply browned Tennessee potatoes a gratin in a glass baking dish',
+    catImage: '/cats/tennessee-potatoes-a-gratin-ceramic-mosaic-cat.webp',
     catAlt:
       'A gray-and-white cat beside cheesy potato gratin in a ceramic mosaic illustration',
     ingredients: [
@@ -2591,7 +2592,7 @@ export const recipes: Recipe[] = [
       text: 'Pre-cooking in short microwave segments gets the potato slices nearly tender before the oven has its turn to brown the cheese.',
     },
     familyNote: {
-      title: 'Tennessee potato zaga',
+      title: 'Tennessee potatoes a gratin',
       text: 'Three cheeses, smoked paprika, and a deeply browned top make this the warmest kind of potato gratin.',
     },
   },
@@ -2628,4 +2629,4 @@ export const momsMashedPotatoes = recipes[27];
 export const shortGrainStirFryRice = recipes[28];
 export const pinkFishAndPineapple = recipes[29];
 export const blisteredCherryTomatoes = recipes[30];
-export const tennesseePotatoZaga = recipes[31];
+export const tennesseePotatoesAGratin = recipes[31];

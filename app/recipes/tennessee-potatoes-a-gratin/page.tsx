@@ -3,7 +3,7 @@ import {
   createRecipeMetadata,
   type RecipePageDetails,
 } from '@/components/recipe-page-layout';
-import { tennesseePotatoZaga as recipe } from '@/lib/recipes';
+import { tennesseePotatoesAGratin as recipe } from '@/lib/recipes';
 
 export const dynamic = 'force-static';
 export const metadata = createRecipeMetadata(recipe);
@@ -21,7 +21,7 @@ const details: RecipePageDetails = {
       'Butter and flour hold the milk and cheeses together while smoked paprika brings a warm, Tennessee-style color.',
     items: [
       {
-        src: '/photos/tennessee-potato-zaga-sauce.webp',
+        src: '/photos/tennessee-potatoes-a-gratin-sauce.webp',
         alt: 'Three cheeses melting into a smoked paprika sauce in a saucepan',
         caption:
           'Melt the cheeses gently over medium-low heat, then salt last: they carry plenty of seasoning themselves.',
