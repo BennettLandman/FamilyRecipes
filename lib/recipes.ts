@@ -2494,6 +2494,107 @@ export const recipes: Recipe[] = [
       text: 'Purple basil makes the sweet tomatoes especially lively.',
     },
   },
+  {
+    slug: 'tennessee-potato-zaga',
+    title: 'Tennessee Potato Zaga',
+    description:
+      'A smoked-paprika, three-cheese potato gratin with a microwave shortcut and a deeply browned finish.',
+    author: 'Brentwood Bunch',
+    yield: '1 large baking dish',
+    yieldRange: [1, 1],
+    yieldUnit: 'baking dish',
+    yieldPluralUnit: 'baking dishes',
+    added: 'October 10, 2026',
+    updated: 'October 10, 2026',
+    section: 'Side dishes',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Russet potatoes',
+      'Butter',
+      'Milk',
+      'Parmesan',
+      'Sharp cheddar',
+      'Mexican-style cheese',
+      'Smoked paprika',
+    ],
+    badges: ['Potato gratin', 'Three cheeses', 'Smoky'],
+    heroImage: '/photos/tennessee-potato-zaga-finished.webp',
+    heroAlt: 'Deeply browned Tennessee potato zaga in a glass baking dish',
+    catImage: '/cats/tennessee-potato-zaga-ceramic-mosaic-cat.webp',
+    catAlt:
+      'A gray-and-white cat beside cheesy potato gratin in a ceramic mosaic illustration',
+    ingredients: [
+      {
+        amount: 5,
+        item: 'large russet potatoes, washed, bad spots removed, and sliced 1/8 inch thick',
+      },
+      {
+        amount: 1,
+        unit: 'stick',
+        pluralUnit: 'sticks',
+        item: 'unsalted butter',
+      },
+      {
+        amount: 3,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'all-purpose flour',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'smoked paprika',
+      },
+      { item: 'Onion powder, to taste' },
+      { amount: 3, unit: 'cup', pluralUnit: 'cups', item: 'milk' },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'shredded Parmesan cheese',
+      },
+      {
+        amount: 2,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'sharp cheddar cheese, plus a little more for the top',
+      },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'Mexican-style mixed cheese',
+      },
+      { item: 'Salt and black pepper, to taste' },
+    ],
+    steps: [
+      {
+        title: 'Pre-cook the potatoes',
+        text: 'Arrange the sliced potatoes in a microwave-safe Pyrex baking pan. Microwave for 20 minutes total in 5-minute segments, rotating the pan and potatoes between each segment, until mostly cooked through. Take care: both the dish and potatoes are hot.',
+      },
+      {
+        title: 'Make the cheese sauce',
+        text: 'While the potatoes cook, melt the butter in a saucepan over medium-low heat. Stir in the flour to make a roux, then add the smoked paprika and onion powder. Whisk in the milk, Parmesan, sharp cheddar, and Mexican-style cheese until melted into a relatively thin sauce that coats a spoon. Season with salt and just a little pepper, keeping in mind that the cheeses bring salt of their own.',
+      },
+      {
+        title: 'Coat the layers',
+        text: 'Use a spatula to gently separate the partly cooked potato slices into loose layers in the baking pan. Slowly pour the cheese sauce over the potatoes, working apart any slices that are stuck together so sauce reaches between the layers.',
+      },
+      {
+        title: 'Bake until bubbling',
+        text: 'Sprinkle a little sharp cheddar over the top. Bake at 400°F for 30 to 40 minutes, until bubbling and fork-tender all the way through. Let cool slightly, then serve warm.',
+      },
+    ],
+    houseNote: {
+      title: 'The microwave shortcut',
+      text: 'Pre-cooking in short microwave segments gets the potato slices nearly tender before the oven has its turn to brown the cheese.',
+    },
+    familyNote: {
+      title: 'Tennessee potato zaga',
+      text: 'Three cheeses, smoked paprika, and a deeply browned top make this the warmest kind of potato gratin.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2527,3 +2628,4 @@ export const momsMashedPotatoes = recipes[27];
 export const shortGrainStirFryRice = recipes[28];
 export const pinkFishAndPineapple = recipes[29];
 export const blisteredCherryTomatoes = recipes[30];
+export const tennesseePotatoZaga = recipes[31];
