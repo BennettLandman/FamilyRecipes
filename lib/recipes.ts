@@ -2651,6 +2651,110 @@ export const recipes: Recipe[] = [
       text: 'A little skillet browning and a gentle sauce finish turn a prepared taco kit into dinner.',
     },
   },
+  {
+    slug: 'bacon-exactly-how-you-want-it',
+    title: 'Bacon Exactly How You Want It',
+    description:
+      'A dependable, low-mess oven method for bacon, with crispness entirely in your hands.',
+    author: 'Brentwood Bunch',
+    yield: 'Bacon for the table',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'October 11, 2026',
+    updated: 'October 11, 2026',
+    section: 'Breakfast',
+    meals: ['Breakfast'],
+    commonIngredients: ['Bacon'],
+    badges: ['Oven method', 'Low mess', 'Cook to preference'],
+    heroImage: '/photos/bacon-exactly-how-you-want-it-finished.webp',
+    heroAlt: 'Oven-baked bacon collected in a bowl after cooking',
+    catImage: '/cats/bacon-exactly-how-you-want-it-wax-resist-cat.webp',
+    catAlt:
+      'A ginger-and-white cat watching a tray of baked bacon in a wax-resist illustration',
+    ingredients: [{ item: 'Bacon, as much as you would like to cook' }],
+    steps: [
+      {
+        title: 'Heat the oven and arrange the bacon',
+        text: 'Preheat the oven to 400°F. Lay the bacon out on easy-to-clean baking trays.',
+      },
+      {
+        title: 'Bake and rotate',
+        text: 'Bake the bacon, rotating the trays and moving them between oven racks every 5 minutes so they cook evenly.',
+      },
+      {
+        title: 'Choose your crispness',
+        text: 'Continue baking until the bacon reaches your preferred crispness. In this oven, three trays of thick-cut bacon took about 35 minutes.',
+      },
+      {
+        title: 'Drain and save the grease',
+        text: 'Remove the cooked bacon from the trays and place it on paper towels or in a bowl, keeping the grease separate. Save the bacon grease to cook with later in the day in place of butter, if you like.',
+      },
+    ],
+    houseNote: {
+      title: 'Crispness is the timer',
+      text: 'Every oven and every thickness is different, so start checking as the bacon colors and stop at exactly the texture you enjoy.',
+    },
+    familyNote: {
+      title: 'A better way to make a lot',
+      text: 'The oven keeps bacon out of the splatter zone and makes room for enough strips to share.',
+    },
+  },
+  {
+    slug: 'breakfast-skillet-potatoes',
+    title: 'Breakfast Skillet Potatoes',
+    description:
+      'Skin-on leftover baked potatoes, cubed and crisped in butter until golden.',
+    author: 'Brentwood Bunch',
+    yield: '1 full skillet',
+    yieldRange: [1, 1],
+    yieldUnit: 'skillet',
+    yieldPluralUnit: 'skillets',
+    added: 'October 11, 2026',
+    updated: 'October 11, 2026',
+    section: 'Breakfast',
+    meals: ['Breakfast'],
+    commonIngredients: ['Baked potatoes', 'Butter', 'Black pepper', 'Salt'],
+    badges: ['Leftover magic', 'Skin-on', 'Golden crisp'],
+    heroImage: '/photos/breakfast-skillet-potatoes-finished.webp',
+    heroAlt: 'Golden, skin-on breakfast potato cubes crisping in a skillet',
+    catImage: '/cats/breakfast-skillet-potatoes-marquetry-cat.webp',
+    catAlt:
+      'A black-and-white cat beside a skillet of browned potato cubes in a wooden marquetry illustration',
+    ingredients: [
+      { item: 'Baked potatoes from the previous day, chilled' },
+      {
+        amount: 6,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'unsalted butter, for a full skillet of potatoes',
+      },
+      { item: 'Coarsely ground black pepper, to taste' },
+      { item: 'Salt, to taste' },
+    ],
+    steps: [
+      {
+        title: 'Cube the cold potatoes',
+        text: 'Cut the chilled baked potatoes into cubes about 1 centimeter across. Leave the skins on if you enjoy them; they add texture and, as Mom says, where the vitamins are.',
+      },
+      {
+        title: 'Coat with butter',
+        text: 'Melt the butter in a skillet. Add the potatoes and toss lightly until the pieces are coated. You want enough butter to coat the potatoes and skillet, not so much that it drips around.',
+      },
+      {
+        title: 'Crisp until golden',
+        text: 'Pan-fry the potatoes until appropriately golden and crisp. Season with coarse black pepper and salt to taste as they cook; both the butter and the potatoes started unsalted.',
+      },
+    ],
+    houseNote: {
+      title: 'Cold, fully cooked potatoes win',
+      text: 'Starting with yesterday’s baked potatoes lets you warm the centers and chase the perfect crisp exterior without worrying about undercooked potato.',
+    },
+    familyNote: {
+      title: 'Keep the skins',
+      text: 'The skins add character, texture, and a little reminder from Mom about where the vitamins live.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2686,3 +2790,5 @@ export const pinkFishAndPineapple = recipes[29];
 export const blisteredCherryTomatoes = recipes[30];
 export const tennesseePotatoesAGratin = recipes[31];
 export const pascalsNearlyHomemadeTacos = recipes[32];
+export const baconExactlyHowYouWantIt = recipes[33];
+export const breakfastSkilletPotatoes = recipes[34];
