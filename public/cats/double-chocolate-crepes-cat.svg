@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Cat keeping an eye on chocolate crepes</title>
+  <desc id="desc">A quiet cocoa-colored cat sits beside a folded crepe on a mint kitchen counter.</desc>
+  <rect width="480" height="480" rx="30" fill="#e9f1e8"/>
+  <circle cx="239" cy="226" r="151" fill="#f8f0df"/>
+  <path d="M104 375c12-63 59-97 120-97s107 34 120 97" fill="#735044"/>
+  <path d="m145 222 7-82 63 48m52 0 63-48 7 82" fill="#735044" stroke="#4e382f" stroke-width="9" stroke-linejoin="round"/>
+  <path d="m169 199-4-34 34 25m108 9 4-34-34 25" fill="#d9988a"/>
+  <ellipse cx="224" cy="226" rx="8" ry="12" fill="#382d29"/><ellipse cx="278" cy="226" rx="8" ry="12" fill="#382d29"/>
+  <path d="M239 247q12 11 24 0m-12 0v9q-12 12-23 0m23 0q12 12 23 0" fill="none" stroke="#382d29" stroke-width="5" stroke-linecap="round"/>
+  <path d="M192 247 137 238m55 20-57 5m193-16-55 3m55 16-57-1" stroke="#f3dfc2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M321 346c34-10 55-3 57 13 2 18-18 28-48 24" fill="none" stroke="#735044" stroke-width="13" stroke-linecap="round"/>
+  <path d="M93 397h294" stroke="#9bb9a5" stroke-width="10" stroke-linecap="round"/>
+  <path d="m296 381 18-46 84 20-19 46z" fill="#8b4d37" stroke="#613927" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m301 369 87 21" stroke="#e4b78e" stroke-width="4"/>
+  <circle cx="326" cy="360" r="3" fill="#f1d7b1"/><circle cx="351" cy="371" r="3" fill="#f1d7b1"/>
+</svg>

@@ -2755,6 +2755,146 @@ export const recipes: Recipe[] = [
       text: 'The skins add character, texture, and a little reminder from Mom about where the vitamins live.',
     },
   },
+
+  {
+    slug: 'double-chocolate-crepes',
+    title: 'Double Chocolate Crepes',
+    description:
+      'Tender chocolate crepes made with sugared hot cocoa mix and filled with chocolate chips.',
+    author: 'Family',
+    yield: 'About 12–16 crepes',
+    yieldRange: [12, 16],
+    yieldUnit: 'crepe',
+    yieldPluralUnit: 'crepes',
+    added: 'October 18, 2026',
+    updated: 'October 18, 2026',
+    section: 'Breakfast',
+    meals: ['Breakfast'],
+    commonIngredients: [
+      'Eggs',
+      'Flour',
+      'Milk',
+      'Hot cocoa',
+      'Chocolate chips',
+    ],
+    badges: ['Chocolate for breakfast'],
+    heroImage: '/photos/double-chocolate-crepes-finished.webp',
+    heroAlt: 'A plate of folded chocolate crepes with chocolate chips',
+    catImage: '/cats/double-chocolate-crepes-cat.svg',
+    catAlt: 'A cocoa-colored cat watching over a folded chocolate crepe',
+    ingredients: [
+      { amount: 3, item: 'eggs' },
+      { amount: 1, unit: 'cup', pluralUnit: 'cups', item: 'flour' },
+      { amount: 1, unit: 'cup', pluralUnit: 'cups', item: 'milk' },
+      {
+        amount: 2,
+        unit: 'packet',
+        pluralUnit: 'packets',
+        item: 'sugared hot cocoa powder',
+      },
+      { item: 'Chocolate chips, for filling' },
+    ],
+    steps: [
+      {
+        title: 'Mix the batter',
+        text: 'Whisk together the eggs, flour, milk, and two packets of sugared hot cocoa powder until smooth.',
+      },
+      {
+        title: 'Cook gently',
+        text: 'Pour a thin layer of batter into the pan over low to medium-low heat. The cocoa mix makes the crepes a little stickier, so avoid high heat or they can burn.',
+      },
+      {
+        title: 'Flip carefully',
+        text: 'When the first side is set, loosen the edges and flip carefully. Cook the second side until done.',
+      },
+      {
+        title: 'Add chocolate chips and enjoy',
+        text: 'Add chocolate chips as a filling, then fold or roll the crepes and enjoy.',
+      },
+    ],
+    houseNote: {
+      title: 'A gentler pan makes the difference',
+      text: 'Sugared cocoa powder makes this batter a little stickier than the classic version. Keep the heat low and take care when flipping.',
+    },
+  },
+
+  {
+    slug: 'airbnb-chocolate-cookie-bars',
+    title: 'Airbnb Chocolate Cookie Bars',
+    description:
+      'Warm, soft chocolate cookie bars made with sugared hot cocoa powder and plenty of chocolate chips.',
+    author: 'Family',
+    yield: '1 small baking pan',
+    yieldRange: [1, 1],
+    yieldUnit: 'pan',
+    yieldPluralUnit: 'pans',
+    added: 'October 18, 2026',
+    updated: 'October 18, 2026',
+    section: 'Desserts',
+    meals: ['Desserts'],
+    commonIngredients: [
+      'Butter',
+      'Hot cocoa',
+      'Eggs',
+      'Flour',
+      'Chocolate chips',
+    ],
+    badges: ['Small-pan dessert', 'Best warm'],
+    heroImage: '/photos/airbnb-chocolate-cookie-bars-finished.webp',
+    heroAlt: 'A warm chocolate cookie bar served on a white plate',
+    catImage: '/cats/airbnb-chocolate-cookie-bars-cat.png',
+    catAlt:
+      'An orange tabby cat looking at a pan of chocolate cookie bars on a kitchen counter',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'stick',
+        pluralUnit: 'sticks',
+        item: 'butter, softened in the microwave',
+      },
+      {
+        amount: 150,
+        unit: 'gram',
+        pluralUnit: 'grams',
+        item: 'sugared hot cocoa powder (about five Ghirardelli packets for this batch)',
+      },
+      { amount: 1, item: 'egg' },
+      {
+        amount: 1,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'flour, plus a little more as needed for texture',
+        approximate: true,
+      },
+      { amount: 1, unit: 'cup', pluralUnit: 'cups', item: 'chocolate chips' },
+    ],
+    steps: [
+      {
+        title: 'Soften the butter',
+        text: 'Soften the butter in the microwave.',
+      },
+      {
+        title: 'Mix until smooth',
+        text: 'Add the hot cocoa powder and egg to the softened butter. Mix until very smooth.',
+      },
+      {
+        title: 'Finish the dough',
+        text: 'Mix in 1 cup of flour, then add a little more if needed to get the texture you want. Stir in the chocolate chips.',
+      },
+      {
+        title: 'Bake the bars',
+        text: 'Spread the dough in a small baking pan. Bake at 325°F for about 30 minutes, rotating the pan every 5 to 10 minutes, until the bar is set.',
+      },
+      {
+        title: 'Enjoy carefully',
+        text: 'The pan and bars are very hot when they come out of the oven. Let them cool enough to handle before serving.',
+      },
+    ],
+    houseNote: {
+      title: 'Hot from the oven',
+      text: 'These bars come out very hot. Give them a little time before serving.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2792,3 +2932,10 @@ export const tennesseePotatoesAGratin = recipes[31];
 export const pascalsNearlyHomemadeTacos = recipes[32];
 export const baconExactlyHowYouWantIt = recipes[33];
 export const breakfastSkilletPotatoes = recipes[34];
+
+export const doubleChocolateCrepes = recipes.find(
+  (recipe) => recipe.slug === 'double-chocolate-crepes',
+)!;
+export const airbnbChocolateCookieBars = recipes.find(
+  (recipe) => recipe.slug === 'airbnb-chocolate-cookie-bars',
+)!;
