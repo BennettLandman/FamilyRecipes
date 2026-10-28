@@ -3064,6 +3064,137 @@ export const recipes: Recipe[] = [
       text: 'There were extra ingredients, so Dad made a second, smaller lasagna. Serve and enjoy.',
     },
   },
+  {
+    slug: 'moms-lasagna',
+    title: 'Mom’s Lasagna',
+    description:
+      'Mom’s layered lasagna with seasoned ground beef, spaghetti sauce, herbed ricotta, and plenty of mozzarella. Overlap the noodles, save sauce for the top, and let the cheese layers settle before slicing.',
+    author: 'Mom',
+    yield: 'One 9 × 13-inch or slightly larger pan',
+    yieldRange: [1, 1],
+    yieldUnit: 'pan',
+    yieldPluralUnit: 'pans',
+    added: 'October 28, 2026',
+    updated: 'October 28, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Ground beef',
+      'Lasagna noodles',
+      'Spaghetti sauce',
+      'Ricotta',
+      'Eggs',
+      'Mozzarella',
+      'Parmesan',
+    ],
+    badges: ['Mom’s recipe', 'Extra noodles encouraged'],
+    heroImage: '/photos/moms-lasagna-finished.webp',
+    heroAlt:
+      'Mom’s lasagna in a rectangular glass dish with a golden, browned mozzarella topping',
+    catImage: '/cats/moms-lasagna-felt-cat.webp',
+    catAlt:
+      'A small gray-and-white felt cat quietly watching a colander of extra lasagna noodles',
+    photos: [
+      {
+        src: '/photos/moms-lasagna-meat-sauce.webp',
+        alt: 'Seasoned browned ground beef mixed with tomato spaghetti sauce in a skillet',
+        caption:
+          'Season the meat like spaghetti sauce before browning, then stir in the sauce.',
+      },
+      {
+        src: '/photos/moms-lasagna-ricotta.webp',
+        alt: 'Creamy ricotta mixture with eggs, herbs, and optional mozzarella in a mixing bowl',
+        caption:
+          'Whisk the eggs first, then mix with ricotta, oregano, and parsley. A little mozzarella can go in too.',
+      },
+      {
+        src: '/photos/moms-lasagna-noodle-layer.webp',
+        alt: 'Cooked lasagna noodles overlapping across the baking dish during assembly',
+        caption:
+          'Overlap the noodles in the lower layers so each layer has good coverage.',
+      },
+      {
+        src: '/photos/moms-lasagna-sauce-layer.webp',
+        alt: 'The final noodle layer covered with meat sauce before the mozzarella and Parmesan topping',
+        caption:
+          'Save enough sauce to cover all the top noodles. This last layer gets cheese, but no ricotta.',
+      },
+    ],
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'ground beef, at least; use more if you like',
+      },
+      { item: 'Lawry’s seasoned salt, to taste' },
+      { item: 'Black pepper, to taste' },
+      { item: 'Oregano, for the meat and ricotta, to taste' },
+      { item: 'Parsley, for the meat and ricotta, to taste' },
+      { item: 'Minced onion, for seasoning the meat, to taste' },
+      { item: 'Worcestershire sauce, for seasoning the meat, to taste' },
+      {
+        item: 'Spaghetti sauce, enough for the meat and several thin layers, including full coverage of the top noodles',
+      },
+      {
+        amount: 12,
+        item: 'lasagna noodles, at least; extra noodles are welcome',
+      },
+      {
+        amount: 32,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'ricotta cheese',
+      },
+      { range: [3, 4], item: 'eggs, whisked before adding to the ricotta' },
+      {
+        item: 'Shredded mozzarella, as needed for the layers and topping, plus an optional handful for the ricotta mixture',
+      },
+      { item: 'Parmesan cheese, for the top, if you have it (optional)' },
+    ],
+    steps: [
+      {
+        title: 'Defrost if needed and season the meat',
+        text: 'If the ground beef is frozen, defrost it using your microwave’s defrost setting and the appliance instructions, then begin cooking promptly. If the meat is already thawed, start here: before browning, season it as you would for spaghetti sauce with Lawry’s seasoned salt, black pepper, oregano, parsley, minced onion, and Worcestershire sauce. Stir the seasonings into the meat.',
+      },
+      {
+        title: 'Brown the meat and add sauce',
+        text: 'Brown the seasoned beef fully, breaking it up as it cooks. Drain the grease if needed. Transfer to a large bowl and stir in spaghetti sauce appropriate to the amount of meat. Plan enough sauce for several layers and full coverage of the top noodles.',
+      },
+      {
+        title: 'Cook the noodles',
+        text: 'Meanwhile, boil water and cook at least 12 lasagna noodles. Drain and let them cool just enough to handle. Extra noodles are fine—Mom always makes extra and eats them.',
+      },
+      {
+        title: 'Mix the ricotta',
+        text: 'Whisk 3 or 4 eggs before adding them to the ricotta in a separate bowl. Season with oregano and parsley, mix together, and set aside. You can mix some shredded mozzarella into the ricotta too; Mom did for this batch, but it is optional.',
+      },
+      {
+        title: 'Start the layers',
+        text: 'Heat the oven to 375–400°F. Use a 9 × 13-inch or slightly larger pan. Spread a thin layer of meat sauce over the bottom, then add noodles, overlapping them slightly. Add another thin layer of sauce, smooth ricotta over it, and sprinkle with mozzarella.',
+      },
+      {
+        title: 'Repeat, then cover the top noodles',
+        text: 'Repeat with noodles, sauce, ricotta, and mozzarella. Finish with a final layer of noodles, then sauce, mozzarella, and Parmesan if you have it. Do not add ricotta to this final layer. Keep the sauce layers modest so you have enough left to cover every noodle on top.',
+      },
+      {
+        title: 'Bake through, then crisp if you like',
+        text: 'Bake at 375–400°F for about 30 to 40 minutes, until the center is hot all the way through. If you want a crisper top and your pan is broiler-safe, finish briefly under the low broil setting, watching closely. Let the center finish baking before crisping the top.',
+      },
+      {
+        title: 'Let the layers settle',
+        text: 'After the lasagna comes out of the oven, let it sit and cool so the cheese layers firm up before cutting and serving.',
+      },
+    ],
+    houseNote: {
+      title: 'Save sauce for the top',
+      text: 'One batch fills a 9 × 13-inch or slightly larger pan. There are several sauce layers, so keep each one thin and reserve enough to cover all the noodles on top. Mom’s note from this batch: it needed more baking time before the top was crisped. Check the middle, then give the finished lasagna time to settle.',
+    },
+    familyNote: {
+      title: 'The extra noodles are spoken for',
+      text: '“It is okay to have extra noodles. I always have extra noodles, and I just eat them.” — Mom',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -3110,4 +3241,7 @@ export const airbnbChocolateCookieBars = recipes.find(
 )!;
 export const dadsImpossiblyGoodLasagna = recipes.find(
   (recipe) => recipe.slug === 'dads-impossibly-good-lasagna',
+)!;
+export const momsLasagna = recipes.find(
+  (recipe) => recipe.slug === 'moms-lasagna',
 )!;
