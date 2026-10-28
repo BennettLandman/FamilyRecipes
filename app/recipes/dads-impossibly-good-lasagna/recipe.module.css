@@ -1,0 +1,27 @@
+.heroPhoto img {
+  aspect-ratio: 3 / 4;
+}
+
+.catArt figcaption {
+  right: 0;
+}
+
+@media screen {
+  .page :global(.recipe-hero) {
+    padding-bottom: 160px;
+  }
+}
+
+.page :global(.gallery-grid) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page :global(.gallery-grid img) {
+  aspect-ratio: auto;
+}
+
+@media (max-width: 700px) {
+  .page :global(.gallery-grid) {
+    grid-template-columns: 1fr;
+  }
+}

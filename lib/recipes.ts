@@ -22,6 +22,8 @@ export type RecipeIngredient = {
 
 export type RecipeStep = { title: string; text: string };
 
+export type RecipePhoto = { src: string; alt: string; caption: string };
+
 export type Recipe = {
   slug: string;
   title: string;
@@ -39,6 +41,7 @@ export type Recipe = {
   badges: string[];
   heroImage: string;
   heroAlt: string;
+  photos?: RecipePhoto[];
   catImage: string;
   catAlt: string;
   ingredients: RecipeIngredient[];
@@ -2895,6 +2898,172 @@ export const recipes: Recipe[] = [
       text: 'These bars come out very hot. Give them a little time before serving.',
     },
   },
+  {
+    slug: 'dads-impossibly-good-lasagna',
+    title: 'Dad’s Impossibly Good Lasagna',
+    description:
+      'Golden, bubbling lasagna with browned mushrooms, spinach and onions, Impossible Burger, creamy herbed ricotta, and just enough tomato sauce to bring it all together.',
+    author: 'Dad',
+    yield: 'One 9 × 13-inch lasagna plus one 8 × 8-inch lasagna',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'October 27, 2026',
+    updated: 'October 27, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Lasagna noodles',
+      'Ricotta',
+      'Eggs',
+      'Mozzarella',
+      'Mushrooms',
+      'Spinach',
+      'Onions',
+      'Impossible Burger',
+      'Tomato sauce',
+    ],
+    badges: ['Dad’s recipe', 'A bonus little lasagna'],
+    heroImage: '/photos/dads-impossibly-good-lasagna-finished.webp',
+    heroAlt:
+      'Dad’s baked lasagna in a rectangular glass dish, with golden mozzarella and tomato sauce on top',
+    photos: [
+      {
+        src: '/photos/dads-impossibly-good-lasagna-fillings.webp',
+        alt: 'Prepared ricotta, browned mushrooms, spinach and onions, tomato sauce, Impossible Burger, and drained lasagna noodles ready for layering',
+        caption:
+          'Everything ready for assembly: creamy ricotta, dry fillings, thick sauce, and well-drained noodles.',
+      },
+      {
+        src: '/photos/dads-impossibly-good-lasagna-ready-to-bake.webp',
+        alt: 'The assembled lasagna topped with a light coating of tomato sauce and shredded mozzarella before baking',
+        caption:
+          'Just enough sauce to coat, with a little mozzarella to finish the top.',
+      },
+      {
+        src: '/photos/dads-impossibly-good-lasagna-small-pan.webp',
+        alt: 'The smaller baked lasagna with browned cheese, visible mushrooms and ricotta, and a serving spatula',
+        caption:
+          'The extra fillings became an 8 × 8-inch lasagna. A very good overflow plan.',
+      },
+    ],
+    catImage: '/cats/dads-impossibly-good-lasagna-etching-cat.webp',
+    catAlt:
+      'A delicate sepia etching of a seated tabby quietly watching a red lasagna dish cool on a trivet',
+    ingredients: [
+      {
+        amount: 32,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'ricotta cheese',
+      },
+      { amount: 3, item: 'eggs' },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'dried oregano',
+      },
+      {
+        amount: 0.5,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'dried basil',
+      },
+      { item: 'A few shakes of black pepper' },
+      {
+        amount: 2,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'cremini and/or portobello mushrooms, stems removed and caps sliced',
+      },
+      { item: 'Olive oil, a little for sautéing' },
+      {
+        item: 'Worcestershire sauce, a little for the mushrooms and Impossible Burger',
+      },
+      { amount: 2, item: 'onions, diced' },
+      { item: 'A shake of salt, for the onions' },
+      {
+        amount: 2,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'fresh spinach',
+        approximate: true,
+      },
+      {
+        amount: 1,
+        unit: 'jar',
+        pluralUnit: 'jars',
+        item: 'Prego cheese tomato sauce (24 ounces per jar)',
+      },
+      { amount: 4, unit: 'ounce', pluralUnit: 'ounces', item: 'tomato paste' },
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'Impossible Burger',
+      },
+      { item: 'Soy sauce, a little for the Impossible Burger' },
+      {
+        amount: 1,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'lasagna noodles (one package for the original batch)',
+      },
+      {
+        amount: 4,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'shredded mozzarella, not fresh mozzarella',
+      },
+    ],
+    steps: [
+      {
+        title: 'Make the creamy ricotta',
+        text: 'Mix the ricotta, eggs, dried oregano, dried basil, and a few shakes of black pepper until creamy.',
+      },
+      {
+        title: 'Let the sauce simmer alongside',
+        text: 'Combine the Prego cheese tomato sauce and tomato paste in a saucepan. Heat over low heat for about 20 minutes while preparing the other ingredients.',
+      },
+      {
+        title: 'Brown the mushrooms',
+        text: 'Remove the mushroom stems and slice the caps. Sauté in a little olive oil over medium to medium-low heat until nicely golden brown and a bit dehydrated. Add a little Worcestershire sauce to loosen the browned bits, then remove the mushrooms from the pan.',
+      },
+      {
+        title: 'Cook the onions and spinach dry',
+        text: 'Brown the diced onions in a little olive oil with a shake of salt, then remove them from the pan. Add the fresh spinach—it starts as an overflowing pan—and sauté over medium to medium-low heat until wilted and dry. Off the heat, mix the spinach with the onions.',
+      },
+      {
+        title: 'Brown the Impossible Burger',
+        text: 'Add a little soy sauce and Worcestershire sauce to the Impossible Burger and brown it until crumbly.',
+      },
+      {
+        title: 'Boil and really drain the noodles',
+        text: 'Boil the lasagna noodles until slightly overdone. Drain in a colander in the sink for about 10 minutes, until quite dry. Heat the oven to 375°F.',
+      },
+      {
+        title: 'Build the layers',
+        text: 'Spread a little tomato sauce over the bottom of a 9 × 13-inch baking dish to keep the noodles from sticking. Add a layer of noodles, then alternate ricotta and shredded-mozzarella layers, distributing the mushrooms, browned Impossible Burger, and spinach-onion mixture among the layers. Add noodles between layers and use only a little sauce as you go: enough to coat, never enough to make it soupy. Keep sauce on top whenever possible, and finish with a little shredded mozzarella. Use the extra ingredients to assemble a second, smaller 8 × 8-inch lasagna.',
+      },
+      {
+        title: 'Bake until bubbly',
+        text: 'Bake at 375°F for about 30 minutes, until bubbly and heated all the way through.',
+      },
+      {
+        title: 'Give it the full rest',
+        text: 'Let stand for 15 minutes to cool and settle into the perfect texture. Run a spatula around the edges to release them, then serve and enjoy.',
+      },
+    ],
+    houseNote: {
+      title: 'One batch, two pans',
+      text: 'The original batch filled one 9 × 13-inch dish and a second 8 × 8-inch dish. Cook the vegetables until dry, drain the noodles thoroughly, and use just enough sauce to coat the layers. The 15-minute rest makes the texture.',
+    },
+    familyNote: {
+      title: 'Dad’s overflow plan',
+      text: 'There were extra ingredients, so Dad made a second, smaller lasagna. Serve and enjoy.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -2938,4 +3107,7 @@ export const doubleChocolateCrepes = recipes.find(
 )!;
 export const airbnbChocolateCookieBars = recipes.find(
   (recipe) => recipe.slug === 'airbnb-chocolate-cookie-bars',
+)!;
+export const dadsImpossiblyGoodLasagna = recipes.find(
+  (recipe) => recipe.slug === 'dads-impossibly-good-lasagna',
 )!;
