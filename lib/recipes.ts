@@ -3195,6 +3195,126 @@ export const recipes: Recipe[] = [
       text: '“It is okay to have extra noodles. I always have extra noodles, and I just eat them.” — Mom',
     },
   },
+  {
+    slug: 'mushroom-risotto',
+    title: 'Mushroom Risotto',
+    description:
+      'Orinda’s special request: a big pan of creamy Arborio rice, hand-broken mushrooms, homemade chicken stock, and plenty of freshly shredded Parmesan.',
+    author: 'Dad',
+    yield: 'About 20–25 servings',
+    yieldRange: [20, 25],
+    yieldUnit: 'serving',
+    yieldPluralUnit: 'servings',
+    added: 'October 31, 2026',
+    updated: 'October 31, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Rice',
+      'Mushrooms',
+      'Onion',
+      'Green onion',
+      'Chicken stock',
+      'Butter',
+      'Parmesan',
+    ],
+    badges: ['Dad’s recipe', 'Orinda’s special request'],
+    heroImage: '/photos/mushroom-risotto-finished.webp',
+    heroAlt: 'A wide pan of finished creamy mushroom risotto on the stove',
+    photos: [
+      {
+        src: '/photos/mushroom-risotto-stovetop.webp',
+        alt: 'Arborio rice with onion and green onion in the front pan, broken mushrooms in the middle pan, and homemade chicken stock cooking behind them',
+        caption:
+          'Three pans at work: toast the rice, soften the mushrooms, and keep the homemade stock ready.',
+      },
+      {
+        src: '/photos/mushroom-risotto-garden-onion.webp',
+        alt: 'A large garden green onion with its pale stalk and green leaves on an orange cutting board',
+        caption:
+          'The garden supplied a very large green onion. A leek is Dad’s usual choice.',
+      },
+    ],
+    catImage: '/cats/mushroom-risotto-majolica-cat.webp',
+    catAlt:
+      'A sleeping blue-and-ochre tabby beside mushrooms and a green onion on a painted ceramic tile',
+    ingredients: [
+      {
+        amount: 8,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'unsalted butter',
+      },
+      { amount: 1, item: 'medium-large onion, chopped' },
+      { amount: 1, item: 'large garden green onion, chopped, or a leek' },
+      { amount: 4, unit: 'cup', pluralUnit: 'cups', item: 'Arborio rice' },
+      {
+        amount: 2,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'mushrooms, hard stem ends removed; broken into pieces or diced',
+      },
+      { item: 'A little ghee, butter, or oil, for cooking the mushrooms' },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'unsalted homemade chicken stock, for the first addition to the rice',
+      },
+      {
+        amount: 16,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'unsalted chicken stock, to simmer with the mushrooms and add gradually to the rice',
+      },
+      {
+        amount: 12,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'freshly shredded Parmesan cheese',
+        approximate: true,
+      },
+      { item: 'Salt and pepper, to taste' },
+    ],
+    steps: [
+      {
+        title: 'Soften the onions',
+        text: 'Melt the butter in a large pan. Add the chopped onion and garden green onion (or leek), with a little salt. Cook gently until both are soft and becoming translucent. For this original batch, 8 tablespoons of butter is one stick.',
+      },
+      {
+        title: 'Toast the rice gently',
+        text: 'Add the Arborio rice to the onions and butter. Stir and toast until lightly golden, without browning. You want to dry the rice, not fry the rice.',
+      },
+      {
+        title: 'Let the mushrooms wilt',
+        text: 'Meanwhile, remove the little hard ends of the mushroom stems. Dad likes to break the mushrooms by hand so the irregular surfaces soak up the juices, but dicing is fine too. In a separate pan, cook them in a little ghee, butter, or oil until they begin to wilt.',
+      },
+      {
+        title: 'Start the stock in both pans',
+        text: 'Once the rice is toasted, add the first 1½ cups of homemade chicken stock to the rice. Add the remaining 16 cups of chicken stock to the mushrooms and keep that pan simmering. The mushrooms will continue to release water and make a rich mushroom-chicken stock.',
+      },
+      {
+        title: 'A little stock, a lot of stirring',
+        text: 'Keep the rice at a gentle simmer, stirring continually so it does not stick or burn on the bottom. As the liquid is absorbed, ladle in a little more stock with mushrooms from the other pan. Add just enough for the rice to soak up, without leaving it boiling in a pool of liquid. For this big batch, an addition might be ½ to ¾ cup; for a smaller batch, try ¼ cup or even less. Let each addition absorb before adding the next.',
+      },
+      {
+        title: 'Watch the texture and seasoning',
+        text: 'Continue simmering, stirring, and adding the mushroom stock a little at a time until the rice is tender and very creamy, almost like a porridge, with a little bite in the center. Add salt and pepper to taste. The butter and stock here are unsalted, so taste as you go, remembering that Parmesan is still to come. Orinda prefers very little pepper, so Dad keeps it light.',
+      },
+      {
+        title: 'Finish with Parmesan',
+        text: 'When the stock additions are finished and the rice has reached that tender, creamy texture, stir in about 12 ounces of freshly shredded Parmesan for the original batch. Taste again and adjust the seasoning. Dad skips cream or half-and-half and uses a little extra cheese instead. I hope you enjoy!',
+      },
+    ],
+    houseNote: {
+      title: 'A big batch, made a little at a time',
+      text: 'The original recipe uses 17½ cups of stock total: 1½ cups straight into the toasted rice, then 16 cups simmered with the mushrooms. Scale the ingredients for a smaller pan, and make the stock additions smaller too. The texture of the rice is your guide.',
+    },
+    familyNote: {
+      title: 'Orinda’s special request',
+      text: 'Dad usually uses a leek, but this time a large green onion from the garden stepped in. Some cooks use a little wine to deglaze the toasted rice before adding stock; Dad had none and happily skipped it. He likes this risotto cheesier rather than finished with cream or half-and-half.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -3244,4 +3364,7 @@ export const dadsImpossiblyGoodLasagna = recipes.find(
 )!;
 export const momsLasagna = recipes.find(
   (recipe) => recipe.slug === 'moms-lasagna',
+)!;
+export const mushroomRisotto = recipes.find(
+  (recipe) => recipe.slug === 'mushroom-risotto',
 )!;

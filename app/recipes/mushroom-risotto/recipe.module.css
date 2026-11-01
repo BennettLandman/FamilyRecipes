@@ -1,0 +1,14 @@
+.page :global(.gallery-grid img) {
+  aspect-ratio: 9 / 16;
+  max-height: 680px;
+  object-fit: contain;
+  background: #faf3e6;
+}
+
+.page :global(.recipe-cat figcaption) {
+  right: 0;
+}
+
+.page :global(.recipe-cat img) {
+  border-radius: 6px;
+}
