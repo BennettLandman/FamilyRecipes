@@ -3458,8 +3458,8 @@ export const recipes: Recipe[] = [
     description:
       'A generous pot of chickpeas in a warmly spiced tomato sauce, with shallots, ghee, and a couple of very lively garden peppers.',
     author: 'Dad',
-    yield: 'About 20 servings',
-    yieldRange: [20, 20],
+    yield: 'About 40 servings',
+    yieldRange: [40, 40],
     yieldUnit: 'serving',
     yieldPluralUnit: 'servings',
     added: 'October 31, 2026',
