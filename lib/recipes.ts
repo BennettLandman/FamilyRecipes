@@ -3451,6 +3451,155 @@ export const recipes: Recipe[] = [
       text: 'Dad used lemon juice for brightness in place of amchur, ground cardamom and cumin in place of whole spices, and shallots and powdered ginger in place of garlic and fresh ginger. He skipped fenugreek and fresh chilies, but used dark chili powder and a little extra garam masala. A big batch, a long simmer, and dinner is ready.',
     },
   },
+
+  {
+    slug: 'brentwood-chana-masala',
+    title: 'Brentwood Chana Masala',
+    description:
+      'A generous pot of chickpeas in a warmly spiced tomato sauce, with shallots, ghee, and a couple of very lively garden peppers.',
+    author: 'Dad',
+    yield: 'About 20 servings',
+    yieldRange: [20, 20],
+    yieldUnit: 'serving',
+    yieldPluralUnit: 'servings',
+    added: 'October 31, 2026',
+    updated: 'October 31, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: ['Chickpeas', 'Tomatoes', 'Onion', 'Shallots', 'Ginger'],
+    badges: ['Dad’s recipe', 'Garden peppers'],
+    heroImage: '/photos/brentwood-chana-masala-finished.webp',
+    heroAlt: 'Chana masala served with rice in a black bowl',
+    photos: [
+      {
+        src: '/photos/brentwood-chana-masala-garden-peppers.webp',
+        alt: 'Two green peppers on an orange cutting board',
+        caption:
+          'Two mysterious garden peppers with a surprising amount of heat.',
+      },
+      {
+        src: '/photos/brentwood-chana-masala-spiced-onions.webp',
+        alt: 'Onions and spices cooking in a large pot',
+        caption: 'The onions and spices make a fragrant start.',
+      },
+      {
+        src: '/photos/brentwood-chana-masala-simmering.webp',
+        alt: 'Chickpeas simmering in a tomato sauce in a large pot',
+        caption: 'Chickpeas and tomato sauce, getting to know each other.',
+      },
+    ],
+    catImage: '/cats/brentwood-chana-masala-pencil-cat.webp',
+    catAlt:
+      'A colored-pencil tabby watching a bowl of chickpeas beside green peppers',
+    ingredients: [
+      { amount: 1.25, unit: 'cup', pluralUnit: 'cups', item: 'ghee' },
+      { amount: 5, item: 'medium yellow onions, finely chopped' },
+      { item: 'Sliced shallots, to taste' },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'ground ginger, heaping',
+      },
+      {
+        amount: 2,
+        item: 'small-to-medium extra-spicy garden peppers, sliced (adjust to taste)',
+      },
+      {
+        amount: 5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'cumin seeds',
+      },
+      {
+        amount: 10,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground coriander',
+      },
+      {
+        amount: 5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground cumin',
+      },
+      {
+        amount: 5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'paprika or Kashmiri chili powder',
+      },
+      {
+        amount: 2.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground turmeric',
+      },
+      {
+        amount: 1.25,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'red chili powder',
+      },
+      {
+        amount: 1500,
+        unit: 'gram',
+        pluralUnit: 'grams',
+        item: 'tomatoes total: fresh tomatoes plus canned diced tomatoes, blended',
+      },
+      {
+        amount: 10,
+        unit: '15-ounce can',
+        pluralUnit: '15-ounce cans',
+        item: 'chickpeas, rinsed and drained',
+      },
+      {
+        amount: 1.25,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'baking soda',
+      },
+      {
+        amount: 2,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'water, plus a little more if needed',
+      },
+      { item: 'Salt, to taste' },
+      { item: 'A little garam masala and lemon juice, to finish' },
+      { item: 'Cooked rice, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Blend the tomatoes',
+        text: 'Blend the fresh tomatoes together with the canned diced tomatoes. Dad used one 15-ounce can and enough fresh tomatoes to bring the combined total to 1,500 grams for this batch.',
+      },
+      {
+        title: 'Start with the onions',
+        text: 'Heat the ghee in a large heavy pot over medium-high heat. Add the cumin seeds and onions and cook, stirring, until the onions are golden, about 7 to 8 minutes. Add a splash of water if the pan gets dry.',
+      },
+      {
+        title: 'Wake up the spices',
+        text: 'Add the sliced shallots, ground ginger, and garden peppers. Cook briefly, then stir in the ground coriander, cumin, paprika, turmeric, and red chili powder. Give everything a few stirs, adding a splash of water if needed.',
+      },
+      {
+        title: 'Bring the pot together',
+        text: 'Stir in the blended tomatoes and cook for a few minutes. Add the drained chickpeas, baking soda, salt, and water. Bring to a boil, then cover and simmer over medium heat for about 25 to 30 minutes, until the chickpeas are very tender.',
+      },
+      {
+        title: 'Finish to taste',
+        text: 'Uncover and lightly crush some chickpeas with a wooden spoon to thicken the sauce. Simmer a few more minutes to the consistency you like. Taste for salt, then add a little garam masala and lemon juice. Serve with rice, or let it cool and refrigerate for later. Enjoy!',
+      },
+    ],
+    houseNote: {
+      title: 'About those tomatoes',
+      text: 'For the original batch, Dad blended a 15-ounce can of diced tomatoes with enough fresh tomatoes to make 1,500 grams total. The canned tomatoes are part of that weight, not an addition to it.',
+    },
+    familyNote: {
+      title: 'The garden keeps its secrets',
+      text: 'The two peppers came from the garden and their exact variety is a mystery. They were extra spicy, so use the amount that suits your table. Dad used ghee instead of neutral oil, sliced shallots instead of garlic, and ground ginger instead of fresh.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -3507,4 +3656,8 @@ export const mushroomRisotto = recipes.find(
 
 export const dadsMegaBatchLambSaag = recipes.find(
   (recipe) => recipe.slug === 'dads-mega-batch-lamb-saag',
+)!;
+
+export const brentwoodChanaMasala = recipes.find(
+  (recipe) => recipe.slug === 'brentwood-chana-masala',
 )!;
