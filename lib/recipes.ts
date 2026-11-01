@@ -3315,6 +3315,142 @@ export const recipes: Recipe[] = [
       text: 'Dad usually uses a leek, but this time a large green onion from the garden stepped in. Some cooks use a little wine to deglaze the toasted rice before adding stock; Dad had none and happily skipped it. He likes this risotto cheesier rather than finished with cream or half-and-half.',
     },
   },
+
+  {
+    slug: 'dads-mega-batch-lamb-saag',
+    title: 'Dad’s Mega-Batch Lamb Saag',
+    description:
+      'A big, slow-simmered pot of tender lamb and spiced spinach, with the pan juices saved for a richer sauce.',
+    author: 'Dad',
+    yield: 'About 20–25 servings',
+    yieldRange: [20, 25],
+    yieldUnit: 'serving',
+    yieldPluralUnit: 'servings',
+    added: 'October 31, 2026',
+    updated: 'October 31, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Lamb',
+      'Spinach',
+      'Onion',
+      'Tomatoes',
+      'Shallots',
+      'Ginger',
+    ],
+    badges: ['Dad’s recipe', 'Mega batch'],
+    heroImage: '/photos/lamb-saag-finished.webp',
+    heroAlt: 'A bowl of lamb saag served with rice',
+    photos: [
+      {
+        src: '/photos/lamb-saag-onions.webp',
+        alt: 'Chopped onions and spices softening in a large pot',
+        caption: 'Onions and spices start the big pot.',
+      },
+      {
+        src: '/photos/lamb-saag-tomatoes.webp',
+        alt: 'Chopped tomatoes on a green cutting board',
+        caption: 'Tomatoes ready for the sauce.',
+      },
+      {
+        src: '/photos/lamb-saag-spinach.webp',
+        alt: 'A pot of bright green spinach sauce with tomatoes and onions',
+        caption: 'The spinach sauce comes together before the lamb joins in.',
+      },
+    ],
+    catImage: '/cats/lamb-saag-blockprint-cat.webp',
+    catAlt:
+      'A sleeping cat beside a simmering pot in a block-print illustration',
+    ingredients: [
+      {
+        amount: 6,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'boneless lamb leg, cut into bite-sized pieces',
+        approximate: true,
+      },
+      {
+        amount: 50,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'frozen spinach, thawed',
+      },
+      { item: 'Hot water, as needed for blending' },
+      {
+        amount: 6,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'ghee, plus a little for browning the lamb',
+      },
+      { amount: 3, item: 'large onions, finely chopped' },
+      { amount: 3, item: 'large tomatoes, finely chopped' },
+      { item: 'Shallots, finely chopped, to taste' },
+      { item: 'Ground ginger, to taste' },
+      { amount: 3, unit: 'bay leaf', pluralUnit: 'bay leaves', item: '' },
+      { range: [6, 9], item: 'whole cloves' },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground cumin, or to taste',
+        approximate: true,
+      },
+      { item: 'Ground cardamom, to taste' },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'dark chili powder, or more to taste',
+        approximate: true,
+      },
+      {
+        amount: 3,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'garam masala, or a little more to taste',
+        approximate: true,
+      },
+      {
+        amount: 4,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'lemon juice',
+        approximate: true,
+      },
+      { item: 'Salt and a little white pepper, to taste' },
+      { item: 'Cooked rice, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Blend the spinach',
+        text: 'Thaw the frozen spinach in the microwave. Blend until smooth, adding enough hot water to help the blender along. Work in batches if needed.',
+      },
+      {
+        title: 'Build the spice base',
+        text: 'Warm the ghee in a large pot. Add the bay leaves and cloves, then the onions and shallots; cook until softened and lightly golden. Stir in the ground ginger, cumin, cardamom, and chili powder. Add the tomatoes and cook until soft, then stir in the garam masala.',
+      },
+      {
+        title: 'Bring the spinach together',
+        text: 'Stir in the spinach purée and lemon juice, then let the sauce simmer gently while you brown the lamb.',
+      },
+      {
+        title: 'Brown the lamb, save the juices',
+        text: 'Cut the boneless lamb into bite-sized pieces and brown in a separate pan with a little ghee, working in batches if needed. The lamb gives off plenty of juice: pour it into the spinach sauce as it collects, and bring the sauce to a boil. Keep cooking the lamb until browned, then add it to the pot.',
+      },
+      {
+        title: 'Let the big pot take its time',
+        text: 'Cover and simmer on low for a couple of hours, stirring occasionally, until the lamb is tender and the flavors have come together. Add water if the sauce needs loosening. Season with salt and a touch of white pepper, taste, and serve with rice.',
+      },
+    ],
+    houseNote: {
+      title: 'Keep the good juices',
+      text: 'The lamb gives off a lot of flavorful liquid as it cooks. Dad pours it into the sauce instead of discarding it, brings the sauce to a boil, and keeps browning the meat before adding it to the pot.',
+    },
+    familyNote: {
+      title: 'Make it with what you have',
+      text: 'Dad used lemon juice for brightness in place of amchur, ground cardamom and cumin in place of whole spices, and shallots and powdered ginger in place of garlic and fresh ginger. He skipped fenugreek and fresh chilies, but used dark chili powder and a little extra garam masala. A big batch, a long simmer, and dinner is ready.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -3367,4 +3503,8 @@ export const momsLasagna = recipes.find(
 )!;
 export const mushroomRisotto = recipes.find(
   (recipe) => recipe.slug === 'mushroom-risotto',
+)!;
+
+export const dadsMegaBatchLambSaag = recipes.find(
+  (recipe) => recipe.slug === 'dads-mega-batch-lamb-saag',
 )!;
