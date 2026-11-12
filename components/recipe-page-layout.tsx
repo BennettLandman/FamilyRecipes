@@ -149,12 +149,28 @@ export function RecipePageLayout({
               <div className="paperclip" aria-hidden="true" />
               <p className="handwritten">{details.ingredientNote}</p>
               <h2 id="ingredients-title">Ingredients</h2>
-              <RecipeScaler
-                baseYield={recipe.yieldRange}
-                yieldUnit={recipe.yieldUnit}
-                yieldPluralUnit={recipe.yieldPluralUnit}
-                ingredients={recipe.ingredients}
-              />
+              {recipe.variableYield ? (
+                <div className="recipe-scaler">
+                  <div className="scaler-heading">
+                    <p className="scaled-yield">
+                      <span>Yield</span>
+                      <strong>{recipe.yield}</strong>
+                    </p>
+                  </div>
+                  <ul aria-label="Ingredients">
+                    {recipe.ingredients.map((ingredient) => (
+                      <li key={ingredient.item}>{formatIngredient(ingredient)}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <RecipeScaler
+                  baseYield={recipe.yieldRange}
+                  yieldUnit={recipe.yieldUnit}
+                  yieldPluralUnit={recipe.yieldPluralUnit}
+                  ingredients={recipe.ingredients}
+                />
+              )}
               {recipe.houseNote && (
                 <aside className="house-note">
                   <strong>{recipe.houseNote.title}</strong>

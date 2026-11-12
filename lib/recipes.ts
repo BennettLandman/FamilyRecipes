@@ -33,6 +33,7 @@ export type Recipe = {
   yieldRange: [number, number];
   yieldUnit: string;
   yieldPluralUnit: string;
+  variableYield?: boolean;
   added: string;
   updated: string;
   section: RecipeSection;
@@ -3600,6 +3601,256 @@ export const recipes: Recipe[] = [
       text: 'The two peppers came from the garden and their exact variety is a mystery. They were extra spicy, so use the amount that suits your table. Dad used ghee instead of neutral oil, sliced shallots instead of garlic, and ground ginger instead of fresh.',
     },
   },
+  {
+    slug: 'moms-hamburgers',
+    title: 'Mom’s Hamburgers',
+    description:
+      'Juicy grilled hamburgers seasoned by eye with minced onion, seasoned salt, Worcestershire sauce, and pepper.',
+    author: 'Mom',
+    yield: 'Varies by batch',
+    yieldRange: [8, 8],
+    yieldUnit: 'patty',
+    yieldPluralUnit: 'patties',
+    variableYield: true,
+    added: 'November 12, 2026',
+    updated: 'November 12, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: ['Ground beef', 'Onion', 'Worcestershire sauce'],
+    badges: ['Mom’s recipe'],
+    heroImage: '/photos/moms-hamburgers-finished.webp',
+    heroAlt: 'A grilled hamburger on toasted bread with cheese and ketchup',
+    photos: [
+      {
+        src: '/photos/moms-hamburgers-seasoned.webp',
+        alt: 'Ground beef topped with seasonings in a metal mixing bowl',
+        caption: 'Minced onion, seasoned salt, and pepper before mixing.',
+      },
+      {
+        src: '/photos/moms-hamburgers-mixed.webp',
+        alt: 'Seasoned ground beef mixed evenly in a metal bowl',
+        caption: 'Look for flecks of onion and pepper throughout the meat.',
+      },
+      {
+        src: '/photos/moms-hamburgers-grill.webp',
+        alt: 'Eight hand-shaped hamburger patties on the grill',
+        caption: 'This batch made eight patties.',
+      },
+    ],
+    catImage: '/cats/moms-hamburgers-charcoal-cat.webp',
+    catAlt: 'A charcoal illustration of a cat keeping watch near a kettle grill',
+    ingredients: [
+      { item: 'Ground beef with enough fat to stay juicy on the grill' },
+      { item: 'Minced onion' },
+      { item: 'Lawry’s Seasoned Salt' },
+      { item: 'Worcestershire sauce' },
+      { item: 'Pepper' },
+    ],
+    steps: [
+      {
+        title: 'Season by eye',
+        text: 'Mix the beef with minced onion, seasoned salt, Worcestershire sauce, and pepper. Look for little bits of onion and flecks of pepper and seasoning throughout the meat. Add a little more wherever the mixture looks sparse.',
+      },
+      {
+        title: 'Look for a change in color',
+        text: 'The Worcestershire sauce should darken the mixture slightly as you mix it in. Add another splash if needed.',
+      },
+      {
+        title: 'Shape the patties',
+        text: 'Make the patties a little wider than you want them to end up. They’ll shrink on the grill.',
+      },
+      {
+        title: 'Grill the burgers',
+        text: 'Mom grills them to medium-well. Use a food thermometer to check that the center of each patty reaches at least 160°F.',
+      },
+    ],
+    familyNote: {
+      title: 'Thin or thick?',
+      text: 'Thinner patties cook faster. Thicker patties take longer on the grill and stay juicier.',
+    },
+  },
+  {
+    slug: 'fish-cakes',
+    title: 'Fish Cakes',
+    description:
+      'Crisp baked fish cakes made with leftover salmon or tilapia, herbed breadcrumbs, and eggs.',
+    author: 'Brentwood Bunch',
+    yield: 'About 10 fish cakes',
+    yieldRange: [10, 10],
+    yieldUnit: 'fish cake',
+    yieldPluralUnit: 'fish cakes',
+    added: 'November 12, 2026',
+    updated: 'November 12, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: ['Salmon', 'Tilapia', 'Eggs', 'Bread'],
+    badges: [],
+    heroImage: '/photos/fish-cakes-finished.webp',
+    heroAlt: 'Ten browned fish cakes on a parchment-lined baking sheet',
+    photos: [
+      {
+        src: '/photos/fish-cakes-breadcrumbs.webp',
+        alt: 'Toasted breadcrumbs, dried herbs, and butter in a food processor',
+        caption: 'Blend the toast, herbs, butter, pepper, and salt into fine crumbs.',
+      },
+      {
+        src: '/photos/fish-cakes-shaped.webp',
+        alt: 'A fish cake just turned out of the ramekin, with the parchment circle still on top',
+        caption: 'Turn the cake out onto the lined pan, then peel off the small parchment circle.',
+      },
+      {
+        src: '/photos/fish-cakes-oven.webp',
+        alt: 'Round fish cakes baking on a parchment-lined sheet in the oven',
+        caption: 'Bake on the sheet until the centers are set and the outsides are crisp.',
+      },
+    ],
+    catImage: '/cats/fish-cakes-delft-cat.webp',
+    catAlt: 'A blue-and-white ceramic tile illustration of a curled cat beside a tiny fish',
+    ingredients: [
+      {
+        amount: 3,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'leftover cooked salmon or tilapia',
+        approximate: true,
+      },
+      { amount: 6, item: 'eggs' },
+      {
+        amount: 6,
+        unit: 'slice',
+        pluralUnit: 'slices',
+        item: 'of bread, for homemade breadcrumbs',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'dried oregano',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'dried basil',
+      },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'pepper',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'unsalted butter',
+      },
+      { amount: 1, unit: 'teaspoon', pluralUnit: 'teaspoons', item: 'salt' },
+      { item: 'Lemon, fresh salsa, or barbecue sauce, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Make the breadcrumbs',
+        text: 'Toast the bread slowly until it is completely dry. Blend it in a food processor with the oregano, basil, pepper, butter, and salt until the crumbs are fine and evenly mixed. You can also start with store-bought breadcrumbs in place of the toast.',
+      },
+      {
+        title: 'Flake the fish and bind the mixture',
+        text: 'Mix the cooked fish and breadcrumbs by hand, breaking the fish into flakes as you go. Mix in the eggs to bind everything together.',
+      },
+      {
+        title: 'Shape the cakes',
+        text: 'Cut a parchment circle to fit the bottom of a ramekin. Press a portion of the mixture into the lined ramekin, run a knife around the edge, and turn the cake out onto a parchment-lined baking sheet. Peel off the small circle and repeat with the remaining mixture.',
+      },
+      {
+        title: 'Bake until crisp',
+        text: 'Bake at 350–400°F, depending on the thickness of the cakes, until the egg is fully cooked and the outsides are crisp.',
+      },
+      {
+        title: 'Serve',
+        text: 'Serve with lemon, fresh salsa, or barbecue sauce.',
+      },
+    ],
+    familyNote: {
+      title: 'Save the leftover fish',
+      text: 'Leftover cooked salmon or tilapia both work well. The pictured batch used about three pounds of fish and made ten ramekin-shaped cakes.',
+    },
+  },
+  {
+    slug: 'roasted-green-tomato-salsa',
+    title: 'Roasted Green Tomato Salsa',
+    description:
+      'A tangy, mild salsa made with green tomatoes, shallots, onion, and a hot pepper blistered under the broiler.',
+    author: 'Brentwood Bunch',
+    yield: 'One batch',
+    yieldRange: [1, 1],
+    yieldUnit: 'batch',
+    yieldPluralUnit: 'batches',
+    added: 'November 12, 2026',
+    updated: 'November 12, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers'],
+    commonIngredients: [
+      'Tomatoes',
+      'Green tomatoes',
+      'Shallots',
+      'Onion',
+      'Hot pepper',
+    ],
+    badges: [],
+    heroImage: '/photos/roasted-green-tomato-salsa-finished.webp',
+    heroAlt: 'Roasted green tomato salsa in a glass bowl with a spoon',
+    photos: [
+      {
+        src: '/photos/roasted-green-tomato-salsa-prep.webp',
+        alt: 'Green tomatoes, shallots, chopped onion, and hot pepper on a sheet pan',
+        caption: 'Coat the vegetables with olive oil and dust them with salt.',
+      },
+      {
+        src: '/photos/roasted-green-tomato-salsa-roasted.webp',
+        alt: 'Blistered green tomatoes and browned onions and shallots after broiling',
+        caption: 'Turn the vegetables every few minutes so they blister without burning.',
+      },
+      {
+        src: '/photos/roasted-green-tomato-salsa-blended.webp',
+        alt: 'Blended green tomato salsa in the bowl of a food processor',
+        caption: 'Process the roasted vegetables until smooth.',
+      },
+    ],
+    catImage: '/cats/roasted-green-tomato-salsa-linocut-cat.webp',
+    catAlt: 'A linocut-style cat peeking over a green tomato',
+    ingredients: [
+      {
+        amount: 3,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'green tomatoes',
+        approximate: true,
+      },
+      { amount: 2, item: 'large shallots, peeled and split' },
+      { amount: 1, item: 'medium onion, peeled and roughly chopped' },
+      { amount: 1, item: 'hot pepper' },
+      { item: 'Olive oil, enough to coat' },
+      { item: 'Salt, for a light dusting' },
+    ],
+    steps: [
+      {
+        title: 'Coat the vegetables',
+        text: 'Spread the green tomatoes, shallots, onion, and hot pepper on a baking sheet. Coat them with olive oil and dust lightly with salt.',
+      },
+      {
+        title: 'Broil until blistered',
+        text: 'Broil on low for about 15 minutes, until the vegetables are blistered. Turn and flip them every few minutes to keep them from burning.',
+      },
+      {
+        title: 'Blend until smooth',
+        text: 'Transfer the roasted vegetables to a food processor and blend until smooth.',
+      },
+    ],
+    familyNote: {
+      title: 'Tangy and mild',
+      text: 'The green tomatoes give this salsa its tang. The original batch was mild with one hot pepper.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -3660,4 +3911,14 @@ export const dadsMegaBatchLambSaag = recipes.find(
 
 export const brentwoodChanaMasala = recipes.find(
   (recipe) => recipe.slug === 'brentwood-chana-masala',
+)!;
+
+export const momsHamburgers = recipes.find(
+  (recipe) => recipe.slug === 'moms-hamburgers',
+)!;
+
+export const fishCakes = recipes.find((recipe) => recipe.slug === 'fish-cakes')!;
+
+export const roastedGreenTomatoSalsa = recipes.find(
+  (recipe) => recipe.slug === 'roasted-green-tomato-salsa',
 )!;
