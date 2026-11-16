@@ -3852,6 +3852,113 @@ export const recipes: Recipe[] = [
     },
   },
   {
+    slug: 'deconstructed-eggplant-panini',
+    title: 'Deconstructed Eggplant Panini',
+    description:
+      'Creamy pesto pasta layered with thinly sliced tomatoes, panini-pressed eggplant, Parmesan, and fresh mozzarella.',
+    author: 'Bennett',
+    yield: 'One 9 × 13-inch pan',
+    yieldRange: [1, 1],
+    yieldUnit: '9 × 13-inch pan',
+    yieldPluralUnit: '9 × 13-inch pans',
+    added: 'November 15, 2026',
+    updated: 'November 15, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Eggplant',
+      'Pasta',
+      'Pesto',
+      'Tomatoes',
+      'Mexican-blend cheese',
+      'Parmesan',
+      'Mozzarella',
+    ],
+    badges: ['Panini press'],
+    heroImage: '/photos/deconstructed-eggplant-panini-finished.webp',
+    heroAlt:
+      'Baked eggplant and sliced tomatoes topped with melted mozzarella in a glass baking dish',
+    photos: [
+      {
+        src: '/photos/deconstructed-eggplant-panini-tomato-layer.webp',
+        alt: 'Thin tomato slices and grated Parmesan layered over pesto pasta',
+        caption:
+          'The first layer of tomatoes and Parmesan goes right on the pesto pasta.',
+      },
+      {
+        src: '/photos/deconstructed-eggplant-panini-grill.webp',
+        alt: 'Seasoned eggplant rounds on an open panini press',
+        caption:
+          'Start the eggplant on medium-low so it softens before you turn up the heat.',
+      },
+      {
+        src: '/photos/deconstructed-eggplant-panini-before-baking.webp',
+        alt: 'Halved mozzarella balls and grated Parmesan scattered over the top layer of tomatoes',
+        caption:
+          'Finish with halved mozzarella balls and the rest of the Parmesan.',
+      },
+    ],
+    catImage: '/cats/deconstructed-eggplant-panini-risograph-cat.webp',
+    catAlt:
+      'A purple risograph cat peeking over a panini press beside an eggplant',
+    ingredients: [
+      { amount: 1, unit: 'pound', pluralUnit: 'pounds', item: 'pasta' },
+      { amount: 0.25, unit: 'cup', pluralUnit: 'cups', item: 'homemade pesto' },
+      {
+        amount: 0.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'Mexican-blend cheese',
+        approximate: true,
+      },
+      { amount: 3, item: 'medium tomatoes, sliced very thin' },
+      { amount: 5, item: 'small to medium eggplants' },
+      { item: 'Kosher salt, for a light dusting' },
+      { item: 'Olive oil, enough to coat the eggplant' },
+      { item: 'Black pepper, to taste' },
+      {
+        amount: 2,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'finely grated Parmesan, divided',
+        approximate: true,
+      },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'small fresh mozzarella balls, halved',
+        approximate: true,
+      },
+    ],
+    steps: [
+      {
+        title: 'Make the pesto pasta',
+        text: 'Cook and drain the pasta, then stir in the homemade pesto and Mexican-blend cheese while the pasta is hot. Spread it in a 9 × 13-inch baking dish. Add a layer of very thin tomato slices and dust with Parmesan.',
+      },
+      {
+        title: 'Salt the eggplant',
+        text: 'Cut the eggplants into ½- to ¾-inch rounds. Dust them lightly with kosher salt and let them sit in a stainless steel bowl for 30 minutes to draw out moisture and mellow any bitterness. Leave the salt on the slices and toss them with enough olive oil to coat and some black pepper.',
+      },
+      {
+        title: 'Grill the eggplant',
+        text: 'Working in batches as needed, close the panini press over the eggplant and press down lightly. Grill for about 10 minutes on medium-low, then 3 to 4 minutes on medium-high. The slices should be very soft, with light grill marks and no burnt spots.',
+      },
+      {
+        title: 'Finish layering',
+        text: 'Preheat the oven to 350°F. Arrange the grilled eggplant in a single layer over the tomatoes and Parmesan. Add the remaining tomato slices and another dusting of Parmesan. Scatter the halved mozzarella balls over the tomatoes and finish with the remaining Parmesan.',
+      },
+      {
+        title: 'Bake until bubbly',
+        text: 'Bake at 350°F for about 15 minutes, until heated through and the cheese is melted and bubbly. Pull the dish out before the cheese browns or crisps, then serve.',
+      },
+    ],
+    familyNote: {
+      title: 'How the panini became a pasta bake',
+      text: 'Bennett saw a delicious-looking eggplant panini and wanted those flavors without pressing a sandwich for everyone. The eggplant fans loved the bake, and everyone else liked the rest. Bennett had fun making it.',
+    },
+  },
+  {
     slug: 'roasted-eggplant-green-tomato-shepherds-pie',
     title: 'Roasted Eggplant and Green Tomato Shepherd’s Pie',
     description:
@@ -4118,6 +4225,11 @@ export const fishCakes = recipes.find((recipe) => recipe.slug === 'fish-cakes')!
 
 export const roastedGreenTomatoSalsa = recipes.find(
   (recipe) => recipe.slug === 'roasted-green-tomato-salsa',
+)!;
+
+
+export const deconstructedEggplantPanini = recipes.find(
+  (recipe) => recipe.slug === 'deconstructed-eggplant-panini',
 )!;
 
 export const roastedEggplantGreenTomatoShepherdsPie = recipes.find(
