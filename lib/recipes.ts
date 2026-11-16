@@ -3851,6 +3851,203 @@ export const recipes: Recipe[] = [
       text: 'The green tomatoes give this salsa its tang. The original batch was mild with one hot pepper.',
     },
   },
+  {
+    slug: 'roasted-eggplant-green-tomato-shepherds-pie',
+    title: 'Roasted Eggplant and Green Tomato Shepherd’s Pie',
+    description:
+      'Thai eggplant and tart green tomatoes with oregano and smoked Spanish paprika, under prosciutto mashed potatoes and golden Parmesan.',
+    author: 'Bennett',
+    yield: 'Two 9 × 9-inch pies',
+    yieldRange: [2, 2],
+    yieldUnit: '9 × 9-inch pie',
+    yieldPluralUnit: '9 × 9-inch pies',
+    added: 'November 15, 2026',
+    updated: 'November 15, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Thai eggplant',
+      'Green tomatoes',
+      'Potatoes',
+      'Prosciutto',
+      'Mexi-Melt cheese',
+      'Parmesan',
+      'Smoked Spanish paprika',
+    ],
+    badges: [],
+    heroImage: '/photos/roasted-eggplant-green-tomato-shepherds-pie.webp',
+    heroAlt:
+      'A square shepherd’s pie with a golden Parmesan and mashed potato crust',
+    photos: [
+      {
+        src: '/photos/shepherds-pie-eggplant-skillet.webp',
+        alt: 'Roasted eggplant with sautéed onion and shallots in a skillet',
+        caption: 'The roasted eggplant goes in with the onion and shallots.',
+      },
+      {
+        src: '/photos/shepherds-pie-green-tomato-filling.webp',
+        alt: 'Roasted green tomatoes and eggplant steaming together in a skillet',
+        caption: 'Fold in the green tomatoes and let the filling cook down.',
+      },
+    ],
+    catImage: '/cats/shepherds-pie-woodcut-cat.webp',
+    catAlt: 'A woodcut of a sleeping tortoiseshell cat beside an oven mitt',
+    ingredients: [
+      { amount: 7, item: 'medium long Thai eggplants, chopped' },
+      {
+        amount: 4,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'green tomatoes, cut into chunks',
+        approximate: true,
+      },
+      {
+        amount: 1,
+        unit: 'medium yellow onion',
+        pluralUnit: 'medium yellow onions',
+        item: 'chopped',
+      },
+      { amount: 4, unit: 'shallot', pluralUnit: 'shallots', item: 'chopped' },
+      { item: 'Olive oil, for roasting and sautéing' },
+      { item: 'Oregano, to taste' },
+      { item: 'Smoked Spanish paprika, a generous amount' },
+      {
+        amount: 5,
+        unit: 'pound',
+        pluralUnit: 'pounds',
+        item: 'potatoes, peeled and cut into chunks',
+      },
+      { amount: 8, unit: 'ounce', pluralUnit: 'ounces', item: 'prosciutto' },
+      { item: 'Butter, for crisping the prosciutto' },
+      { item: 'Mexi-Melt cheese, to taste' },
+      { item: 'Milk, a splash or as needed' },
+      { item: 'Grated Parmesan, for topping' },
+    ],
+    steps: [
+      {
+        title: 'Roast the vegetables separately',
+        text: 'Heat the oven to 400°F. Toss the chopped eggplant and green tomatoes lightly with olive oil and spread them on separate rimmed pans. Roast the eggplant until tender and browned, checking at about 20 minutes. Roast the tomatoes until they start to soften, checking at about 15 minutes, then give them about 5 minutes under the low broiler to dry the surfaces and turn the edges golden. Watch them closely and return the oven to 400°F for the pies.',
+      },
+      {
+        title: 'Cook down the filling',
+        text: 'Sauté the yellow onion and shallots in olive oil until softened and lightly golden. Stir in the roasted eggplant, oregano, and a generous amount of smoked Spanish paprika. Fold in the roasted green tomatoes and cook uncovered until the filling is thick enough to spoon into the baking dishes.',
+      },
+      {
+        title: 'Make the prosciutto mash',
+        text: 'Boil the potatoes until fork-tender and drain them well. While they cook, crisp the prosciutto in butter, then chop it. Mash the hot potatoes in a stand mixer on low, adding Mexi-Melt and a splash of milk until the mash is spreadable. Fold in the chopped prosciutto.',
+      },
+      {
+        title: 'Bake the two pies',
+        text: 'Divide the filling between two 9 × 9-inch baking dishes. Spread the prosciutto mash over the filling and scatter grated Parmesan on top. Bake at 400°F for about 20 minutes, until the top is golden and the filling bubbles around the edges.',
+      },
+    ],
+    familyNote: {
+      title: 'Two dishes from the green tomato haul',
+      text: 'Bennett turned a full roasting tray of green tomatoes into two pies and served them with crispy green cherry tomatoes and rémoulade.',
+    },
+  },
+  {
+    slug: 'fried-green-cherry-tomatoes',
+    title: 'Fried Green Cherry Tomatoes, Two Ways',
+    description:
+      'Green cherry tomato halves in a paprika-spiked cornmeal crust, pan-fried or air-fried and served with rémoulade.',
+    author: 'Bennett',
+    yield: 'One full 9 × 9-inch dish',
+    yieldRange: [1, 1],
+    yieldUnit: '9 × 9-inch dish',
+    yieldPluralUnit: '9 × 9-inch dishes',
+    added: 'November 15, 2026',
+    updated: 'November 15, 2026',
+    section: 'Side dishes',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Green cherry tomatoes',
+      'Cornmeal',
+      'Flour',
+      'Eggs',
+      'Paprika',
+      'Rémoulade',
+    ],
+    badges: [],
+    heroImage: '/photos/fried-green-cherry-tomatoes.webp',
+    heroAlt:
+      'A square dish filled with golden cornmeal-crusted green cherry tomatoes',
+    photos: [
+      {
+        src: '/photos/fried-green-cherry-tomatoes-remoulade.webp',
+        alt: 'A small bowl of rémoulade with a spoon',
+        caption: 'Rémoulade for dipping.',
+      },
+    ],
+    catImage: '/cats/green-cherry-tomato-pencil-cat.webp',
+    catAlt:
+      'A colored-pencil illustration of a tuxedo cat sniffing a green cherry tomato',
+    ingredients: [
+      {
+        amount: 4,
+        unit: 'pint',
+        pluralUnit: 'pints',
+        item: 'firm green cherry tomatoes, halved',
+      },
+      { item: 'All-purpose flour, for the first dredge' },
+      {
+        amount: 4,
+        unit: 'egg',
+        pluralUnit: 'eggs',
+        item: 'for the dip',
+      },
+      { item: 'Milk, a splash for the egg dip' },
+      { amount: 1, unit: 'cup', pluralUnit: 'cups', item: 'cornmeal' },
+      {
+        amount: 0.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'all-purpose flour, for the coating',
+      },
+      { amount: 1, unit: 'teaspoon', pluralUnit: 'teaspoons', item: 'salt' },
+      {
+        amount: 0.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'black pepper',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'paprika',
+        approximate: true,
+      },
+      { item: 'Butter and olive oil, for pan-frying' },
+      { item: 'Rémoulade, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Set up the breading',
+        text: 'Pat the tomato halves dry. Set out three shallow bowls. Put plain flour in the first, beat the eggs with a splash of milk in the second, and stir together the cornmeal, measured flour, salt, pepper, and paprika in the third.',
+      },
+      {
+        title: 'Coat the halves',
+        text: 'Dust each half with flour, dip it in the egg mixture, and press it gently into the cornmeal coating. Let the coated tomatoes rest briefly while you heat the skillet and air fryer.',
+      },
+      {
+        title: 'Pan-fry half the batch',
+        text: 'Heat a mix of butter and olive oil in a skillet over medium heat. Fry the tomatoes in a single layer, in batches as needed, turning when the underside is golden. Cook until crisp on both sides, then drain on a rack or paper towels.',
+      },
+      {
+        title: 'Air-fry the other half',
+        text: 'Arrange the coated halves in a single layer in the air fryer basket and mist lightly with oil. Air-fry at 375°F for about 8 to 10 minutes, turning halfway through, until crisp and golden. Work in batches if needed.',
+      },
+      {
+        title: 'Serve with rémoulade',
+        text: 'Pile both batches into a serving dish and bring them to the table warm, with rémoulade for dipping.',
+      },
+    ],
+    familyNote: {
+      title: 'One dish, two batches',
+      text: 'Bennett pan-fried half in butter and olive oil, air-fried the other half, and served both alongside the roasted eggplant and green tomato shepherd’s pie.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -3921,4 +4118,12 @@ export const fishCakes = recipes.find((recipe) => recipe.slug === 'fish-cakes')!
 
 export const roastedGreenTomatoSalsa = recipes.find(
   (recipe) => recipe.slug === 'roasted-green-tomato-salsa',
+)!;
+
+export const roastedEggplantGreenTomatoShepherdsPie = recipes.find(
+  (recipe) => recipe.slug === 'roasted-eggplant-green-tomato-shepherds-pie',
+)!;
+
+export const friedGreenCherryTomatoes = recipes.find(
+  (recipe) => recipe.slug === 'fried-green-cherry-tomatoes',
 )!;
