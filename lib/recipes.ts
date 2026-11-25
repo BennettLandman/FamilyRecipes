@@ -4155,6 +4155,225 @@ export const recipes: Recipe[] = [
       text: 'Bennett pan-fried half in butter and olive oil, air-fried the other half, and served both alongside the roasted eggplant and green tomato shepherd’s pie.',
     },
   },
+  {
+    slug: 'orindas-vegetarian-scallops',
+    title: 'Orinda’s Vegetarian Scallops',
+    description:
+      'Butter-browned eggplant “scallops” with sweet smoked paprika, savory mixed mushrooms, and golden tomatoes tossed with fresh linguine.',
+    author: 'Orinda',
+    yield: 'About 8 servings',
+    yieldRange: [8, 8],
+    yieldUnit: 'serving',
+    yieldPluralUnit: 'servings',
+    added: 'November 25, 2026',
+    updated: 'November 25, 2026',
+    section: 'Dinner',
+    meals: ['Dinner'],
+    commonIngredients: [
+      'Eggplant',
+      'Mushrooms',
+      'Linguine',
+      'Golden tomatoes',
+      'Parmesan',
+      'Soy sauce',
+      'Smoked paprika',
+    ],
+    badges: ['Orinda’s recipe'],
+    heroImage: '/photos/orindas-vegetarian-scallops-finished.webp',
+    heroAlt:
+      'Fresh linguine tossed with browned eggplant, mixed mushrooms, golden tomatoes, and shaved Parmesan',
+    photos: [
+      {
+        src: '/photos/orindas-vegetarian-scallops-mushrooms.webp',
+        alt: 'A medley of fresh mushrooms on a cutting board',
+        caption: 'Slice the whole mushroom medley thinly.',
+      },
+      {
+        src: '/photos/orindas-vegetarian-scallops-eggplant.webp',
+        alt: 'Peeled, quartered eggplant lightly salted on a red plate',
+        caption: 'Quarter the rounds for small scallops and let them sit with a dusting of salt.',
+      },
+      {
+        src: '/photos/orindas-vegetarian-scallops-browned-mushrooms.webp',
+        alt: 'Browned mushrooms and a wooden spoon in an enamel pan',
+        caption: 'Leave the browned bits in the pan to season the eggplant.',
+      },
+      {
+        src: '/photos/orindas-vegetarian-scallops-tomatoes.webp',
+        alt: 'Golden grape tomatoes with lightly blistered skins in an enamel pan',
+        caption: 'Blister the tomatoes lightly so they still hold their shape.',
+      },
+    ],
+    catImage: '/cats/orindas-vegetarian-scallops-scratchboard-cat.webp',
+    catAlt: 'A scratchboard illustration of a gray tabby eyeing a golden tomato',
+    ingredients: [
+      {
+        amount: 12,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'mixed mushrooms, including oyster and shiitake',
+      },
+      { item: 'Olive oil, for sautéing' },
+      { item: 'Soy sauce, a splash to season the mushrooms' },
+      {
+        amount: 3,
+        unit: 'small eggplant',
+        pluralUnit: 'small eggplants',
+        item: '(peeled and thinly sliced)',
+      },
+      { item: 'Kosher salt, for lightly dusting the eggplant' },
+      {
+        amount: 6,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'butter',
+        approximate: true,
+      },
+      {
+        amount: 1,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'sweet smoked paprika',
+        approximate: true,
+      },
+      { amount: 36, unit: 'ounce', pluralUnit: 'ounces', item: 'fresh linguine' },
+      {
+        amount: 16,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'golden grape or cherry tomatoes',
+        approximate: true,
+      },
+      {
+        amount: 6,
+        unit: 'ounce',
+        pluralUnit: 'ounces',
+        item: 'shaved Parmesan, divided',
+        approximate: true,
+      },
+    ],
+    steps: [
+      {
+        title: 'Cut and salt the scallops',
+        text: 'Peel the eggplants, trim any blemishes, and slice them into thin rounds. Leave the rounds whole for large scallops or quarter them for small ones. Remove as many seeds as you like. Save the skins and seedy centers for Dad’s Leftover Baba Ganoush. Lightly dust the scallops with kosher salt and let sit for about 30 minutes.',
+      },
+      {
+        title: 'Brown the mushrooms',
+        text: 'Thinly slice the mushroom medley. Sauté in a little olive oil until the mushrooms cook down and become tender, with some crisp edges. Season with a splash of soy sauce and set aside, leaving the browned bits in the pan.',
+      },
+      {
+        title: 'Cook the eggplant in butter',
+        text: 'Melt the butter in the mushroom pan. Cook the eggplant in the butter until golden, turning the pieces and loosening the browned mushroom bits as you go. Toss with the sweet smoked paprika at the end, then set aside.',
+      },
+      {
+        title: 'Cook the pasta and blister the tomatoes',
+        text: 'Cook the linguine according to the package directions. Meanwhile, cook the tomatoes whole in a hot pan for about 3 minutes on each of two sides, about 6 minutes total. They should be warm and lightly blistered while still holding their shape.',
+      },
+      {
+        title: 'Toss and finish with Parmesan',
+        text: 'Combine the tomatoes, mushrooms, and eggplant. Scatter half the Parmesan over them and cover while the pasta finishes. Drain the linguine, toss it with the toppings in a large serving bowl, and finish with the remaining Parmesan.',
+      },
+    ],
+    houseNote: {
+      title: 'For a vegetarian version',
+      text: 'Choose a Parmesan-style cheese made with vegetarian rennet.',
+    },
+    familyNote: {
+      title: 'Orinda’s notes for next time',
+      text: 'The mushrooms were her favorite, and there was plenty of umami. She recommends taking out as many eggplant seeds as possible and adding the tomatoes at the end so they just warm through.',
+    },
+  },
+  {
+    slug: 'dads-leftover-baba-ganoush',
+    title: 'Dad’s Leftover Baba Ganoush',
+    description:
+      'A mildly spicy eggplant dip made from the skins and seedy centers left over from Orinda’s vegetarian scallops, with tahini, lemon, and garlic chili crisp.',
+    author: 'Dad',
+    yield: 'One small bowl',
+    yieldRange: [1, 1],
+    yieldUnit: 'small bowl',
+    yieldPluralUnit: 'small bowls',
+    added: 'November 25, 2026',
+    updated: 'November 25, 2026',
+    section: 'Appetizers',
+    meals: ['Appetizers'],
+    commonIngredients: [
+      'Eggplant',
+      'Tahini',
+      'Lemon',
+      'Garlic chili crisp',
+      'Soy sauce',
+      'Olive oil',
+    ],
+    badges: ['Dad’s recipe'],
+    heroImage: '/photos/dads-leftover-baba-ganoush-finished.webp',
+    heroAlt: 'Finished eggplant dip with dark specks of peel in an orange bowl',
+    photos: [
+      {
+        src: '/photos/dads-leftover-baba-ganoush-eggplant.webp',
+        alt: 'Eggplant skins and seedy centers softening in a steaming pan',
+        caption: 'Cook the skins and centers until they are soft enough to mash.',
+      },
+      {
+        src: '/photos/dads-leftover-baba-ganoush-tahini.webp',
+        alt: 'Tahini, lemon juice, and garlic chili crisp in a food processor',
+        caption: 'Tahini, lemon juice, and garlic chili crisp go into the food processor.',
+      },
+    ],
+    catImage: '/cats/dads-leftover-baba-ganoush-cut-paper-cat.webp',
+    catAlt: 'A cut-paper calico cat curled beside a strip of purple eggplant peel',
+    ingredients: [
+      {
+        amount: 3,
+        unit: 'small eggplant',
+        pluralUnit: 'small eggplants',
+        item: '(skins and seedy centers only)',
+      },
+      {
+        amount: 2,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'olive oil, plus more to adjust the consistency',
+        approximate: true,
+      },
+      { item: 'Soy sauce, a splash to deglaze the pan' },
+      { amount: 1, unit: 'lemon', pluralUnit: 'lemons', item: '(juiced)' },
+      {
+        amount: 1.5,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'jarred garlic chili crisp',
+      },
+      { amount: 3, unit: 'tablespoon', pluralUnit: 'tablespoons', item: 'tahini' },
+      { item: 'Chips, for serving' },
+    ],
+    steps: [
+      {
+        title: 'Cook the eggplant until very soft',
+        text: 'Heat the olive oil in the pan used for Orinda’s Vegetarian Scallops. Add the eggplant skins and seedy centers and cook for about 15 minutes, stirring occasionally, until very soft and mashable.',
+      },
+      {
+        title: 'Deglaze with soy sauce',
+        text: 'Splash in a little soy sauce and scrape up the browned bits. Transfer the eggplant and everything you scraped from the pan to a food processor.',
+      },
+      {
+        title: 'Blend until smooth',
+        text: 'Add the lemon juice, garlic chili crisp, and tahini. Process until the skins are finely broken down, stopping to scrape the bowl as needed. Dad’s batch took about 10 to 15 minutes of blending. Add just enough olive oil to get a smooth, dippable consistency and blend again.',
+      },
+      {
+        title: 'Chill and serve',
+        text: 'Refrigerate for about 45 minutes to let the flavors come together. Serve with chips for dipping.',
+      },
+    ],
+    houseNote: {
+      title: 'Use the scallop pan',
+      text: 'The browned mushroom bits, soy sauce, and sweet smoked paprika left in the pan season the dip as the eggplant cooks.',
+    },
+    familyNote: {
+      title: 'The family tasting verdict',
+      text: '“Fancy hummus” was the comparison at the table. When Dad asked about the umami, “aggressive” got a yes.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -4238,4 +4457,12 @@ export const roastedEggplantGreenTomatoShepherdsPie = recipes.find(
 
 export const friedGreenCherryTomatoes = recipes.find(
   (recipe) => recipe.slug === 'fried-green-cherry-tomatoes',
+)!;
+
+export const orindasVegetarianScallops = recipes.find(
+  (recipe) => recipe.slug === 'orindas-vegetarian-scallops',
+)!;
+
+export const dadsLeftoverBabaGanoush = recipes.find(
+  (recipe) => recipe.slug === 'dads-leftover-baba-ganoush',
 )!;

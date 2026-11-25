@@ -355,6 +355,7 @@ h3 { font-size: 1.45rem; }
   .recipe-hero { grid-template-columns: 1fr; }
   .recipe-hero-photo { max-width: 680px; }
   .recipe-cat { left: auto; right: 0; bottom: 5px; }
+  .recipe-cat-inset-caption figcaption { right: 0; }
   .recipe-content { grid-template-columns: 1fr; gap: 4rem; }
   .ingredients-card { max-width: 650px; }
   .book-toolbar-inner { grid-template-columns: 1fr auto; padding-block: 1rem; }
