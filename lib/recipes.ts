@@ -4512,6 +4512,144 @@ export const recipes: Recipe[] = [
       text: 'Charlotte’s secret is purée made from the sweet pumpkins Grandma grew. When it’s time to check the pie, ask Mom for the jiggle test.',
     },
   },
+  {
+    slug: 'great-grandma-ednas-lemon-meringue-pie',
+    title: 'Great Grandma Edna’s Lemon Meringue Pie',
+    description:
+      'Fresh lemon juice and zest make a bright custard under a crown of golden meringue.',
+    author: 'Edna',
+    yield: '1 9-inch pie',
+    yieldRange: [1, 1],
+    yieldUnit: 'pie',
+    yieldPluralUnit: 'pies',
+    added: 'November 26, 2026',
+    updated: 'November 26, 2026',
+    section: 'Desserts',
+    meals: ['Thanksgiving'],
+    commonIngredients: ['Lemon', 'Eggs', 'Butter', 'Sugar', 'Cornstarch'],
+    badges: ['Thanksgiving'],
+    heroImage: '/photos/ednas-lemon-meringue-pie-finished.webp',
+    heroAlt: 'Lemon meringue pie on a cooling rack with lightly toasted peaks',
+    photos: [
+      {
+        src: '/photos/ednas-lemon-meringue-pie-zest.webp',
+        alt: 'Freshly grated lemon zest in a small white bowl',
+        caption: 'Fresh lemon zest goes into the filling with the juice.',
+      },
+      {
+        src: '/photos/ednas-lemon-meringue-pie-thickening.webp',
+        alt: 'Thickened cornstarch mixture in a stainless steel saucepan',
+        caption:
+          'Cook the sugar and cornstarch until the mixture thickens and bubbles.',
+      },
+      {
+        src: '/photos/ednas-lemon-meringue-pie-filled-shell.webp',
+        alt: 'Glossy yellow lemon filling in a baked pie shell',
+        caption: 'Pour the lemon filling into the baked shell while it’s hot.',
+      },
+      {
+        src: '/photos/ednas-lemon-meringue-pie-whipped-meringue.webp',
+        alt: 'Glossy meringue around the whisk of a stand mixer',
+        caption: 'Beat until the meringue holds stiff, glossy peaks.',
+      },
+    ],
+    catImage: '/cats/ednas-lemon-meringue-pie-lithograph-cat.webp',
+    catAlt: 'A green and yellow print of a cat beside a whisk and a lemon half',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'pie shell',
+        pluralUnit: 'pie shells',
+        item: '(9-inch, fully baked)',
+      },
+      {
+        amount: 1.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'granulated sugar for the filling',
+      },
+      { amount: 1 / 3, unit: 'cup', pluralUnit: 'cups', item: 'cornstarch' },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'additional cornstarch',
+      },
+      { amount: 1.5, unit: 'cup', pluralUnit: 'cups', item: 'water' },
+      { amount: 3, item: 'egg yolks for the filling' },
+      {
+        amount: 3,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'butter',
+      },
+      {
+        amount: 2,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'finely grated lemon zest',
+      },
+      {
+        amount: 0.5,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'fresh lemon juice',
+      },
+      { amount: 3, item: 'egg whites for the meringue' },
+      {
+        amount: 0.25,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'cream of tartar',
+      },
+      {
+        amount: 6,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'granulated sugar for the meringue',
+      },
+      {
+        amount: 0.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'vanilla extract',
+      },
+    ],
+    steps: [
+      {
+        title: 'Get the shell and eggs ready',
+        text: 'Start with a fully baked pie shell and heat the oven to 400°F. Separate the eggs. Lightly beat the yolks in one bowl and put the whites in a clean, dry mixer bowl.',
+      },
+      {
+        title: 'Thicken the filling',
+        text: 'Whisk the filling sugar and both measures of cornstarch together in a saucepan. Add the water gradually, whisking until smooth. Stir over medium heat until the mixture thickens and bubbles, then keep it boiling for 1 minute while you stir.',
+      },
+      {
+        title: 'Temper the yolks and add the lemon',
+        text: 'Slowly whisk about half of the hot mixture into the yolks. Whisk it back into the saucepan and bring it to a boil again, stirring for 1 minute. Take the pan off the heat and stir in the butter, lemon zest, and lemon juice. Cover to keep the filling hot.',
+      },
+      {
+        title: 'Beat the meringue to stiff peaks',
+        text: 'Whip the whites with the cream of tartar until foamy. Beat in the meringue sugar a spoonful at a time. Keep whipping until the meringue is glossy and the peaks stand upright when you lift the whisk. Beat in the vanilla.',
+      },
+      {
+        title: 'Top the pie and brown the peaks',
+        text: 'Pour the hot filling into the shell. Spoon the meringue over it right away and spread it all the way to the pastry so it seals against the rim. Lift the back of a spoon to make peaks. Bake for about 10 minutes, until the tips are light golden and the meringue reaches 160°F.',
+      },
+      {
+        title: 'Let the pie set',
+        text: 'Cool the pie on a wire rack away from drafts, then refrigerate until the filling is set. Serve chilled.',
+      },
+    ],
+    houseNote: {
+      title: 'Seal the edges',
+      text: 'Spread the meringue to the crust while the filling is hot. That helps keep the topping from pulling away as it bakes.',
+    },
+    familyNote: {
+      title: 'Two pies for Thanksgiving',
+      text: 'We started with the well-used cookbook recipe and doubled the batch to make two pies, whipping the meringue until the peaks stood up on their own.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -4607,4 +4745,8 @@ export const dadsLeftoverBabaGanoush = recipes.find(
 
 export const charlottesThanksgivingPumpkinPie = recipes.find(
   (recipe) => recipe.slug === 'charlottes-thanksgiving-pumpkin-pie',
+)!;
+
+export const greatGrandmaEdnasLemonMeringuePie = recipes.find(
+  (recipe) => recipe.slug === 'great-grandma-ednas-lemon-meringue-pie',
 )!;

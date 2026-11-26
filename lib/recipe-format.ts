@@ -1,8 +1,15 @@
 import type { RecipeIngredient } from '@/lib/recipes';
 
 const eighthFractions = ['', '⅛', '¼', '⅜', '½', '⅝', '¾', '⅞'];
+const sixthFractions = ['', '⅙', '⅓', '½', '⅔', '⅚'];
 
 export function formatRecipeNumber(value: number) {
+  const sixths = value * 6;
+  if (Number.isInteger(sixths) && sixths % 3 !== 0) {
+    const whole = Math.floor(value);
+    return `${whole || ''}${sixthFractions[sixths - whole * 6]}`;
+  }
+
   const precision = Number.isInteger(value * 16) ? 16 : 4;
   const rounded = Math.round(value * precision) / precision;
   const whole = Math.floor(rounded);
