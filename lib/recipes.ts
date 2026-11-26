@@ -4374,6 +4374,144 @@ export const recipes: Recipe[] = [
       text: '“Fancy hummus” was the comparison at the table. When Dad asked about the umami, “aggressive” got a yes.',
     },
   },
+  {
+    slug: 'charlottes-thanksgiving-pumpkin-pie',
+    title: 'Charlotte’s Thanksgiving Pumpkin Pie',
+    description:
+      'A brown sugar and spice custard made with pumpkins from Grandma’s garden, baked in a fork-crimped crust.',
+    author: 'Charlotte',
+    yield: '1 deep-dish 9-inch pie (8–10 slices)',
+    yieldRange: [1, 1],
+    yieldUnit: 'pie',
+    yieldPluralUnit: 'pies',
+    added: 'November 25, 2026',
+    updated: 'November 25, 2026',
+    section: 'Desserts',
+    meals: ['Thanksgiving'],
+    commonIngredients: [
+      'Pumpkin',
+      'Eggs',
+      'Brown sugar',
+      'Milk',
+      'Butter',
+      'Cinnamon',
+    ],
+    badges: ['Thanksgiving'],
+    heroImage: '/photos/charlottes-thanksgiving-pumpkin-pie-finished.webp',
+    heroAlt:
+      'Charlotte’s pumpkin pie with a golden fork-crimped crust cooling on a wire rack',
+    photos: [
+      {
+        src: '/photos/charlottes-pumpkin-pie-garden-pumpkins.webp',
+        alt: 'Two whole orange pumpkins with their stems intact',
+        caption: 'Two sweet pumpkins from Grandma’s garden.',
+      },
+      {
+        src: '/photos/charlottes-pumpkin-pie-roasted-pumpkins.webp',
+        alt: 'Roasted pumpkin halves cooling on a yellow plate',
+        caption: 'Roast the halves until the flesh is soft.',
+      },
+      {
+        src: '/photos/charlottes-pumpkin-pie-processor.webp',
+        alt: 'Roasted pumpkin flesh in a food processor',
+        caption: 'Peel the cooled pumpkin and blend the flesh until smooth.',
+      },
+      {
+        src: '/photos/charlottes-pumpkin-pie-crust.webp',
+        alt: 'Unbaked pie shell with a fork-crimped rim and small holes in the bottom',
+        caption: 'Crimp the rim and prick the base with a fork.',
+      },
+    ],
+    catImage: '/cats/charlottes-pumpkin-pie-engraving-cat.webp',
+    catAlt: 'A sepia engraving of a tortoiseshell cat watching a small pumpkin',
+    ingredients: [
+      {
+        amount: 1,
+        unit: 'unbaked 9-inch pie crust',
+        pluralUnit: 'unbaked 9-inch pie crusts',
+        item: 'for a deep-dish pie plate',
+      },
+      {
+        amount: 425,
+        unit: 'g',
+        item: 'homemade pumpkin purée, from small sweet pumpkins',
+      },
+      { amount: 3, item: 'large eggs' },
+      {
+        amount: 1.25,
+        unit: 'cup',
+        pluralUnit: 'cups',
+        item: 'packed brown sugar',
+      },
+      {
+        amount: 1,
+        unit: 'tablespoon',
+        pluralUnit: 'tablespoons',
+        item: 'cornstarch',
+      },
+      { amount: 0.5, unit: 'teaspoon', pluralUnit: 'teaspoons', item: 'salt' },
+      {
+        amount: 1.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground cinnamon',
+      },
+      {
+        amount: 0.5,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground ginger',
+      },
+      {
+        amount: 0.25,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground nutmeg',
+      },
+      {
+        amount: 0.125,
+        unit: 'teaspoon',
+        pluralUnit: 'teaspoons',
+        item: 'ground cloves',
+      },
+      { amount: 0.75, unit: 'cup', pluralUnit: 'cups', item: 'milk' },
+      { amount: 0.25, unit: 'cup', pluralUnit: 'cups', item: 'butter, melted' },
+    ],
+    steps: [
+      {
+        title: 'Roast the pumpkins',
+        text: 'Heat the oven to 350°F. Halve two small sweet pumpkins, scoop out the seeds and strings, and place the halves cut side down on a rimmed baking sheet. Roast for about an hour, until the flesh is soft.',
+      },
+      {
+        title: 'Make the purée',
+        text: 'Let the pumpkin cool until you can handle it. Remove the skins and blend the flesh until smooth. If the purée looks watery, blot it lightly before weighing it for the filling.',
+      },
+      {
+        title: 'Par-bake the crust',
+        text: 'Raise the oven to 375°F. Fit the dough into a deep 9-inch pie plate and crimp the rim with a fork. Line the shell with parchment and fill it with pie weights or dry beans. Bake for 10 minutes, lift out the parchment and weights, then prick the bottom with a fork. Bake another 7 to 8 minutes, until the base just begins to color.',
+      },
+      {
+        title: 'Whisk the filling',
+        text: 'Whisk the pumpkin purée, eggs, and brown sugar together. Whisk in the cornstarch, salt, and ground spices. Stir the melted butter into room-temperature milk, then whisk it into the pumpkin mixture until smooth.',
+      },
+      {
+        title: 'Bake until the center barely jiggles',
+        text: 'Pour the filling into the warm crust, leaving room at the rim. Bake at 375°F for about 55 to 60 minutes, checking from 50 minutes onward. Gently nudge the pan. The pie is ready when the filling is set and only a small spot at the center barely jiggles. Shield the crust with foil if it browns early.',
+      },
+      {
+        title: 'Cool before slicing',
+        text: 'Set the pie on a wire rack to cool, then chill it in the refrigerator until the filling is firm enough to slice.',
+      },
+    ],
+    houseNote: {
+      title: 'Recipe inspiration',
+      text: 'The Great Pumpkin Pie Recipe from Sally’s Baking.',
+    },
+    familyNote: {
+      title: 'Grandma’s pumpkins, Mom’s jiggle test',
+      text: 'Charlotte’s secret is purée made from the sweet pumpkins Grandma grew. When it’s time to check the pie, ask Mom for the jiggle test.',
+    },
+  },
 ];
 
 export const dadsFrenchToast = recipes[0];
@@ -4465,4 +4603,8 @@ export const orindasVegetarianScallops = recipes.find(
 
 export const dadsLeftoverBabaGanoush = recipes.find(
   (recipe) => recipe.slug === 'dads-leftover-baba-ganoush',
+)!;
+
+export const charlottesThanksgivingPumpkinPie = recipes.find(
+  (recipe) => recipe.slug === 'charlottes-thanksgiving-pumpkin-pie',
 )!;

@@ -1,20 +1,18 @@
 import type { RecipeIngredient } from '@/lib/recipes';
 
-export function formatRecipeNumber(value: number) {
-  const rounded = Math.round(value * 4) / 4;
-  const whole = Math.floor(rounded);
-  const remainder = rounded - whole;
-  const fraction =
-    remainder === 0.25
-      ? '¼'
-      : remainder === 0.5
-        ? '½'
-        : remainder === 0.75
-          ? '¾'
-          : '';
+const eighthFractions = ['', '⅛', '¼', '⅜', '½', '⅝', '¾', '⅞'];
 
-  if (!whole) return fraction || String(rounded);
-  return `${whole}${fraction}`;
+export function formatRecipeNumber(value: number) {
+  const precision = Number.isInteger(value * 16) ? 16 : 4;
+  const rounded = Math.round(value * precision) / precision;
+  const whole = Math.floor(rounded);
+  const sixteenths = (rounded - whole) * 16;
+  if (!sixteenths) return String(whole);
+
+  const fraction = eighthFractions[sixteenths / 2];
+  const prefix = whole ? String(whole) : '';
+  if (fraction) return `${prefix}${fraction}`;
+  return `${whole ? `${prefix} ` : ''}${sixteenths}/16`;
 }
 
 export function formatIngredientAmount(
